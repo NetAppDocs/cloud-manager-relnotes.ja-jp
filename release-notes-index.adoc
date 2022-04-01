@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: release-notes-index.html 
+---
+= リリースノートインデックス
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+個々のサービスごとにリリースノートの全セットを表示します。
+
+
+
+== ストレージ
+
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/whats-new.html["Azure NetApp Files の特長"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/whats-new.html["ONTAP 対応の Amazon FSX"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service for Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-kubernetes/whats-new.html["Kubernetes クラスタ"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html["オンプレミスの ONTAP クラスタ"^]
+
+
+
+
+== データサービス
+
+* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["AppTemplate （アプリケーションテンプレート）"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["クラウドバックアップ"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["クラウドデータの意味"^]
+* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Cloud Sync"^]
+* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["クラウド階層化"^]
+* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["コンピューティング"^]
+* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["グローバルファイルキャッシュ"^]
+* https://docs.netapp.com/us-en/cloud-manager-monitoring/whats-new.html["監視"^]
+* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["ランサムウェア"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["レプリケーション"^]
+* https://docs.netapp.com/us-en/cloud-manager-snapcenter/whats-new.html["SnapCenter サービス"^]
+
+
+
+
+== 管理
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["管理を設定します"^]
+
