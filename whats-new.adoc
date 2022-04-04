@@ -1,6 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: Cloud Manager プラットフォームで行われた クラウド サービス の最新の変更点について説明します。詳細については、各サービスのすべてのリリースノートを参照してください。 
 ---
 = Cloud Manager での最新の変更点
 :toc: macro
