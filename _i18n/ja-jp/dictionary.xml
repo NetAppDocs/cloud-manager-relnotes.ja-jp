@@ -213,19 +213,6 @@
   <block id="2931385a1afec19638d47ebab7744410" category="paragraph">以前のリリースでは、 Cloud Sync とクラウドデータセンスの統合を導入しました。この更新プログラムでは、同期関係を簡単に作成できるように統合を強化しました。Cloud Data Sense からデータ同期を開始すると、すべてのソース情報が 1 つの手順で表示されるため、重要な情報をいくつか入力するだけで済みます。</block>
   <block id="f3b62c43bc969f6b5b30d96b8171a06d" category="inline-image-macro">Cloud Data Sense から直接新しい同期を開始した後に表示される Data Sense Integration ページを示すスクリーンショット。</block>
   <block id="b7415479c879eb3f5804ebd25ea733e7" category="paragraph"><block ref="b7415479c879eb3f5804ebd25ea733e7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5c46bd67ae4b5c23f9c243b5f396c088" category="section-title">2022 年 2 月 6 日</block>
-  <block id="b173d47e232436d0170127aec6c62d25" category="section-title">データブローカーグループの機能拡張</block>
-  <block id="2362e2192964b2a1132ee3c33127e6ec" category="paragraph">データブローカーの操作方法は、 dataBroker_groups_を 強調するように変更されました。</block>
-  <block id="009030a7e855d0f36e42bdac812520b4" category="paragraph">たとえば、新しい同期関係を作成する場合は、特定のデータブローカーではなく、データブローカーの _GROP_To がその関係で使用するように選択します。</block>
-  <block id="435847457b00dd1f91120adf3d0e24aa" category="inline-image-macro">データブローカーグループの選択を示す同期関係ウィザードのスクリーンショット。</block>
-  <block id="1010f6ebb8a63e17d664e622c2299691" category="paragraph"><block ref="1010f6ebb8a63e17d664e622c2299691" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9eb0238485945ad5d6512b69445e72c6" category="paragraph">[ データブローカーの管理 *] タブには、データブローカーグループが管理している同期関係の数も表示されます。</block>
-  <block id="4f1d2e29d6b816360bccc567294cac53" category="inline-image-macro">データブローカーグループの管理ページのスクリーンショット。管理しているリレーションシップの数など、データブローカーグループとそのグループの詳細が表示されます。</block>
-  <block id="b5012dcabc22fc10384141ed3b715897" category="paragraph"><block ref="b5012dcabc22fc10384141ed3b715897" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="81a424c5c67f920d35d770215956f31f" category="section-title">PDF レポートをダウンロードできます</block>
-  <block id="983eab96e054cfaaef2e1cc070a5ac0d" category="paragraph">レポートの PDF をダウンロードできるようになりました。</block>
-  <block id="b8573b8d6cb0195fa946927c3aa36397" category="inline-link">レポートの詳細については、こちらをご覧ください</block>
-  <block id="913d3279d6ca39c6bd290fac85314961" category="paragraph"><block ref="9ba5aa88e2b271505b32ed12efb1883e" category="inline-link-rx"></block>。</block>
   <block id="6cb8333618f00b139da255e7f5a82ea0" category="section-title">Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました</block>
   <block id="073223fc83a8b7f1f274f1af1f635f2f" category="paragraph">Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。</block>
   <block id="199090bb5d58df554b18a5cb68acb0b7" category="section-title">Cloud Tiering は、 ONTAP Select システムで完全に認定されています</block>
@@ -366,4 +353,13 @@
   <block id="249f6fd27ec465f7b6af7dc12178a1ea" category="paragraph">Cloud Volumes ONTAP 作業環境内から以前に利用可能だった System Manager のリンクを削除しました。</block>
   <block id="1979125e36e7d7c49ca297e15301d908" category="inline-link">System Manager への接続に関する詳細情報</block>
   <block id="bbf60c789b26c6dcc40b75262425eac7" category="paragraph">Cloud Volumes ONTAP システムに接続している Web ブラウザにクラスタ管理 IP アドレスを入力しても、 System Manager に接続できます。<block ref="c343c10570bfa751089c9639f87b6a1f" category="inline-link-rx"></block>。</block>
+  <block id="81fb4d1570abd75a1e2945d1f1c9f8cc" category="section-title">2022年5月1日</block>
+  <block id="5cccebf55aa4da23124f776528630bf3" category="section-title">同期タイムアウト</block>
+  <block id="5e4a50a7111ce8bba22cd01d07f86a3b" category="paragraph">新しい* Sync Timeout *設定を同期関係に使用できるようになりました。この設定を使用すると、指定した時間数または日数内に同期が完了していない場合にCloud Sync でデータの同期をキャンセルするかどうかを定義できます。</block>
+  <block id="21a5968447686d2d79ece94fc6ab0653" category="inline-link">同期関係の設定の変更の詳細については、こちらをご覧ください</block>
+  <block id="5f03ed55634cfe3f169d94549e45f06c" category="paragraph"><block ref="050cf03a98debb532006e420507b54cf" category="inline-link-rx"></block>。</block>
+  <block id="a274f4d4670213a9045ce258c6c56b80" category="section-title">通知</block>
+  <block id="0a3f4ee017f808dc79fb4939a3eaf91b" category="paragraph">新しい* Notifications *設定を同期関係に使用できるようになりました。この設定を使用すると、Cloud Sync 通知をCloud Managerの通知センターで受信するかどうかを選択できます。データの同期が成功した場合、データの同期が失敗した場合、データの同期がキャンセルされた場合の通知を有効にできます。</block>
+  <block id="9081c0430b4e4fcf1f0dd042e7c0ca60" category="inline-image-macro">Cloud Managerの通知センターを示すスクリーンショット。</block>
+  <block id="914b918c172fa270f423df8135932978" category="paragraph"><block ref="914b918c172fa270f423df8135932978" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

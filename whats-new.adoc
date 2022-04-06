@@ -377,6 +377,28 @@ Cloud Manager Connector のセキュリティグループでは、セキュリ�
 
 
 
+=== 2022年5月1日
+
+
+
+==== 同期タイムアウト
+
+新しい* Sync Timeout *設定を同期関係に使用できるようになりました。この設定を使用すると、指定した時間数または日数内に同期が完了していない場合にCloud Sync でデータの同期をキャンセルするかどうかを定義できます。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["同期関係の設定の変更の詳細については、こちらをご覧ください"]。
+
+
+
+==== 通知
+
+新しい* Notifications *設定を同期関係に使用できるようになりました。この設定を使用すると、Cloud Sync 通知をCloud Managerの通知センターで受信するかどうかを選択できます。データの同期が成功した場合、データの同期が失敗した場合、データの同期がキャンセルされた場合の通知を有効にできます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png["Cloud Managerの通知センターを示すスクリーンショット。"]
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["同期関係の設定の変更の詳細については、こちらをご覧ください"]。
+
+
+
 === 2022 年 4 月 3 日
 
 
@@ -419,32 +441,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 以前のリリースでは、 Cloud Sync とクラウドデータセンスの統合を導入しました。この更新プログラムでは、同期関係を簡単に作成できるように統合を強化しました。Cloud Data Sense からデータ同期を開始すると、すべてのソース情報が 1 つの手順で表示されるため、重要な情報をいくつか入力するだけで済みます。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png["Cloud Data Sense から直接新しい同期を開始した後に表示される Data Sense Integration ページを示すスクリーンショット。"]
-
-
-
-=== 2022 年 2 月 6 日
-
-
-
-==== データブローカーグループの機能拡張
-
-データブローカーの操作方法は、 dataBroker_groups_を 強調するように変更されました。
-
-たとえば、新しい同期関係を作成する場合は、特定のデータブローカーではなく、データブローカーの _GROP_To がその関係で使用するように選択します。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-select-data-broker-group.png["データブローカーグループの選択を示す同期関係ウィザードのスクリーンショット。"]
-
-[ データブローカーの管理 *] タブには、データブローカーグループが管理している同期関係の数も表示されます。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-group-relationships.png["データブローカーグループの管理ページのスクリーンショット。管理しているリレーションシップの数など、データブローカーグループとそのグループの詳細が表示されます。"]
-
-
-
-==== PDF レポートをダウンロードできます
-
-レポートの PDF をダウンロードできるようになりました。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["レポートの詳細については、こちらをご覧ください"]。
 
 
 
