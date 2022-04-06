@@ -7,6 +7,7 @@ summary: Cloud Manager プラットフォームで行われた クラウド サ�
 = Cloud Manager での最新の変更点
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font
@@ -24,106 +25,842 @@ Cloud Manager プラットフォームで行われた クラウド サービス 
 
 このセクションでは、 Cloud Manager の管理機能に関連する新機能として、アカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 2 月 27 日
+
+
+
+==== Google Cloud の Connector 強化
+
+Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。
+
+
+
+=== 2022 年 1 月 30 日
+
+
+
+==== ネットアップサポートサイトのアカウントに関する注意事項
+
+現在、ネットアップでは、サポートとライセンスに固有の認証サービスを提供するアイデンティティプロバイダとして、 Microsoft Azure Active Directory を使用しています。この更新の結果、 Cloud Manager は、以前に追加した既存のアカウントのネットアップサポートサイト（ NSS ）のクレデンシャルの更新を求めます。
+
+NSS アカウントを IDaaS に移行していない場合は、まずアカウントを移行してから、 Cloud Manager でクレデンシャルを更新する必要があります。
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["ネットアップによるアイデンティティ管理での Microsoft Azure AD の使用方法の詳細については、こちらをご覧ください"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["NSS アカウントを新しい認証方法に更新する方法について説明します"]
+
+
+
+
+=== 2022 年 1 月 2 日
+
+
+
+==== コネクタのエンドポイントが減少しました
+
+パブリッククラウド環境内でリソースやプロセスを管理するためにコネクタが接続する必要があるエンドポイントの数を削減しました。
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#outbound-internet-access["必要なエンドポイントのリストを表示します"]。
+
+
+
+==== コネクタの EBS ディスク暗号化
+
+Cloud Manager から AWS に新しいコネクタを導入する際に、デフォルトのマスターキーまたは管理対象キーを使用してコネクタの EBS ディスクを暗号化できるようになりました。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-disk-encryption.png["AWS でコネクタを作成する際のディスク暗号化オプションを示すスクリーンショット。"]
+
+
+
+==== NSS アカウントの E メールアドレス
+
+Cloud Manager に、ネットアップサポートサイトのアカウントに関連付けられている E メールアドレスが表示されるようになりました。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-nss-display-email.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
 
 
 
 == Azure NetApp Files の特長
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-azure-netapp-files/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2021 年 4 月 11 日
+
+
+
+==== ボリュームテンプレートのサポート
+
+新しいアプリケーションテンプレートサービスを使用すると、 Azure NetApp Files のボリュームテンプレートを設定できます。テンプレートを使用すると、容量プール、サイズ、プロトコル、 VNet 、ボリュームを配置するサブネットなど、一部のボリュームパラメータがテンプレートにすでに定義されているため、ジョブの簡易化に役立ちます。パラメータがすでに事前定義されている場合は、次のボリュームパラメータに進みます。
+
+* https://docs.netapp.com/us-en/cloud-manager-app-template/concept-resource-templates.html["アプリケーションテンプレートと、環境での使用方法について説明します"^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html["テンプレートから Azure NetApp Files ボリュームを作成する方法について説明します"]
+
+
+
+
+=== 2021 年 3 月 8 日
+
+
+
+==== サービスレベルを動的に変更
+
+ワークロードのニーズを満たし、コストを最適化するために、ボリュームのサービスレベルを動的に変更できるようになりました。ボリュームは、ボリュームに影響を及ぼすことなく、もう一方の容量プールに移動されます。
+
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["ボリュームのサービスレベルを変更する方法について説明します"]。
+
+
+
+=== 2020 年 8 月 3 日
+
+
+
+==== Azure NetApp Files のセットアップと管理
+
+Azure NetApp Files は Cloud Manager から直接セットアップおよび管理できます。Azure NetApp Files 作業環境を作成したら、次の作業を実行できます。
+
+* NFS ボリュームと SMB ボリュームを作成
+* 容量プールとボリューム Snapshot を管理します
++
+Cloud Manager では、ボリューム Snapshot を作成、削除、リストアできます。新しい容量プールを作成してそのサービスレベルを指定することもできます。
+
+* サイズを変更し、タグを管理してボリュームを編集します。
+
+
+以前のデータ移行機能は、 Cloud Manager から Azure NetApp Files を直接作成および管理できるようになりました。
 
 
 
 == ONTAP 対応の Amazon FSX
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-fsx-ontap/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 2 月 27 日
+
+
+
+==== IAM の役割を引き受けます
+
+ONTAP 作業環境向け FSX を作成する場合、 Cloud Manager が ONTAP 作業環境用の FSX を作成すると想定できる IAM ロールの ARN を指定する必要があります。以前は、 AWS アクセスキーを指定する必要がありました。
+
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["FSX for ONTAP のアクセス許可を設定する方法について説明します"]。
+
+
+
+=== 2021 年 10 月 31 日
+
+
+
+==== Cloud Manager API を使用して iSCSI ボリュームを作成
+
+Cloud Manager API を使用して FSX for ONTAP 用の iSCSI ボリュームを作成し、作業環境で管理できます。
+
+
+
+==== ボリュームの作成時にボリュームの単位を選択します
+
+可能です link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します"] FSX for ONTAP の場合。
+
+
+
+=== 2021 年 10 月 4 日
+
+
+
+==== Cloud Manager を使用して CIFS ボリュームを作成
+
+できるようになりました。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Cloud Manager を使用して、 FSX for ONTAP に CIFS ボリュームを作成します"]。
+
+
+
+==== Cloud Manager を使用してボリュームを編集
+
+できるようになりました。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["Cloud Manager を使用して ONTAP ボリュームの FSX を編集します"]。
 
 
 
 == アプリケーションテンプレート
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-app-template/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 3 月 3 日
+
+
+
+==== テンプレートを作成して、特定の作業環境を検索できるようになりました
+
+「既存のリソースを検索」アクションを使用すると、作業環境を特定してから、ボリュームの作成などの他のテンプレートアクションを使用して、既存の作業環境に対して簡単にアクションを実行できます。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates["詳細については、こちらをご覧ください"]。
+
+
+
+==== AWS で Cloud Volumes ONTAP HA 作業環境を作成できる
+
+AWS での Cloud Volumes ONTAP 作業環境の作成は、既存のサポートが拡張されて、シングルノードシステムに加えて高可用性システムも作成できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment["Cloud Volumes ONTAP 作業環境用のテンプレートの作成方法については、を参照してください"]。
+
+
+
+=== 2022 年 2 月 9 日
+
+
+
+==== テンプレートを作成して特定の既存ボリュームを検索し、 Cloud Backup を有効にすることができます
+
+新しい「リソース検索」アクションを使用すると、 Cloud Backup を有効にするすべてのボリュームを特定し、 Cloud Backup アクションを使用してそれらのボリュームのバックアップを有効にできます。
+
+現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-cloud-backup["詳細については、こちらをご覧ください"]。
+
+
+
+=== 2021 年 10 月 31 日
+
+
+
+==== これで、同期関係にタグを付けて、簡単にアクセスできるように関係をグループ化または分類できます
+
+https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["リソースタグ付けの詳細については、こちらをご覧ください"]。
 
 
 
 == クラウドバックアップ
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-backup-restore/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 4 月 4 日
+
+
+
+==== Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました
+
+新しい Cloud Backup for Applications 機能を使用すると、 Oracle および Microsoft SQL の既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージから AWS S3 または Azure Blob のクラウドオブジェクトストレージにオフロードできます。
+
+必要に応じて、クラウドからオンプレミスへデータをリストアできます。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-data-to-cloud.html["オンプレミスアプリケーションのデータをクラウドで保護する方法については、こちらをご覧ください"]。
+
+
+
+==== すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能
+
+ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["検索とリストアの使用方法を説明します"]。
+
+
+
+=== 2022 年 3 月 3 日
+
+
+
+==== GKE Kubernetes クラスタから Google Cloud ストレージに永続ボリュームをバックアップする機能
+
+ネットアップ Astra Trident がインストールされている GKE クラスタで、 Cloud Volumes ONTAP for GCP をクラスタのバックエンドストレージとして使用している場合は、 Google Cloud ストレージとの間で永続的ボリュームのバックアップとリストアを行うことができます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-kubernetes-to-gcp.html["詳細については、こちらをご覧ください"]。
+
+
+
+==== Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました
+
+
+
+=== 2022 年 2 月 14 日
+
+
+
+==== バックアップポリシーを単一クラスタ内の個々のボリュームに割り当てることができるようになりました
+
+これまでは、クラスタ内のすべてのボリュームに割り当てることができるバックアップポリシーは 1 つだけでした。1 つのクラスタに複数のバックアップポリシーを作成し、異なるボリュームに異なるポリシーを適用できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap#changing-the-policy-assigned-to-existing-volumes["クラスタの新しいバックアップポリシーを作成し、選択したボリュームに割り当てる方法を参照してください"]。
+
+
+
+==== 新しいオプションを使用すると、新規に作成されたボリュームにデフォルトのバックアップポリシーを自動的に適用できます
+
+以前は、 Cloud Backup をアクティブ化したあとに作業環境で作成した新しいボリュームには、バックアップポリシーを手動で適用する必要がありました。これで、 Cloud Manager 、 System Manager 、 CLI 、または API を使用してボリュームを作成したかどうかに関係なく、 Cloud Backup はボリュームを検出し、デフォルトポリシーとして選択したバックアップポリシーを適用します。
+
+このオプションは、新しい作業環境でバックアップを有効にする場合、または既存の作業環境で _ ボリュームの管理 _ ページから有効にする場合に使用できます。
+
+
+
+==== すべてのバックアップジョブとリストアジョブの処理中ステータスを確認するには、新しいジョブモニタを使用できます
+
+ジョブモニタは、バックアップポリシーの変更やバックアップの削除など、複数のボリュームに対して処理を開始した場合に非常に役立ちます。そのため、すべてのボリュームで処理が完了したことを確認できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["「ジョブモニタの使用方法」を参照してください"]。
 
 
 
 == クラウドデータの意味
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-data-sense/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 4 月 5 日
+
+
+
+==== オーストラリアの個人データは、データセンスで新たに 4 種類識別できます
+
+データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["データで特定できるすべての種類の個人データを表示します"]。
+
+
+
+==== グローバル Active Directory サーバを LDAP サーバとして使用できるようになりました
+
+Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["詳細については、こちらをご覧ください"]。
+
+
+
+=== 2022 年 3 月 15 日
+
+
+
+==== 新しいフィルタ：特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します
+
+「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。ユーザ名またはグループ名の一部または一部を指定できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。
+
+
+
+==== データセンスを使用すると、 SharePoint アカウントと OneDrive アカウントのファイルに対する権限を決定できます
+
+データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。
+
+
+
+==== 追加の 2 種類の個人データは、データセンスで識別できます
+
+* フランスの INSEE - INSEE コードは、フランス国立統計経済研究所（ INSEE ）がさまざまなエンティティを識別するために使用する数値コードです。
+* パスワード - この情報は、英数字の文字列の横にある「 password 」という単語を検索して、近接性検証を使用して識別されます。見つかったアイテムの数は、コンプライアンスダッシュボードの [ 個人の結果 ] の下に表示されます。［ 調査 ］ ペインでパスワードを含むファイルを検索するには、 ［ フィルタ * 個人データ ］ > ［ パスワード * ］ を使用します。
+
+
+
+
+==== ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます
+
+インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["次のエンドポイントへのアクセスを許可する必要があります。"]
+
+
+
+==== Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました
+
+
+
+=== 2022 年 2 月 9 日
+
+
+
+==== Microsoft SharePoint オンラインアカウントのスキャンのサポートが追加されました
+
+SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html["SharePoint アカウントをスキャンする方法をご覧ください"]。
+
+
+
+==== データセンスでは、データソースからターゲットの場所にファイルをコピーし、それらのファイルを同期できます
+
+これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync の略"^] データをソースからターゲットにコピーおよび同期する機能。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["ファイルのコピーおよび同期方法を参照してください"]。
+
+
+
+==== dsar レポートの新しい言語サポート
+
+データ主体の名前を検索して Data Subject Access Request （ dsar ）レポートを作成するときに、ドイツ語とスペイン語がサポートされるようになりました。このレポートは、企業が GDPR または同様のデータプライバシー法を遵守する必要がある場合に役立つように作成されています。
+
+
+
+==== 追加の 3 種類の個人データは、データセンスで識別できます
+
+データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["データがスキャンで識別するすべての個人データタイプのリストを表示します"]。
+
+
+
+==== コネクタへのデータセンス通信のためにセキュリティグループポートが変更されました
+
+Cloud Manager Connector のセキュリティグループでは、セキュリティを強化するために、データセンスインスタンスとの間のインバウンドトラフィックとアウトバウンドトラフィックにポート 80 ではなくポート 443 が使用されます。この時点では両方のポートは開いたままなので、問題はありませんが、将来のリリースではポート 80 が廃止される予定であるため、以前のどの環境でもセキュリティグループを更新する必要があります。
 
 
 
 == Cloud Sync
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 4 月 3 日
+
+
+
+==== データブローカーグループの機能拡張
+
+データブローカーグループには、次のような機能拡張が行われました。
+
+* データブローカーを新規または既存のグループに移動できるようになりました。
+* データブローカーのプロキシ設定を更新できるようになりました。
+* 最後に、データブローカーグループを削除することもできます。
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["データブローカーグループの管理方法について説明します"]。
+
+
+
+==== ダッシュボードフィルタ
+
+Sync Dashboard の内容をフィルタリングして、特定のステータスに一致する同期関係を簡単に見つけることができるようになりました。たとえば、ステータスが「失敗」の同期関係をフィルタリングできます
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png["ダッシュボードの上部にある ［ 同期によるフィルタ ］ ステータスオプションを示すスクリーンショット。"]
+
+
+
+=== 2022 年 3 月 3 日
+
+
+
+==== ダッシュボードでソートします
+
+ダッシュボードを同期関係名でソートできるようになりました。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-sort.png["ダッシュボードで使用できる [ 名前でソート ] オプションを示すスクリーンショット。"]
+
+
+
+==== データセンスの統合の強化
+
+以前のリリースでは、 Cloud Sync とクラウドデータセンスの統合を導入しました。この更新プログラムでは、同期関係を簡単に作成できるように統合を強化しました。Cloud Data Sense からデータ同期を開始すると、すべてのソース情報が 1 つの手順で表示されるため、重要な情報をいくつか入力するだけで済みます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png["Cloud Data Sense から直接新しい同期を開始した後に表示される Data Sense Integration ページを示すスクリーンショット。"]
+
+
+
+=== 2022 年 2 月 6 日
+
+
+
+==== データブローカーグループの機能拡張
+
+データブローカーの操作方法は、 dataBroker_groups_を 強調するように変更されました。
+
+たとえば、新しい同期関係を作成する場合は、特定のデータブローカーではなく、データブローカーの _GROP_To がその関係で使用するように選択します。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-select-data-broker-group.png["データブローカーグループの選択を示す同期関係ウィザードのスクリーンショット。"]
+
+[ データブローカーの管理 *] タブには、データブローカーグループが管理している同期関係の数も表示されます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-group-relationships.png["データブローカーグループの管理ページのスクリーンショット。管理しているリレーションシップの数など、データブローカーグループとそのグループの詳細が表示されます。"]
+
+
+
+==== PDF レポートをダウンロードできます
+
+レポートの PDF をダウンロードできるようになりました。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["レポートの詳細については、こちらをご覧ください"]。
 
 
 
 == クラウド階層化
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-tiering/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 4 月 4 日
+
+
+
+==== Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました
+
+Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。
+
+
+
+==== Cloud Tiering は、 ONTAP Select システムで完全に認定されています
+
+AFF システムと FAS システムのデータを階層化するだけでなく、 ONTAP Select システムからクラウドストレージにもアクセス頻度の低いデータを階層化できるようになりました。
+
+
+
+=== 2021 年 9 月 2 日
+
+
+
+==== FabricPool ライセンスは Cloud Tiering BYOL ライセンスに置き換えられています
+
+Cloud Tiering サービスを使用した、 Cloud Manager でサポートされる階層化構成に、新しい * Cloud Tiering * ライセンスが追加されました。複数のオンプレミス ONTAP クラスタにわたって使用できるフローティングライセンスです。過去に使用したことのある * FabricPool * ライセンスは、 Cloud Manager でサポートされていない構成にのみ保持されます。
+
+https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["新しい Cloud Tiering ライセンスの詳細については、こちらをご覧ください"]。
+
+
+
+==== オンプレミスの ONTAP クラスタから S3 互換のオブジェクトストレージにアクセス頻度の低いデータを階層化します
+
+Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスにアクセス頻度の低いデータを階層化できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-s3-compat.html["S3 互換オブジェクトストレージへのデータの階層化方法を参照してください"]。
+
+
+
+=== 2021 年 7 月 7 日
+
+
+
+==== Connector は、データを Azure BLOB ストレージに階層化するときにオンプレミスで実行できます
+
+Azure VNet にインストールされたコネクタを使用する必要はなくなりました。Azure BLOB ストレージにデータを階層化する場合は、オンプレミスのホストで Connector を実行できます。
 
 
 
 == Cloud Volumes ONTAP
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 4 月 3 日
+
+
+
+==== WORM ストレージの充電
+
+導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。
+
+https://cloud.netapp.com/pricing["WORM ストレージの価格設定については、こちらをご覧ください"^]。
+
+
+
+=== 2022 年 2 月 27 日（コネクタ 3.9.16 ）
+
+
+
+==== ボリュームウィザードの再設計
+
+特定のアグリゲートに * Advanced allocation * オプションからボリュームを作成するときに、新しいボリューム作成ウィザードを使用できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["特定のアグリゲートにボリュームを作成する方法について説明します"]。
+
+
+
+=== 2022 年 2 月 9 日
+
+
+
+==== 市場の最新情報
+
+* Essentials パッケージと Professional パッケージが AWS と Google Cloud Marketplace で利用できるようになりました。
++
+容量単位の課金方法では、時間単位での支払いや、年間契約の購入をクラウドプロバイダから直接行うことができます。容量単位のライセンスは、ネットアップから直接購入することもできます。
+
++
+クラウドマーケットプレイスで既存のサブスクリプションがある場合は、それらの新しいサービスにも自動的にサブスクライブされます。新しい Cloud Volumes ONTAP 作業環境の導入時に、容量単位の課金を選択できます。
+
++
+新規のお客様の場合、 Cloud Manager は新しい作業環境の作成時に登録を求めるプロンプトを表示します。
+
+* AWS と Google Cloud Marketplace を使用したノード単位のライセンスは廃止され、新しいユーザには提供されなくなりました。これには、年間契約と時間単位のサブスクリプション（ Explore 、 Standard 、 Premium ）が含まれます。
++
+この充電方法は、有効なサブスクリプションをお持ちの既存のお客様には引き続きご利用いただけます。
+
+
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションの詳細については、こちらをご覧ください"]。
 
 
 
 == Cloud Volumes Service for GCP
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-service-gcp/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2020 年 9 月 9 日
+
+
+
+==== Cloud Volumes Service for Google Cloud のサポート
+
+Cloud Volumes Service for Google Cloud を Cloud Manager から直接管理できるようになりました。
+
+* 作業環境をセットアップして作成
+* Linux クライアントおよび UNIX クライアント用に、 NFSv3 ボリュームと NFSv4.1 ボリュームを作成および管理します
+* Windows クライアント用に SMB 3.x ボリュームを作成して管理します
+* ボリューム Snapshot を作成、削除、およびリストアします
+
 
 
 
 == コンピューティング
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2020 年 12 月 7 日
+
+
+
+==== Cloud Manager と Spot の間のナビゲーション
+
+Cloud Manager と Spot の間の移動が簡単になりました。
+
+Spot の新しい「 * ストレージ運用 * 」セクションでは、 Cloud Manager に直接移動できます。作業が完了したら、 Cloud Manager の * Compute * タブから Spot に戻ることができます。
+
+
+
+=== 2020 年 10 月 18 日
+
+
+
+==== コンピューティングサービスの概要
+
+を活用して https://spot.io/products/cloud-analyzer/["Spot の Cloud Analyzer の略"^]Cloud Manager では、クラウドコンピューティング関連のコストを高水準で分析し、コスト削減の可能性を特定できるようになりました。この情報は、 Cloud Manager の * Compute * サービスから入手できます。
+
+https://docs.netapp.com/us-en/cloud-manager-compute/concept-compute.html["コンピューティングサービスの詳細については、こちらをご覧ください"]。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/media/screenshot_compute_dashboard.gif["Cloud Manager のコスト分析ページを示すスクリーンショット。"]
 
 
 
 == グローバルファイルキャッシュ
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-file-cache/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2021 年 12 月 17 日（バージョン 1.2.0 ）
+
+
+
+==== OpenSSL モジュールがバージョン 1.1.1L にアップグレードされました。
+
+これは最新バージョンであり、より安全です。このモジュールは、 GFC エッジと GFC コア間のセキュアな通信に使用されます。
+
+
+
+==== ロギングインフラが強化されました。
+
+
+
+=== 2021 年 6 月 9 日（バージョン 1.1.0 ）
+
+
+
+==== 「エッジ同期」機能が追加されました。
+
+この機能では、リモートオフィスの複数のエッジが同期され、データは常にキャッシュ / ウォームに保存されます。ファイルを 1 つのエッジでフラッシュ / フェッチすると、 Edge Sync に参加するすべてのエッジ上の同じファイルが更新され、キャッシュされます。のセクション 8.4 を参照してください https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["『 NetApp Global File Cache User Guide 』を参照してください"^] を参照してください。
+
+
+
+==== OpenSSL モジュールがバージョン 1.1.1k にアップグレードされました。
+
+これは最新バージョンであり、より安全です。このモジュールは、 GFC エッジと GFC コア間のセキュアな通信に使用されます。
+
+
+
+==== ライセンス登録ページが更新されました。
+
+GFC ライセンス登録ページに、ネットアップのサブスクリプションを通じてライセンスをアクティブ化したときに表示されるライセンス数が追加されました。
+
+
+
+=== 2021 年 3 月 21 日（バージョン 1.0.3 ）
+
+
+
+==== GFC プロセスを Windows Defender から自動的に除外するためのソフトウェアインストーラのアップデート。
+
+グローバルファイルキャッシュソフトウェアインストーラでは、すべての GFC プロセスが Windows Defender ソフトウェアのオンデマンドスキャンから除外されるようになりました。
+
+
+
+==== 新しい [ ポリシー構成 ] タブが構成コンソールに追加されました。
+
+この設定タブでは、 GFC コアから事前入力ジョブを追加できます。
+
+
+
+==== パフォーマンスと安定性を向上させながら、メモリ使用量を削減するようにソフトウェアを強化。
 
 
 
 == Kubernetes
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-kubernetes/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 4 月 4 日
+
+
+
+==== Cloud Manager のリソースページを使用して Kubernetes クラスタを管理
+
+Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。新しい link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["クイックスタート"] すぐに運用を開始できます。
+
+クラスタリソースのページで次の操作を実行できるようになりました。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Trident をインストール"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["ストレージクラスを追加する"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["クラスタを削除"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["データサービスを有効化"]
+
+
+
+
+=== 2022 年 2 月 27 日
+
+
+
+==== Google Cloud で Kubernetes クラスタがサポートされます
+
+Cloud Manager を使用して、 Google Cloud で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud で Kubernetes クラスタを使用する方法をご確認ください"]。
+
+
+
+=== 2022 年 1 月 11 日
+
+
+
+==== Azure で Kubernetes クラスタがサポートされます
+
+Cloud Manager を使用して、 Azure で管理対象 Azure Kubernetes クラスタ（ AKS ）と自己管理型 Kubernetes クラスタを追加および管理できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの使用の開始"]
 
 
 
 == 監視
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-monitoring/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2021 年 8 月 1 日
+
+
+
+==== Acquisition Unit の名前に変更します
+
+Acquisition Unit インスタンスのデフォルトの名前を CloudInsights - AU - _UUID_so に変更し、わかりやすい名前にしました（ UUID は生成されたハッシュです）。
+
+このインスタンスは、 Cloud Volumes ONTAP 作業環境で監視サービスを有効にすると Cloud Manager によって導入されます。
+
+
+
+=== 2021 年 5 月 5 日
+
+
+
+==== 既存のテナントをサポート
+
+既存の Cloud Insights テナントがある場合でも、 Cloud Volumes ONTAP 作業環境で監視サービスを有効にできるようになりました。
+
+
+
+==== 無料トライアル移行
+
+監視サービスを有効にすると、 Cloud Manager は Cloud Insights の無償トライアルをセットアップします。29 日目に、計画は自動的に試用版からに移行します https://docs.netapp.com/us-en/cloudinsights/concept_subscribing_to_cloud_insights.html#editions["Basic エディション"^]。
+
+
+
+=== 2021 年 2 月 9 日
+
+
+
+==== Azure でのサポート
+
+Cloud Volumes ONTAP for Azure で監視サービスがサポートされるようになりました。
+
+
+
+==== 政府機関のサポート
+
+監視サービスは、 AWS および Azure の政府機関のリージョンでもサポートされます。
 
 
 
 == オンプレミスの ONTAP クラスタ
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 2 月 27 日
+
+
+
+==== 「社内 ONTAP 」タブはデジタルウォレットで使用できます。
+
+オンプレミスの ONTAP クラスタのインベントリと、ハードウェアおよびサービス契約の有効期限を確認できるようになりました。クラスタに関するその他の詳細も確認できます。
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details["この重要なオンプレミスクラスタの情報を表示する方法を参照してください"]。クラスタ用のネットアップサポートサイトのアカウント（ NSS ）が必要です。また、 NSS のクレデンシャルを Cloud Manager アカウントに接続する必要があります。
+
+
+
+=== 2022 年 1 月 11 日
+
+
+
+==== オンプレミスの ONTAP クラスタのボリュームに追加するタグは、 Tagging サービスで使用できます。
+
+ボリュームに追加するタグは、アプリケーションテンプレートサービスのタグ機能に関連付けられます。これにより、リソースの管理を整理して簡単にすることができます。
+
+
+
+=== 2021 年 11 月 28 日
+
+
+
+==== オンプレミスの ONTAP クラスタ向けのボリューム作成ウィザードが簡易化されました
+
+使いやすいようにボリューム作成ウィザードが再設計され、カスタムのエクスポートポリシーを選択できるようになりました。
 
 
 
 == ランサムウェアからの保護
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ransomware/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2022 年 3 月 15 日
+
+
+
+==== ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル
+
+新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["詳細については、こちらをご覧ください"]。
+
+
+
+==== [ アクセス許可 ] 領域に OneDrive アカウントと SharePoint アカウントが含まれるようになりました
+
+ランサムウェア対策保護ダッシュボードの [ 開くアクセス許可 ] 領域に、 OneDrive アカウントと SharePoint アカウントでスキャンされるファイルに存在するアクセス許可が表示されるようになりました。
+
+
+
+=== 2022 年 2 月 9 日
+
+
+
+==== 新たなランサムウェア対策サービス
+
+新しいランサムウェア防御サービスでは、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価することができます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html["この新しいサービスの詳細については、こちらをご覧ください"]。
 
 
 
 == レプリケーション
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-replication/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2021 年 9 月 2 日
+
+
+
+==== Amazon FSX for ONTAP のサポート
+
+Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。
+
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"]。
+
+
+
+=== 2021 年 5 月 5 日
+
+
+
+==== インターフェイスの再設計
+
+使いやすく、 Cloud Manager のユーザインターフェイスの最新のルックアンドフィールに合わせて、 Replication タブが再設計されました。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-replication/main/media/replication.gif["Cloud Manager の再設計された Replication タブのスクリーンショット。ボリューム関係のリストを示しています。"]
 
 
 
 == SnapCenter サービス
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-snapcenter/main/whats-new.adoc["tag=whats-new 、 leveloffset=+1"]
+
+
+=== 2021 年 12 月 21 日
+
+
+
+==== Apache log4j の脆弱性に対する修正
+
+SnapCenter サービス 1.0.1 をアップグレードすると、バージョン 2.9.1 から 2.17 に Apache log4j がアップグレードされ、次の脆弱性が解決されます： CVE-20244228 、 CVE-2012-4104 、および CVE-2016-45105 。
+
+SnapCenter サービスクラスタは最新バージョンに自動更新される必要があります。SnapCenter サービス UI に、クラスタが 1.0.1.1251 以降であることを確認する必要があります。

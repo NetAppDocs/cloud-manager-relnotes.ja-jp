@@ -8,6 +8,7 @@ summary: このリリースノートでは、 Cloud Manager プラットフォ�
 = Cloud Manager リリースノート
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

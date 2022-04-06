@@ -5,6 +5,7 @@ permalink: release-notes-index.html
 = リリースノートインデックス
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font
