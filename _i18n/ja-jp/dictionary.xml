@@ -182,7 +182,6 @@
   <block id="f3b62c43bc969f6b5b30d96b8171a06d" category="inline-image-macro">Cloud Data Sense から直接新しい同期を開始した後に表示される Data Sense Integration ページを示すスクリーンショット。</block>
   <block id="b7415479c879eb3f5804ebd25ea733e7" category="paragraph"><block ref="b7415479c879eb3f5804ebd25ea733e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6cb8333618f00b139da255e7f5a82ea0" category="section-title">Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました</block>
-  <block id="073223fc83a8b7f1f274f1af1f635f2f" category="paragraph">Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。</block>
   <block id="199090bb5d58df554b18a5cb68acb0b7" category="section-title">Cloud Tiering は、 ONTAP Select システムで完全に認定されています</block>
   <block id="a74220a8acc78d1041352afb305af18f" category="paragraph">AFF システムと FAS システムのデータを階層化するだけでなく、 ONTAP Select システムからクラウドストレージにもアクセス頻度の低いデータを階層化できるようになりました。</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
@@ -193,9 +192,6 @@
   <block id="24263383a842093a8c2b6b9b8a88989d" category="section-title">オンプレミスの ONTAP クラスタから S3 互換のオブジェクトストレージにアクセス頻度の低いデータを階層化します</block>
   <block id="59e10c49329cd1a0a55e4a0d27f6a584" category="inline-link">S3 互換オブジェクトストレージへのデータの階層化方法を参照してください</block>
   <block id="df94b79ab63138be1c03382ae20c338d" category="paragraph">Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスにアクセス頻度の低いデータを階層化できるようになりました。<block ref="26932bf166134e05b1ade0d7ecb1b6d8" category="inline-link-rx"></block>。</block>
-  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
-  <block id="154176674c0672732a91f2bd7ca5d8e0" category="section-title">Connector は、データを Azure BLOB ストレージに階層化するときにオンプレミスで実行できます</block>
-  <block id="def40345e2d3c9101a49141b1956c58d" category="paragraph">Azure VNet にインストールされたコネクタを使用する必要はなくなりました。Azure BLOB ストレージにデータを階層化する場合は、オンプレミスのホストで Connector を実行できます。</block>
   <block id="0f132f66e81cbab588044405a33dc058" category="section-title">WORM ストレージの充電</block>
   <block id="d87a373c29bad4362e9f6515cb3a6927" category="paragraph">導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。</block>
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">WORM ストレージの価格設定については、こちらをご覧ください</block>
@@ -400,4 +396,10 @@
   <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</block>
   <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb1bf021e05707d1f69722b4d550c310" category="paragraph">コネクタの3.9.16リリースでは、次の変更が加えられました。</block>
+  <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
+  <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tieringは、追加のクラスタ構成をサポートしています</block>
+  <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">これらのタイプのクラスタのライセンスを設定する方法を参照してください。</block>
+  <block id="4675a948ea93098e22976c0848737e1a" category="paragraph">クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
+  <block id="75ad6cd4979a906c67e27abc9ee1c14e" category="inline-link">サポートされているS3ストレージクラスを参照してください。</block>
+  <block id="d3028cb26dae3dbde1ec068c17d15383" category="paragraph">Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。<block ref="99f36cc81f33df65a0349e719000fada" category="inline-link-rx"></block></block>
 </blocks>
