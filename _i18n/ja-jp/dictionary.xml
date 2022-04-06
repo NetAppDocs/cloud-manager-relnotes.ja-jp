@@ -362,4 +362,8 @@
   <block id="b59fdb8f9fe5a28d08cd50bf85b70880" category="section-title">Apache log4j の脆弱性に対する修正</block>
   <block id="6b6f87c741f6734b4908d03d2c21e449" category="paragraph">SnapCenter サービス 1.0.1 をアップグレードすると、バージョン 2.9.1 から 2.17 に Apache log4j がアップグレードされ、次の脆弱性が解決されます： CVE-20244228 、 CVE-2012-4104 、および CVE-2016-45105 。</block>
   <block id="ae1f9a5afbc7e02967d7f7e643135d82" category="paragraph">SnapCenter サービスクラスタは最新バージョンに自動更新される必要があります。SnapCenter サービス UI に、クラスタが 1.0.1.1251 以降であることを確認する必要があります。</block>
+  <block id="97106e7449f4966fc1e4b3b78d425110" category="section-title">System Manager のリンクが削除されました</block>
+  <block id="249f6fd27ec465f7b6af7dc12178a1ea" category="paragraph">Cloud Volumes ONTAP 作業環境内から以前に利用可能だった System Manager のリンクを削除しました。</block>
+  <block id="1979125e36e7d7c49ca297e15301d908" category="inline-link">System Manager への接続に関する詳細情報</block>
+  <block id="bbf60c789b26c6dcc40b75262425eac7" category="paragraph">Cloud Volumes ONTAP システムに接続している Web ブラウザにクラスタ管理 IP アドレスを入力しても、 System Manager に接続できます。<block ref="c343c10570bfa751089c9639f87b6a1f" category="inline-link-rx"></block>。</block>
 </blocks>

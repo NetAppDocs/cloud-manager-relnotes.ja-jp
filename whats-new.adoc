@@ -504,6 +504,14 @@ Azure VNet にインストールされたコネクタを使用する必要はな
 
 
 
+==== System Manager のリンクが削除されました
+
+Cloud Volumes ONTAP 作業環境内から以前に利用可能だった System Manager のリンクを削除しました。
+
+Cloud Volumes ONTAP システムに接続している Web ブラウザにクラスタ管理 IP アドレスを入力しても、 System Manager に接続できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["System Manager への接続に関する詳細情報"]。
+
+
+
 ==== WORM ストレージの充電
 
 導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。
