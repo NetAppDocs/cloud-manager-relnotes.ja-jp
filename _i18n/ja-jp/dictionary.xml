@@ -65,29 +65,7 @@
   <block id="92a19295ac05c2a8159ff4e129265e4f" category="inline-link">Cloud Manager での Cloud Volumes ONTAP 管理に関するリリースノート</block>
   <block id="998c54a50d0a2978b705c26bab946460" category="list-text"><block ref="998c54a50d0a2978b705c26bab946460" category="inline-link-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
-  <block id="0fc27381f6df0f20af584e656aa215b9" category="section-title">Google Cloud の Connector 強化</block>
   <block id="23ea931bf11f885e1a49e6970b0aa60a" category="paragraph">Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。</block>
-  <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022 年 1 月 30 日</block>
-  <block id="4c192c0d77af6017716138a0c469c687" category="section-title">ネットアップサポートサイトのアカウントに関する注意事項</block>
-  <block id="553da3d1de1480b23203668d02c692f5" category="paragraph">現在、ネットアップでは、サポートとライセンスに固有の認証サービスを提供するアイデンティティプロバイダとして、 Microsoft Azure Active Directory を使用しています。この更新の結果、 Cloud Manager は、以前に追加した既存のアカウントのネットアップサポートサイト（ NSS ）のクレデンシャルの更新を求めます。</block>
-  <block id="a47acc65b2885cddfc6096e5aa5324f7" category="paragraph">NSS アカウントを IDaaS に移行していない場合は、まずアカウントを移行してから、 Cloud Manager でクレデンシャルを更新する必要があります。</block>
-  <block id="b48762bb68eb4f8c518d5be6f1c76d16" category="inline-link">ネットアップによるアイデンティティ管理での Microsoft Azure AD の使用方法の詳細については、こちらをご覧ください</block>
-  <block id="d9031e6782c3419c7b81c9c83572daf7" category="list-text"><block ref="d9031e6782c3419c7b81c9c83572daf7" category="inline-link-rx"></block></block>
-  <block id="d843af49cdcc73f67f6a04467ff7a5b1" category="inline-link">NSS アカウントを新しい認証方法に更新する方法について説明します</block>
-  <block id="56e138c1cde783765ac6d2c9d4217fad" category="list-text"><block ref="56e138c1cde783765ac6d2c9d4217fad" category="inline-link-rx"></block></block>
-  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
-  <block id="3eb3c5317b96f11c0338c5ff2b831a15" category="section-title">コネクタのエンドポイントが減少しました</block>
-  <block id="3ea953e33860f2fb58e83ea9f9842e28" category="paragraph">パブリッククラウド環境内でリソースやプロセスを管理するためにコネクタが接続する必要があるエンドポイントの数を削減しました。</block>
-  <block id="deb7ce1a594b9c903900b5242dc0085e" category="inline-link">必要なエンドポイントのリストを表示します</block>
-  <block id="3f9908dd0d34e73be621e521e51cd6a8" category="paragraph"><block ref="5f52a012a929ebfb0b0a901a58e91a4c" category="inline-link-rx"></block>。</block>
-  <block id="cdacfba529ee299ab36d1cdf539f519d" category="section-title">コネクタの EBS ディスク暗号化</block>
-  <block id="dcf92cfff3fdb05a27221d7e0f407165" category="paragraph">Cloud Manager から AWS に新しいコネクタを導入する際に、デフォルトのマスターキーまたは管理対象キーを使用してコネクタの EBS ディスクを暗号化できるようになりました。</block>
-  <block id="e47c7d2e2b0dfe5aea5df23ca3dc5523" category="inline-image-macro">AWS でコネクタを作成する際のディスク暗号化オプションを示すスクリーンショット。</block>
-  <block id="1a3140f260afcdb189bbb444b89966c4" category="paragraph"><block ref="1a3140f260afcdb189bbb444b89966c4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c9ace35ceff752453d1b0f7978e94417" category="section-title">NSS アカウントの E メールアドレス</block>
-  <block id="09a67f36e39e8933808ee04f43addc27" category="paragraph">Cloud Manager に、ネットアップサポートサイトのアカウントに関連付けられている E メールアドレスが表示されるようになりました。</block>
-  <block id="51f80facd7c70833cf77adf937c57d0f" category="inline-image-macro">ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。</block>
-  <block id="e07973e7f57415cf8c19fe68b62a728c" category="paragraph"><block ref="e07973e7f57415cf8c19fe68b62a728c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">ボリュームテンプレートのサポート</block>
   <block id="28c1b76e8b0c8f418301bc750b4e9f0e" category="paragraph">新しいアプリケーションテンプレートサービスを使用すると、 Azure NetApp Files のボリュームテンプレートを設定できます。テンプレートを使用すると、容量プール、サイズ、プロトコル、 VNet 、ボリュームを配置するサブネットなど、一部のボリュームパラメータがテンプレートにすでに定義されているため、ジョブの簡易化に役立ちます。パラメータがすでに事前定義されている場合は、次のボリュームパラメータに進みます。</block>
@@ -222,20 +200,10 @@
   <block id="d87a373c29bad4362e9f6515cb3a6927" category="paragraph">導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。</block>
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">WORM ストレージの価格設定については、こちらをご覧ください</block>
   <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>。</block>
-  <block id="32215461c426d2e6cd125109ca715d8f" category="section-title">2022 年 2 月 27 日（コネクタ 3.9.16 ）</block>
   <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">ボリュームウィザードの再設計</block>
   <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">特定のアグリゲートに * Advanced allocation * オプションからボリュームを作成するときに、新しいボリューム作成ウィザードを使用できるようになりました。</block>
   <block id="c4abca012bce01614c5a65c5b0e6ecd6" category="inline-link">特定のアグリゲートにボリュームを作成する方法について説明します</block>
   <block id="1c6f86b67d4150db2b816bc084d4c069" category="paragraph"><block ref="525dd47105081fbda31ba7a2793ca879" category="inline-link-rx"></block>。</block>
-  <block id="b1894f3de88322c422613dce3ce8f4cd" category="section-title">市場の最新情報</block>
-  <block id="376dea476fe87cb9b0aae288d191c1cc" category="list-text">Essentials パッケージと Professional パッケージが AWS と Google Cloud Marketplace で利用できるようになりました。</block>
-  <block id="8b5bbca61d06a4ab0106010904673191" category="paragraph">容量単位の課金方法では、時間単位での支払いや、年間契約の購入をクラウドプロバイダから直接行うことができます。容量単位のライセンスは、ネットアップから直接購入することもできます。</block>
-  <block id="110339077b8549e028924c27d4eee889" category="paragraph">クラウドマーケットプレイスで既存のサブスクリプションがある場合は、それらの新しいサービスにも自動的にサブスクライブされます。新しい Cloud Volumes ONTAP 作業環境の導入時に、容量単位の課金を選択できます。</block>
-  <block id="941041b0490626a7d2a15321ebfea99b" category="paragraph">新規のお客様の場合、 Cloud Manager は新しい作業環境の作成時に登録を求めるプロンプトを表示します。</block>
-  <block id="0395ddea3013558664b640709c4005e0" category="list-text">AWS と Google Cloud Marketplace を使用したノード単位のライセンスは廃止され、新しいユーザには提供されなくなりました。これには、年間契約と時間単位のサブスクリプション（ Explore 、 Standard 、 Premium ）が含まれます。</block>
-  <block id="b353203eeb0af0c192ef9706121d7227" category="paragraph">この充電方法は、有効なサブスクリプションをお持ちの既存のお客様には引き続きご利用いただけます。</block>
-  <block id="ad66e158a2e414eee17bb2c5185f011a" category="inline-link">Cloud Volumes ONTAP のライセンスオプションの詳細については、こちらをご覧ください</block>
-  <block id="41fe6a9591d04d2b5dc40ba59fd15df9" category="paragraph"><block ref="e22d1e33878d70a72f20edc19056d016" category="inline-link-rx"></block>。</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020 年 9 月 9 日</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Cloud Volumes Service for Google Cloud のサポート</block>
   <block id="9e376b2341c224a05e31bf464f6a9a2c" category="paragraph">Cloud Volumes Service for Google Cloud を Cloud Manager から直接管理できるようになりました。</block>
@@ -366,4 +334,70 @@
   <block id="013bf9b0d5295922582e97a69409b714" category="list-text">無料トライアルは、Marketplaceのサブスクリプションが開始された日から開始されます。たとえば、Cloud Volumes ONTAP システムのMarketplaceサブスクリプションを30日間使用した後で無料トライアルを有効にした場合、クラウドバックアップトライアルは利用できません。</block>
   <block id="caf9c5028f987d64131bfc8e9f4bd0ed" category="inline-link">使用可能なライセンスモデルの詳細については、こちらをご覧ください</block>
   <block id="ecd035ede918d91432ba5203669d96bd" category="paragraph"><block ref="7226e404226609d8e6a7fa892651e74a" category="inline-link-rx"></block>。</block>
+  <block id="def752908b0fa662bfb5de654a533140" category="section-title">コネクタ3.9.18</block>
+  <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。</block>
+  <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">デリー（アジア-サウス2）</block>
+  <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">メルボルン（オーストラリア-スモアカス2）</block>
+  <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">ミラノ（ヨーロッパ-西8）</block>
+  <block id="dcbe8ad0293bd53296a9d2ec0f030d10" category="list-text">サンティアゴ（サウスメリカ-西1）</block>
+  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">サポートされているリージョンの完全なリストを表示します</block>
+  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
+  <block id="5750adecdd8602aee9e0d7052b8cd392" category="list-text">Connectorで使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</block>
+  <block id="898d465c80c6b6783418f6fa71db0946" category="inline-image-macro">サービスアカウントフィールドのスクリーンショット</block>
+  <block id="506e06ca3e996f21913a49d1f4920902" category="paragraph"><block ref="506e06ca3e996f21913a49d1f4920902" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">シールドVM機能</block>
+  <block id="2e0bddfca809f95cf3d5d7adfccca0e2" category="list-text">をサポートするOSでVMインスタンス上のGoogle CloudのConnectorを認定しました<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
+  <block id="561748ecfe4fd0bd9f15c851d5de4d29" category="inline-link">これらの拡張機能について説明します</block>
+  <block id="d2b88fcff484dc7cae448a7e8c287a1f" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。<block ref="60a968f5f71ebaff72f2727ce31f8e5b" category="inline-link-rx"></block></block>
+  <block id="5e9d36e4528c82da2b7294c252e52427" category="list-text">ConnectorでCloud Volumes ONTAP を導入するには、新しいAWS権限が必要です。</block>
+  <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。</block>
+  <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。</block>
+  <block id="eaf263597aafb24c99ce4e16af420ae8" category="inline-link">Cloud Manager のポリシーのページです</block>
+  <block id="26dd25d183752a9f37249174f3d3ff89" category="paragraph">Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>。</block>
+  <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">コネクタ3.9.17</block>
+  <block id="dc45cdfe41bbcfa7f2d8bf1ed54a89ed" category="list-text">Cloud Manager に、環境で設定した IAM ロールを割り当てることでコネクタを作成できるようになりました。この認証方式は、 AWS のアクセスキーとシークレットキーを共有する場合よりも安全です。</block>
+  <block id="c1ef500163b033b0cacf87c830339c6e" category="inline-link">IAM ロールを使用してコネクタを作成する方法について説明します</block>
+  <block id="1d74a995b1a421dcb50976efb8094b21" category="paragraph"><block ref="f92b2fbbcca658498705715523d67bd6" category="inline-link-rx"></block>。</block>
+  <block id="1d99a1c8fadd3f9a537fec830e9791e0" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。<block ref="66c4cd7232189d67ede2231e4ccd26ce" category="inline-link-rx"></block></block>
+  <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">コネクタ3.9.16</block>
+  <block id="8452efafcd305c048b35a9ac1eaa0a58" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。<block ref="f53661746a388d6e170677167c0cb4ac" category="inline-link-rx"></block></block>
+  <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">コネクタの3.9.18リリースでは、次の変更が加えられました。</block>
+  <block id="44521137c9499dbef6a006058d0d9127" category="section-title">Cloud Volumes ONTAP 9.11.0</block>
+  <block id="f5820273186d8dafc3fd2a4b4a00f3ab" category="paragraph">Cloud ManagerでCloud Volumes ONTAP 9.11.0の導入と管理が可能になりました。</block>
+  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP</block>
+  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
+  <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">メディエーターのアップグレードに関する機能拡張</block>
+  <block id="b1001d52fd68a717e647b035c7ba64fe" category="paragraph">Cloud ManagerによってHAペアのメディエーターがアップグレードされると、ブートディスクを削除する前に新しいメディエーターイメージが使用可能であるかどうかが検証されるようになりました。この変更により、アップグレードプロセスが失敗した場合でもメディエーターは正常に動作し続けることができます。</block>
+  <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8sタブが削除されました</block>
+  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。</block>
+  <block id="75b200b4f9a63bca2792f985693a22c8" category="inline-link">Cloud ManagerでのKubernetesのデータ管理について説明します</block>
+  <block id="97bbe1f6bede29b64e2101d03c2362cb" category="paragraph"><block ref="97bbe1f6bede29b64e2101d03c2362cb" category="inline-link-rx"></block></block>
+  <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azureの年間契約</block>
+  <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。</block>
+  <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。</block>
+  <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">ライセンスの詳細については、こちらをご覧ください</block>
+  <block id="bd2a7f63a398b5af0c64c2d07409b38c" category="paragraph"><block ref="fa67dcc1253d6ef7da36dd244bfe620f" category="inline-link-rx"></block>。</block>
+  <block id="57ae56f77d278076fb394799067eb3ef" category="section-title">S3 Glacierのインスタント検索</block>
+  <block id="465771d8890531f2527e09ef3f1b4f68" category="paragraph">Amazon S3 Glacier Instant Retrievalストレージクラスに階層化データを格納できるようになりました。</block>
+  <block id="6d4822148bad6fb79e6d92864dde8771" category="inline-link">階層化データのストレージクラスを変更する方法について説明します</block>
+  <block id="e6eb181abe02ab22f2df966da6c0669d" category="paragraph"><block ref="5ae2503a0985d77718c9fe3da8dbc989" category="inline-link-rx"></block>。</block>
+  <block id="ef8e1d8f242a7ee4d109deb44db1b252" category="section-title">コネクタに新しいAWS権限が必要です</block>
+  <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
+  <block id="6b071f4257d8badb0aeb96e6b0547800" category="paragraph">9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。</block>
+  <block id="986ef6cfb21ad2831a7ae053e3f0506e" category="list-text">Milan（Europe - west8）-シングルノードのみ</block>
+  <block id="00f803da9ac7d98ccbfd2178a95625ee" category="list-text">Santiago（southamerica-west1）-シングルノードのみ</block>
+  <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します</block>
+  <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
+  <block id="8184a89f6d67aafd228ddc002e159ce5" category="section-title">Google Cloudでのn2標準16のサポート</block>
+  <block id="86a3a073b385c5ae85e4523282be3124" category="paragraph">Google CloudのCloud Volumes ONTAP では、9.10.1リリース以降のn2標準-16マシンタイプがサポートされます。</block>
+  <block id="4994b2bf1bd5c0153c9dc0077a84b5a7" category="inline-link">Google CloudでCloud Volumes ONTAP がサポートされている構成を表示します</block>
+  <block id="528aaaafbacf255285f844e94403a43f" category="paragraph"><block ref="528aaaafbacf255285f844e94403a43f" category="inline-link-rx"></block></block>
+  <block id="291a5c22c8cb78fe8ec363d61830f63e" category="section-title">Google Cloudファイアウォールポリシーの機能強化</block>
+  <block id="73d44bfa5f20953f5799b7072e1f9dc7" category="list-text">Google CloudでCloud Volumes ONTAP HAペアを作成すると、VPC内の既存のすべてのファイアウォールポリシーがCloud Managerに表示されるようになりました。</block>
+  <block id="5e1082179426bea32e466fe447cc5f2e" category="paragraph">以前は、Cloud Managerでは、ターゲットタグのないVPC -1、VPC -2、またはVPC -3のポリシーは表示されませんでした。</block>
+  <block id="880f67f103405f29628ff848182ca330" category="list-text">Google CloudでCloud Volumes ONTAP シングルノードシステムを作成する際に、定義済みのファイアウォールポリシーで、選択したVPC内のトラフィックのみを許可するか（推奨）、すべてのVPC内のトラフィックを許可するかを選択できるようになりました。</block>
+  <block id="5c4a95a56d4b5bfef734aeab388618c0" category="section-title">Google Cloudサービスアカウントの機能強化</block>
+  <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</block>
+  <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb1bf021e05707d1f69722b4d550c310" category="paragraph">コネクタの3.9.16リリースでは、次の変更が加えられました。</block>
 </blocks>

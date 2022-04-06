@@ -27,57 +27,73 @@ Cloud Manager プラットフォームで行われた クラウド サービス 
 
 
 
+=== 2022年5月2日
+
+
+
+==== コネクタ3.9.18
+
+* Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。
++
+** デリー（アジア-サウス2）
+** メルボルン（オーストラリア-スモアカス2）
+** ミラノ（ヨーロッパ-西8）
+** サンティアゴ（サウスメリカ-西1）
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+* Connectorで使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
+
+* をサポートするOSでVMインスタンス上のGoogle CloudのConnectorを認定しました https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["シールドVM機能"^]
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["これらの拡張機能について説明します"^]
+* ConnectorでCloud Volumes ONTAP を導入するには、新しいAWS権限が必要です。
++
+単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。
+
++
+[source, json]
+----
+"ec2:DescribePlacementGroups",
+"iam:GetRolePolicy",
+----
++
+これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。
+
++
+Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager のポリシーのページです"^]。
+
+
+
+
+
+=== 2022 年 4 月 3 日
+
+
+
+==== コネクタ3.9.17
+
+* Cloud Manager に、環境で設定した IAM ロールを割り当てることでコネクタを作成できるようになりました。この認証方式は、 AWS のアクセスキーとシークレットキーを共有する場合よりも安全です。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["IAM ロールを使用してコネクタを作成する方法について説明します"]。
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["これらの拡張機能について説明します"^]
+
+
+
+
 === 2022 年 2 月 27 日
 
 
 
-==== Google Cloud の Connector 強化
+==== コネクタ3.9.16
 
-Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。
+* Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["これらの拡張機能について説明します"^]
 
-
-
-=== 2022 年 1 月 30 日
-
-
-
-==== ネットアップサポートサイトのアカウントに関する注意事項
-
-現在、ネットアップでは、サポートとライセンスに固有の認証サービスを提供するアイデンティティプロバイダとして、 Microsoft Azure Active Directory を使用しています。この更新の結果、 Cloud Manager は、以前に追加した既存のアカウントのネットアップサポートサイト（ NSS ）のクレデンシャルの更新を求めます。
-
-NSS アカウントを IDaaS に移行していない場合は、まずアカウントを移行してから、 Cloud Manager でクレデンシャルを更新する必要があります。
-
-* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["ネットアップによるアイデンティティ管理での Microsoft Azure AD の使用方法の詳細については、こちらをご覧ください"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["NSS アカウントを新しい認証方法に更新する方法について説明します"]
-
-
-
-
-=== 2022 年 1 月 2 日
-
-
-
-==== コネクタのエンドポイントが減少しました
-
-パブリッククラウド環境内でリソースやプロセスを管理するためにコネクタが接続する必要があるエンドポイントの数を削減しました。
-
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#outbound-internet-access["必要なエンドポイントのリストを表示します"]。
-
-
-
-==== コネクタの EBS ディスク暗号化
-
-Cloud Manager から AWS に新しいコネクタを導入する際に、デフォルトのマスターキーまたは管理対象キーを使用してコネクタの EBS ディスクを暗号化できるようになりました。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-disk-encryption.png["AWS でコネクタを作成する際のディスク暗号化オプションを示すスクリーンショット。"]
-
-
-
-==== NSS アカウントの E メールアドレス
-
-Cloud Manager に、ネットアップサポートサイトのアカウントに関連付けられている E メールアドレスが表示されるようになりました。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-nss-display-email.png["ネットアップサポートサイトのアカウントの操作メニューを示すスクリーンショット。 E メールアドレスを表示できます。"]
 
 
 
@@ -501,6 +517,108 @@ Azure VNet にインストールされたコネクタを使用する必要はな
 
 
 
+=== 2022年5月2日
+
+コネクタの3.9.18リリースでは、次の変更が加えられました。
+
+
+
+==== Cloud Volumes ONTAP 9.11.0
+
+Cloud ManagerでCloud Volumes ONTAP 9.11.0の導入と管理が可能になりました。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
+==== メディエーターのアップグレードに関する機能拡張
+
+Cloud ManagerによってHAペアのメディエーターがアップグレードされると、ブートディスクを削除する前に新しいメディエーターイメージが使用可能であるかどうかが検証されるようになりました。この変更により、アップグレードプロセスが失敗した場合でもメディエーターは正常に動作し続けることができます。
+
+
+
+==== K8sタブが削除されました
+
+K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。
+
+https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud ManagerでのKubernetesのデータ管理について説明します"^]
+
+
+
+==== Azureの年間契約
+
+EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。
+
+ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["ライセンスの詳細については、こちらをご覧ください"]。
+
+
+
+==== S3 Glacierのインスタント検索
+
+Amazon S3 Glacier Instant Retrievalストレージクラスに階層化データを格納できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["階層化データのストレージクラスを変更する方法について説明します"]。
+
+
+
+==== コネクタに新しいAWS権限が必要です
+
+単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。
+
+[source, json]
+----
+"ec2:DescribePlacementGroups",
+"iam:GetRolePolicy",
+----
+これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。
+
+Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager のポリシーのページです"^]。
+
+
+
+==== 新しいGoogle Cloudリージョンサポート
+
+9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。
+
+* デリー（アジア-サウス2）
+* メルボルン（オーストラリア-スモアカス2）
+* Milan（Europe - west8）-シングルノードのみ
+* Santiago（southamerica-west1）-シングルノードのみ
+
+
+https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します"^]
+
+
+
+==== Google Cloudでのn2標準16のサポート
+
+Google CloudのCloud Volumes ONTAP では、9.10.1リリース以降のn2標準-16マシンタイプがサポートされます。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google CloudでCloud Volumes ONTAP がサポートされている構成を表示します"^]
+
+
+
+==== Google Cloudファイアウォールポリシーの機能強化
+
+* Google CloudでCloud Volumes ONTAP HAペアを作成すると、VPC内の既存のすべてのファイアウォールポリシーがCloud Managerに表示されるようになりました。
++
+以前は、Cloud Managerでは、ターゲットタグのないVPC -1、VPC -2、またはVPC -3のポリシーは表示されませんでした。
+
+* Google CloudでCloud Volumes ONTAP シングルノードシステムを作成する際に、定義済みのファイアウォールポリシーで、選択したVPC内のトラフィックのみを許可するか（推奨）、すべてのVPC内のトラフィックを許可するかを選択できるようになりました。
+
+
+
+
+==== Google Cloudサービスアカウントの機能強化
+
+Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
+
+
+
 === 2022 年 4 月 3 日
 
 
@@ -521,7 +639,9 @@ https://cloud.netapp.com/pricing["WORM ストレージの価格設定につい�
 
 
 
-=== 2022 年 2 月 27 日（コネクタ 3.9.16 ）
+=== 2022 年 2 月 27 日
+
+コネクタの3.9.16リリースでは、次の変更が加えられました。
 
 
 
@@ -530,32 +650,6 @@ https://cloud.netapp.com/pricing["WORM ストレージの価格設定につい�
 特定のアグリゲートに * Advanced allocation * オプションからボリュームを作成するときに、新しいボリューム作成ウィザードを使用できるようになりました。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["特定のアグリゲートにボリュームを作成する方法について説明します"]。
-
-
-
-=== 2022 年 2 月 9 日
-
-
-
-==== 市場の最新情報
-
-* Essentials パッケージと Professional パッケージが AWS と Google Cloud Marketplace で利用できるようになりました。
-+
-容量単位の課金方法では、時間単位での支払いや、年間契約の購入をクラウドプロバイダから直接行うことができます。容量単位のライセンスは、ネットアップから直接購入することもできます。
-
-+
-クラウドマーケットプレイスで既存のサブスクリプションがある場合は、それらの新しいサービスにも自動的にサブスクライブされます。新しい Cloud Volumes ONTAP 作業環境の導入時に、容量単位の課金を選択できます。
-
-+
-新規のお客様の場合、 Cloud Manager は新しい作業環境の作成時に登録を求めるプロンプトを表示します。
-
-* AWS と Google Cloud Marketplace を使用したノード単位のライセンスは廃止され、新しいユーザには提供されなくなりました。これには、年間契約と時間単位のサブスクリプション（ Explore 、 Standard 、 Premium ）が含まれます。
-+
-この充電方法は、有効なサブスクリプションをお持ちの既存のお客様には引き続きご利用いただけます。
-
-
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションの詳細については、こちらをご覧ください"]。
 
 
 
