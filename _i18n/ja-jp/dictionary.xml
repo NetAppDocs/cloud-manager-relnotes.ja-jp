@@ -151,16 +151,6 @@
   <block id="afffc0d082245313c31dfcac23d2d8e0" category="section-title">GKE Kubernetes クラスタから Google Cloud ストレージに永続ボリュームをバックアップする機能</block>
   <block id="387cd7ab52bc5fa4b28d5ab54360a48f" category="paragraph">ネットアップ Astra Trident がインストールされている GKE クラスタで、 Cloud Volumes ONTAP for GCP をクラスタのバックエンドストレージとして使用している場合は、 Google Cloud ストレージとの間で永続的ボリュームのバックアップとリストアを行うことができます。<block ref="39d25c9214775db10710eba772faa6a0" category="inline-link-rx"></block>。</block>
   <block id="536f48524e36a16593703c5d8d108b79" category="section-title">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</block>
-  <block id="f49fe4c56999dcc895c26b71ec63e34f" category="section-title">2022 年 2 月 14 日</block>
-  <block id="57ccb73ee63efac047dc0eeebb63f5a1" category="section-title">バックアップポリシーを単一クラスタ内の個々のボリュームに割り当てることができるようになりました</block>
-  <block id="963d2836c97952a191ac974f0e9b5e67" category="inline-link">クラスタの新しいバックアップポリシーを作成し、選択したボリュームに割り当てる方法を参照してください</block>
-  <block id="6daa5dbfb500796628c3b61f2dad3df6" category="paragraph">これまでは、クラスタ内のすべてのボリュームに割り当てることができるバックアップポリシーは 1 つだけでした。1 つのクラスタに複数のバックアップポリシーを作成し、異なるボリュームに異なるポリシーを適用できるようになりました。<block ref="8b5e26e66ac1e76130ecacb1139755bd" category="inline-link-rx"></block>。</block>
-  <block id="81bbbb41117b46d39dbcf4b7db2f1e38" category="section-title">新しいオプションを使用すると、新規に作成されたボリュームにデフォルトのバックアップポリシーを自動的に適用できます</block>
-  <block id="e239caf739c8a0f59aa2ff963f94dcd3" category="paragraph">以前は、 Cloud Backup をアクティブ化したあとに作業環境で作成した新しいボリュームには、バックアップポリシーを手動で適用する必要がありました。これで、 Cloud Manager 、 System Manager 、 CLI 、または API を使用してボリュームを作成したかどうかに関係なく、 Cloud Backup はボリュームを検出し、デフォルトポリシーとして選択したバックアップポリシーを適用します。</block>
-  <block id="b702b8a648700d54afccce0b8de7766a" category="paragraph">このオプションは、新しい作業環境でバックアップを有効にする場合、または既存の作業環境で _ ボリュームの管理 _ ページから有効にする場合に使用できます。</block>
-  <block id="739f8a5ac1453fdcd33ce781cd333914" category="section-title">すべてのバックアップジョブとリストアジョブの処理中ステータスを確認するには、新しいジョブモニタを使用できます</block>
-  <block id="7a99d9487fc9540fa7bee7c2eb717413" category="inline-link">「ジョブモニタの使用方法」を参照してください</block>
-  <block id="3c51dbbafedd7bc1b145a88fc5e7e77e" category="paragraph">ジョブモニタは、バックアップポリシーの変更やバックアップの削除など、複数のボリュームに対して処理を開始した場合に非常に役立ちます。そのため、すべてのボリュームで処理が完了したことを確認できます。<block ref="9521382be7155a87eb6763729a99c134" category="inline-link-rx"></block>。</block>
   <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">オーストラリアの個人データは、データセンスで新たに 4 種類識別できます</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
@@ -362,4 +352,18 @@
   <block id="0a3f4ee017f808dc79fb4939a3eaf91b" category="paragraph">新しい* Notifications *設定を同期関係に使用できるようになりました。この設定を使用すると、Cloud Sync 通知をCloud Managerの通知センターで受信するかどうかを選択できます。データの同期が成功した場合、データの同期が失敗した場合、データの同期がキャンセルされた場合の通知を有効にできます。</block>
   <block id="9081c0430b4e4fcf1f0dd042e7c0ca60" category="inline-image-macro">Cloud Managerの通知センターを示すスクリーンショット。</block>
   <block id="914b918c172fa270f423df8135932978" category="paragraph"><block ref="914b918c172fa270f423df8135932978" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
+  <block id="403f4772d715b69d553d3568ca523be0" category="section-title">Google Cloud Storageのバックアップファイルで検索とリストアがサポートされるようになりました</block>
+  <block id="a2824b49f1c7526bf0e925b86c7b293c" category="inline-link">Search &amp; Restoreを使用してボリュームとファイルをリストアする方法を参照してください</block>
+  <block id="c84eb78e4a1957b6b0aa50908d89949f" category="paragraph">ボリュームとファイルをリストアするための検索とリストアの方法は、AWSにバックアップファイルを格納するユーザ向けに4月に導入されました。Google Cloud Storageにバックアップファイルを保存するユーザーがこの機能を使用できるようになりました。<block ref="c9d4c1d19223377e15b82823d41fa44a" category="inline-link-rx"></block>。</block>
+  <block id="1dc3a9d2d46d5247757ad692a1dda8d4" category="section-title">Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーが自動的に適用されるように設定します</block>
+  <block id="31d9f5df125d9014e9c296eed143904c" category="inline-link">[バックアップ設定]ページから選択します</block>
+  <block id="0e5eab8eb6782ba4533b5141d39e4a9a" category="paragraph">Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます。このオプションは、セットアップウィザードで新しいKubernetesクラスタまたはに対してCloud Backupをアクティブ化するときに使用できます<block ref="11a3efd6b42c9f2e763586db69ebed23" category="inline-link-rx"></block> Cloud Backupをすでにアクティブ化しているクラスタの場合</block>
+  <block id="fd875d3cd25e36f42ac27fb4f3449a8e" category="section-title">Cloud Backupを作業環境でアクティブ化するには、ライセンスが必要になります</block>
+  <block id="75c0e3b9776c1472c507114bf7a7a1cf" category="paragraph">Cloud Backupのライセンスの実装方法には、次の点が変更されています。</block>
+  <block id="e84f7761b10b99ddca7152e4bb801dd6" category="list-text">Cloud Backupをアクティブ化するには、クラウドプロバイダからPAYGO Marketplaceサブスクリプションに登録するか、ネットアップからBYOLライセンスを購入する必要があります。</block>
+  <block id="6902b4bfe7e77a50b544384d4b87d579" category="list-text">30日間無償トライアルは、クラウドプロバイダがPAYGOサブスクリプションを使用している場合にのみ利用できます。BYOLライセンスを使用している場合は利用できません。</block>
+  <block id="013bf9b0d5295922582e97a69409b714" category="list-text">無料トライアルは、Marketplaceのサブスクリプションが開始された日から開始されます。たとえば、Cloud Volumes ONTAP システムのMarketplaceサブスクリプションを30日間使用した後で無料トライアルを有効にした場合、クラウドバックアップトライアルは利用できません。</block>
+  <block id="caf9c5028f987d64131bfc8e9f4bd0ed" category="inline-link">使用可能なライセンスモデルの詳細については、こちらをご覧ください</block>
+  <block id="ecd035ede918d91432ba5203669d96bd" category="paragraph"><block ref="7226e404226609d8e6a7fa892651e74a" category="inline-link-rx"></block>。</block>
 </blocks>

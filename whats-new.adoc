@@ -225,6 +225,35 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年5月2日
+
+
+
+==== Google Cloud Storageのバックアップファイルで検索とリストアがサポートされるようになりました
+
+ボリュームとファイルをリストアするための検索とリストアの方法は、AWSにバックアップファイルを格納するユーザ向けに4月に導入されました。Google Cloud Storageにバックアップファイルを保存するユーザーがこの機能を使用できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["Search & Restoreを使用してボリュームとファイルをリストアする方法を参照してください"]。
+
+
+
+==== Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーが自動的に適用されるように設定します
+
+Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます。このオプションは、セットアップウィザードで新しいKubernetesクラスタまたはに対してCloud Backupをアクティブ化するときに使用できます https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes["[バックアップ設定]ページから選択します"] Cloud Backupをすでにアクティブ化しているクラスタの場合
+
+
+
+==== Cloud Backupを作業環境でアクティブ化するには、ライセンスが必要になります
+
+Cloud Backupのライセンスの実装方法には、次の点が変更されています。
+
+* Cloud Backupをアクティブ化するには、クラウドプロバイダからPAYGO Marketplaceサブスクリプションに登録するか、ネットアップからBYOLライセンスを購入する必要があります。
+* 30日間無償トライアルは、クラウドプロバイダがPAYGOサブスクリプションを使用している場合にのみ利用できます。BYOLライセンスを使用している場合は利用できません。
+* 無料トライアルは、Marketplaceのサブスクリプションが開始された日から開始されます。たとえば、Cloud Volumes ONTAP システムのMarketplaceサブスクリプションを30日間使用した後で無料トライアルを有効にした場合、クラウドバックアップトライアルは利用できません。
+
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html["使用可能なライセンスモデルの詳細については、こちらをご覧ください"]。
+
+
+
 === 2022 年 4 月 4 日
 
 
@@ -256,30 +285,6 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-d
 
 
 ==== Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました
-
-
-
-=== 2022 年 2 月 14 日
-
-
-
-==== バックアップポリシーを単一クラスタ内の個々のボリュームに割り当てることができるようになりました
-
-これまでは、クラスタ内のすべてのボリュームに割り当てることができるバックアップポリシーは 1 つだけでした。1 つのクラスタに複数のバックアップポリシーを作成し、異なるボリュームに異なるポリシーを適用できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap#changing-the-policy-assigned-to-existing-volumes["クラスタの新しいバックアップポリシーを作成し、選択したボリュームに割り当てる方法を参照してください"]。
-
-
-
-==== 新しいオプションを使用すると、新規に作成されたボリュームにデフォルトのバックアップポリシーを自動的に適用できます
-
-以前は、 Cloud Backup をアクティブ化したあとに作業環境で作成した新しいボリュームには、バックアップポリシーを手動で適用する必要がありました。これで、 Cloud Manager 、 System Manager 、 CLI 、または API を使用してボリュームを作成したかどうかに関係なく、 Cloud Backup はボリュームを検出し、デフォルトポリシーとして選択したバックアップポリシーを適用します。
-
-このオプションは、新しい作業環境でバックアップを有効にする場合、または既存の作業環境で _ ボリュームの管理 _ ページから有効にする場合に使用できます。
-
-
-
-==== すべてのバックアップジョブとリストアジョブの処理中ステータスを確認するには、新しいジョブモニタを使用できます
-
-ジョブモニタは、バックアップポリシーの変更やバックアップの削除など、複数のボリュームに対して処理を開始した場合に非常に役立ちます。そのため、すべてのボリュームで処理が完了したことを確認できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["「ジョブモニタの使用方法」を参照してください"]。
 
 
 
