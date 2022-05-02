@@ -485,7 +485,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-02 13:24:09 +0000">05/02/2022</time>
+    <time datetime="2022-05-02 15:01:08 +0000">05/02/2022</time>
     
   
 
@@ -525,9 +525,9 @@
 </li>
 <li><a href="#クラウドバックアップ">クラウドバックアップ</a>
 <ul class="sectlevel2">
+<li><a href="#2022年5月2日">2022年5月2日</a></li>
 <li><a href="#2022-年-4-月-4-日">2022 年 4 月 4 日</a></li>
 <li><a href="#2022-年-3-月-3-日-2">2022 年 3 月 3 日</a></li>
-<li><a href="#2022-年-2-月-14-日">2022 年 2 月 14 日</a></li>
 </ul>
 </li>
 <li><a href="#クラウドデータの意味">クラウドデータの意味</a>
@@ -848,6 +848,43 @@
 <h2 id="クラウドバックアップ">クラウドバックアップ</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年5月2日">2022年5月2日</h3>
+<div class="sect3">
+<h4 id="google-cloud-storageのバックアップファイルで検索とリストアがサポートされるようになりました">Google Cloud Storageのバックアップファイルで検索とリストアがサポートされるようになりました</h4>
+<div class="paragraph">
+<p>ボリュームとファイルをリストアするための検索とリストアの方法は、AWSにバックアップファイルを格納するユーザ向けに4月に導入されました。Google Cloud Storageにバックアップファイルを保存するユーザーがこの機能を使用できるようになりました。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2">"Search &amp; Restoreを使用してボリュームとファイルをリストアする方法を参照してください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーが自動的に適用されるように設定します">Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーが自動的に適用されるように設定します</h4>
+<div class="paragraph">
+<p>Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます。このオプションは、セットアップウィザードで新しいKubernetesクラスタまたはに対してCloud Backupをアクティブ化するときに使用できます <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes">"[バックアップ設定</a>ページから選択します"] Cloud Backupをすでにアクティブ化しているクラスタの場合</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="cloud-backupを作業環境でアクティブ化するにはライセンスが必要になります">Cloud Backupを作業環境でアクティブ化するには、ライセンスが必要になります</h4>
+<div class="paragraph">
+<p>Cloud Backupのライセンスの実装方法には、次の点が変更されています。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Backupをアクティブ化するには、クラウドプロバイダからPAYGO Marketplaceサブスクリプションに登録するか、ネットアップからBYOLライセンスを購入する必要があります。</p>
+</li>
+<li>
+<p>30日間無償トライアルは、クラウドプロバイダがPAYGOサブスクリプションを使用している場合にのみ利用できます。BYOLライセンスを使用している場合は利用できません。</p>
+</li>
+<li>
+<p>無料トライアルは、Marketplaceのサブスクリプションが開始された日から開始されます。たとえば、Cloud Volumes ONTAP システムのMarketplaceサブスクリプションを30日間使用した後で無料トライアルを有効にした場合、クラウドバックアップトライアルは利用できません。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html">"使用可能なライセンスモデルの詳細については、こちらをご覧ください"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022-年-4-月-4-日">2022 年 4 月 4 日</h3>
 <div class="sect3">
 <h4 id="cloud-backup-for-applications-1-1-0-snapcenter-搭載の-ga-版になりました">Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました</h4>
@@ -879,30 +916,6 @@
 <div class="sect3">
 <h4 id="cloud-data-sense-を使用して-cloud-backup-ファイルをスキャンするベータ機能は本リリースでは廃止されました">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</h4>
 
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-2-月-14-日">2022 年 2 月 14 日</h3>
-<div class="sect3">
-<h4 id="バックアップポリシーを単一クラスタ内の個々のボリュームに割り当てることができるようになりました">バックアップポリシーを単一クラスタ内の個々のボリュームに割り当てることができるようになりました</h4>
-<div class="paragraph">
-<p>これまでは、クラスタ内のすべてのボリュームに割り当てることができるバックアップポリシーは 1 つだけでした。1 つのクラスタに複数のバックアップポリシーを作成し、異なるボリュームに異なるポリシーを適用できるようになりました。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap#changing-the-policy-assigned-to-existing-volumes">"クラスタの新しいバックアップポリシーを作成し、選択したボリュームに割り当てる方法を参照してください"</a>。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="新しいオプションを使用すると新規に作成されたボリュームにデフォルトのバックアップポリシーを自動的に適用できます">新しいオプションを使用すると、新規に作成されたボリュームにデフォルトのバックアップポリシーを自動的に適用できます</h4>
-<div class="paragraph">
-<p>以前は、 Cloud Backup をアクティブ化したあとに作業環境で作成した新しいボリュームには、バックアップポリシーを手動で適用する必要がありました。これで、 Cloud Manager 、 System Manager 、 CLI 、または API を使用してボリュームを作成したかどうかに関係なく、 Cloud Backup はボリュームを検出し、デフォルトポリシーとして選択したバックアップポリシーを適用します。</p>
-</div>
-<div class="paragraph">
-<p>このオプションは、新しい作業環境でバックアップを有効にする場合、または既存の作業環境で _ ボリュームの管理 _ ページから有効にする場合に使用できます。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="すべてのバックアップジョブとリストアジョブの処理中ステータスを確認するには新しいジョブモニタを使用できます">すべてのバックアップジョブとリストアジョブの処理中ステータスを確認するには、新しいジョブモニタを使用できます</h4>
-<div class="paragraph">
-<p>ジョブモニタは、バックアップポリシーの変更やバックアップの削除など、複数のボリュームに対して処理を開始した場合に非常に役立ちます。そのため、すべてのボリュームで処理が完了したことを確認できます。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html">"「ジョブモニタの使用方法」を参照してください"</a>。</p>
-</div>
 </div>
 </div>
 </div>
