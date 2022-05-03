@@ -137,7 +137,6 @@
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
   <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新しいフィルタ：特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します</block>
-  <block id="fe920a28be2287e9ad7ef2d02458c36f" category="paragraph">「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。ユーザ名またはグループ名の一部または一部を指定できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</block>
   <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">データセンスを使用すると、 SharePoint アカウントと OneDrive アカウントのファイルに対する権限を決定できます</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。</block>
   <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">追加の 2 種類の個人データは、データセンスで識別できます</block>
@@ -146,21 +145,6 @@
   <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます</block>
   <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">次のエンドポイントへのアクセスを許可する必要があります。</block>
   <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
-  <block id="5b7066a8679e57ba1c6e16c4237fb674" category="section-title">Microsoft SharePoint オンラインアカウントのスキャンのサポートが追加されました</block>
-  <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link">SharePoint アカウントをスキャンする方法をご覧ください</block>
-  <block id="592c8c1b273df763193797348c862319" category="paragraph">SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。<block ref="fb0503eda5504503140f919428a17c9c" category="inline-link-rx"></block>。</block>
-  <block id="b8977b26a070b5eca7e5cfd90f128004" category="section-title">データセンスでは、データソースからターゲットの場所にファイルをコピーし、それらのファイルを同期できます</block>
-  <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync の略</block>
-  <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> データをソースからターゲットにコピーおよび同期する機能。</block>
-  <block id="48a274f4830d58bf94182b778830c862" category="inline-link">ファイルのコピーおよび同期方法を参照してください</block>
-  <block id="660cff517370f72d72102d4ff2998c40" category="paragraph"><block ref="c0e6847180e8e936303f149ed2e169b8" category="inline-link-rx"></block>。</block>
-  <block id="622db54d0a7d9c01c841d932e3988937" category="section-title">dsar レポートの新しい言語サポート</block>
-  <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">データ主体の名前を検索して Data Subject Access Request （ dsar ）レポートを作成するときに、ドイツ語とスペイン語がサポートされるようになりました。このレポートは、企業が GDPR または同様のデータプライバシー法を遵守する必要がある場合に役立つように作成されています。</block>
-  <block id="8cdccfd2e3c1390208fa5892348c4108" category="section-title">追加の 3 種類の個人データは、データセンスで識別できます</block>
-  <block id="da848e916ac29d03235a007036cf77ca" category="inline-link">データがスキャンで識別するすべての個人データタイプのリストを表示します</block>
-  <block id="0f774c5b2a7839e95c43788f441f3dd3" category="paragraph">データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。<block ref="388ce18cfcb7cb3d159655ecca4c4330" category="inline-link-rx"></block>。</block>
-  <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">コネクタへのデータセンス通信のためにセキュリティグループポートが変更されました</block>
-  <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector のセキュリティグループでは、セキュリティを強化するために、データセンスインスタンスとの間のインバウンドトラフィックとアウトバウンドトラフィックにポート 80 ではなくポート 443 が使用されます。この時点では両方のポートは開いたままなので、問題はありませんが、将来のリリースではポート 80 が廃止される予定であるため、以前のどの環境でもセキュリティグループを更新する必要があります。</block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
   <block id="33c34b75ae4154295ed3cdeeccb3fd6a" category="section-title">データブローカーグループの機能拡張</block>
   <block id="9e85c5ace2120c3600ae07824bd6d1a9" category="paragraph">データブローカーグループには、次のような機能拡張が行われました。</block>
@@ -364,33 +348,6 @@
   <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。</block>
   <block id="75b200b4f9a63bca2792f985693a22c8" category="inline-link">Cloud ManagerでのKubernetesのデータ管理について説明します</block>
   <block id="97bbe1f6bede29b64e2101d03c2362cb" category="paragraph"><block ref="97bbe1f6bede29b64e2101d03c2362cb" category="inline-link-rx"></block></block>
-  <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azureの年間契約</block>
-  <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。</block>
-  <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。</block>
-  <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">ライセンスの詳細については、こちらをご覧ください</block>
-  <block id="bd2a7f63a398b5af0c64c2d07409b38c" category="paragraph"><block ref="fa67dcc1253d6ef7da36dd244bfe620f" category="inline-link-rx"></block>。</block>
-  <block id="57ae56f77d278076fb394799067eb3ef" category="section-title">S3 Glacierのインスタント検索</block>
-  <block id="465771d8890531f2527e09ef3f1b4f68" category="paragraph">Amazon S3 Glacier Instant Retrievalストレージクラスに階層化データを格納できるようになりました。</block>
-  <block id="6d4822148bad6fb79e6d92864dde8771" category="inline-link">階層化データのストレージクラスを変更する方法について説明します</block>
-  <block id="e6eb181abe02ab22f2df966da6c0669d" category="paragraph"><block ref="5ae2503a0985d77718c9fe3da8dbc989" category="inline-link-rx"></block>。</block>
-  <block id="ef8e1d8f242a7ee4d109deb44db1b252" category="section-title">コネクタに新しいAWS権限が必要です</block>
-  <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">新しいGoogle Cloudリージョンサポート</block>
-  <block id="6b071f4257d8badb0aeb96e6b0547800" category="paragraph">9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。</block>
-  <block id="986ef6cfb21ad2831a7ae053e3f0506e" category="list-text">Milan（Europe - west8）-シングルノードのみ</block>
-  <block id="00f803da9ac7d98ccbfd2178a95625ee" category="list-text">Santiago（southamerica-west1）-シングルノードのみ</block>
-  <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します</block>
-  <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
-  <block id="8184a89f6d67aafd228ddc002e159ce5" category="section-title">Google Cloudでのn2標準16のサポート</block>
-  <block id="86a3a073b385c5ae85e4523282be3124" category="paragraph">Google CloudのCloud Volumes ONTAP では、9.10.1リリース以降のn2標準-16マシンタイプがサポートされます。</block>
-  <block id="4994b2bf1bd5c0153c9dc0077a84b5a7" category="inline-link">Google CloudでCloud Volumes ONTAP がサポートされている構成を表示します</block>
-  <block id="528aaaafbacf255285f844e94403a43f" category="paragraph"><block ref="528aaaafbacf255285f844e94403a43f" category="inline-link-rx"></block></block>
-  <block id="291a5c22c8cb78fe8ec363d61830f63e" category="section-title">Google Cloudファイアウォールポリシーの機能強化</block>
-  <block id="73d44bfa5f20953f5799b7072e1f9dc7" category="list-text">Google CloudでCloud Volumes ONTAP HAペアを作成すると、VPC内の既存のすべてのファイアウォールポリシーがCloud Managerに表示されるようになりました。</block>
-  <block id="5e1082179426bea32e466fe447cc5f2e" category="paragraph">以前は、Cloud Managerでは、ターゲットタグのないVPC -1、VPC -2、またはVPC -3のポリシーは表示されませんでした。</block>
-  <block id="880f67f103405f29628ff848182ca330" category="list-text">Google CloudでCloud Volumes ONTAP シングルノードシステムを作成する際に、定義済みのファイアウォールポリシーで、選択したVPC内のトラフィックのみを許可するか（推奨）、すべてのVPC内のトラフィックを許可するかを選択できるようになりました。</block>
-  <block id="5c4a95a56d4b5bfef734aeab388618c0" category="section-title">Google Cloudサービスアカウントの機能強化</block>
-  <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</block>
-  <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb1bf021e05707d1f69722b4d550c310" category="paragraph">コネクタの3.9.16リリースでは、次の変更が加えられました。</block>
   <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
   <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tieringは、追加のクラスタ構成をサポートしています</block>
@@ -403,4 +360,29 @@
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">ストレージクラスを追加します</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
   <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022年5月4日</block>
+  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
+  <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">Google Driveアカウントでのデータスキャンのサポートが追加されました</block>
+  <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">Googleドライブアカウントをスキャンする方法をご覧ください</block>
+  <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">Googleドライブアカウントからドキュメントやファイルをスキャンするために、Googleドライブアカウントをデータセンスに追加できるようになりました。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
+  <block id="1c569820a2d89c87007e78d8b99f545d" category="inline-link">既存のファイルタイプ</block>
+  <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">データセンスは、に加えて、Googleドキュメントスイート（ドキュメント、シート、スライド）からGoogleファイルタイプ内の個人識別情報（PII）を識別できます<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
+  <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">[データ調査]ページに追加されたディレクトリレベルビュー</block>
+  <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">スキャンしたデータのディレクトリビューを選択する方法を参照してください</block>
+  <block id="a5d473c55c66a556abf96b71579ff1bf" category="paragraph">すべてのファイルおよびデータベースのデータを表示およびフィルタリングするだけでなく、[データ調査]ページのフォルダおよび共有内のすべてのデータに基づいてデータを表示およびフィルタリングできるようになりました。これで、ディレクトリレベルでデータを管理できるようになりました。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
+  <block id="fc923fa1acb929379421a26667fff392" category="section-title">グループを展開して、ファイルにアクセスする権限を持つユーザー/メンバーを表示します</block>
+  <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">ファイルに対する読み取り権限または書き込み権限を持つユーザーおよびグループを表示する方法を参照してください</block>
+  <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">データセンス権限機能の一部として、ファイルにアクセスできるユーザとグループのリストを表示できるようになりました。各グループを展開すると、グループ内のユーザのリストが表示されます。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
+  <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">2つの新しいフィルタが[データ調査]ページに追加されました</block>
+  <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「ディレクトリタイプ」フィルタを使用すると、フォルダまたは共有のみを表示するようにデータを絞り込むことができます。結果は新しい*ディレクトリ*タブに表示されます。</block>
+  <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。t</block>
+  <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
+  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
+  <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</block>
+  <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">ONTAP 環境のセキュリティ強化を追跡する新しいパネル。</block>
+  <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください</block>
+  <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">ONTAP ランサムウェア対策機能</block>
+  <block id="c0920e0c17ca7e741f375b33ea0a761b" category="paragraph">新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
+  <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
+  <block id="76553642514a4b204c12afe14df42e92" category="section-title">Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。</block>
+  <block id="c55588bedd5ed04bd522d770a0c3de70" category="paragraph">この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
 </blocks>

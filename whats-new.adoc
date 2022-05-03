@@ -308,6 +308,40 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-d
 
 
 
+=== 2022年5月11日
+
+
+
+==== Google Driveアカウントでのデータスキャンのサポートが追加されました
+
+Googleドライブアカウントからドキュメントやファイルをスキャンするために、Googleドライブアカウントをデータセンスに追加できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-google-drive.html["Googleドライブアカウントをスキャンする方法をご覧ください"]。
+
+データセンスは、に加えて、Googleドキュメントスイート（ドキュメント、シート、スライド）からGoogleファイルタイプ内の個人識別情報（PII）を識別できます https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-files["既存のファイルタイプ"]。
+
+
+
+==== [データ調査]ページに追加されたディレクトリレベルビュー
+
+すべてのファイルおよびデータベースのデータを表示およびフィルタリングするだけでなく、[データ調査]ページのフォルダおよび共有内のすべてのデータに基づいてデータを表示およびフィルタリングできるようになりました。これで、ディレクトリレベルでデータを管理できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["スキャンしたデータのディレクトリビューを選択する方法を参照してください"]。
+
+
+
+==== グループを展開して、ファイルにアクセスする権限を持つユーザー/メンバーを表示します
+
+データセンス権限機能の一部として、ファイルにアクセスできるユーザとグループのリストを表示できるようになりました。各グループを展開すると、グループ内のユーザのリストが表示されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files["ファイルに対する読み取り権限または書き込み権限を持つユーザーおよびグループを表示する方法を参照してください"]。
+
+
+
+==== 2つの新しいフィルタが[データ調査]ページに追加されました
+
+* 「ディレクトリタイプ」フィルタを使用すると、フォルダまたは共有のみを表示するようにデータを絞り込むことができます。結果は新しい*ディレクトリ*タブに表示されます。
+* 「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。t
+
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
+
+
+
 === 2022 年 4 月 5 日
 
 
@@ -330,7 +364,7 @@ Data Sense と統合するグローバル Active Directory サーバは、以前
 
 ==== 新しいフィルタ：特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します
 
-「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。ユーザ名またはグループ名の一部または一部を指定できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。
+「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。
 
 
 
@@ -355,42 +389,6 @@ Data Sense と統合するグローバル Active Directory サーバは、以前
 
 
 ==== Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました
-
-
-
-=== 2022 年 2 月 9 日
-
-
-
-==== Microsoft SharePoint オンラインアカウントのスキャンのサポートが追加されました
-
-SharePoint サイトからドキュメントやファイルをスキャンするために、 SharePoint オンラインアカウントをデータセンスに追加できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html["SharePoint アカウントをスキャンする方法をご覧ください"]。
-
-
-
-==== データセンスでは、データソースからターゲットの場所にファイルをコピーし、それらのファイルを同期できます
-
-これは、データを移行していて、ファイルに加えられた最後の変更を確認する場合に役立ちます。このアクションではを使用します https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync の略"^] データをソースからターゲットにコピーおよび同期する機能。
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["ファイルのコピーおよび同期方法を参照してください"]。
-
-
-
-==== dsar レポートの新しい言語サポート
-
-データ主体の名前を検索して Data Subject Access Request （ dsar ）レポートを作成するときに、ドイツ語とスペイン語がサポートされるようになりました。このレポートは、企業が GDPR または同様のデータプライバシー法を遵守する必要がある場合に役立つように作成されています。
-
-
-
-==== 追加の 3 種類の個人データは、データセンスで識別できます
-
-データセンスでは、ファイル内にフランス語のソーシャルセキュリティ番号、フランス語の ID 、フランス語のドライバーライセンス番号が表示されるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["データがスキャンで識別するすべての個人データタイプのリストを表示します"]。
-
-
-
-==== コネクタへのデータセンス通信のためにセキュリティグループポートが変更されました
-
-Cloud Manager Connector のセキュリティグループでは、セキュリティを強化するために、データセンスインスタンスとの間のインバウンドトラフィックとアウトバウンドトラフィックにポート 80 ではなくポート 443 が使用されます。この時点では両方のポートは開いたままなので、問題はありませんが、将来のリリースではポート 80 が廃止される予定であるため、以前のどの環境でもセキュリティグループを更新する必要があります。
 
 
 
@@ -542,80 +540,6 @@ Cloud ManagerによってHAペアのメディエーターがアップグレー�
 K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud ManagerでのKubernetesのデータ管理について説明します"^]
-
-
-
-==== Azureの年間契約
-
-EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。
-
-ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["ライセンスの詳細については、こちらをご覧ください"]。
-
-
-
-==== S3 Glacierのインスタント検索
-
-Amazon S3 Glacier Instant Retrievalストレージクラスに階層化データを格納できるようになりました。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["階層化データのストレージクラスを変更する方法について説明します"]。
-
-
-
-==== コネクタに新しいAWS権限が必要です
-
-単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。
-
-[source, json]
-----
-"ec2:DescribePlacementGroups",
-"iam:GetRolePolicy",
-----
-これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。
-
-Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager のポリシーのページです"^]。
-
-
-
-==== 新しいGoogle Cloudリージョンサポート
-
-9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。
-
-* デリー（アジア-サウス2）
-* メルボルン（オーストラリア-スモアカス2）
-* Milan（Europe - west8）-シングルノードのみ
-* Santiago（southamerica-west1）-シングルノードのみ
-
-
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します"^]
-
-
-
-==== Google Cloudでのn2標準16のサポート
-
-Google CloudのCloud Volumes ONTAP では、9.10.1リリース以降のn2標準-16マシンタイプがサポートされます。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google CloudでCloud Volumes ONTAP がサポートされている構成を表示します"^]
-
-
-
-==== Google Cloudファイアウォールポリシーの機能強化
-
-* Google CloudでCloud Volumes ONTAP HAペアを作成すると、VPC内の既存のすべてのファイアウォールポリシーがCloud Managerに表示されるようになりました。
-+
-以前は、Cloud Managerでは、ターゲットタグのないVPC -1、VPC -2、またはVPC -3のポリシーは表示されませんでした。
-
-* Google CloudでCloud Volumes ONTAP シングルノードシステムを作成する際に、定義済みのファイアウォールポリシーで、選択したVPC内のトラフィックのみを許可するか（推奨）、すべてのVPC内のトラフィックを許可するかを選択できるようになりました。
-
-
-
-
-==== Google Cloudサービスアカウントの機能強化
-
-Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
 
 
 
@@ -895,6 +819,24 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 == ランサムウェアからの保護
+
+
+
+=== 2022年5月11日
+
+
+
+==== ONTAP 環境のセキュリティ強化を追跡する新しいパネル。
+
+新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"^] これにより、異常なアクティビティをプロアクティブに検出して警告します。
+
+推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["詳細については、こちらをご覧ください"]。
+
+
+
+==== Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。
+
+この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["詳細については、こちらをご覧ください"]。
 
 
 
