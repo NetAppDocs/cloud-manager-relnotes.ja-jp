@@ -322,7 +322,7 @@ Googleドライブアカウントからドキュメントやファイルをス�
 
 ==== [データ調査]ページに追加されたディレクトリレベルビュー
 
-すべてのファイルおよびデータベースのデータを表示およびフィルタリングするだけでなく、[データ調査]ページのフォルダおよび共有内のすべてのデータに基づいてデータを表示およびフィルタリングできるようになりました。これで、ディレクトリレベルでデータを管理できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["スキャンしたデータのディレクトリビューを選択する方法を参照してください"]。
+すべてのファイルおよびデータベースのデータを表示およびフィルタリングするだけでなく、[データ調査]ページのフォルダおよび共有内のすべてのデータに基づいてデータを表示およびフィルタリングできるようになりました。ディレクトリには、スキャンされたCIFS共有とNFS共有、OneDrive、SharePoint、Google Driveフォルダのインデックスが作成されます。これで、権限を表示し、ディレクトリレベルでデータを管理できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["スキャンしたデータのディレクトリビューを選択する方法を参照してください"]。
 
 
 
