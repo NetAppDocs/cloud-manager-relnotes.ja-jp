@@ -539,41 +539,13 @@ Cloud ManagerによってHAペアのメディエーターがアップグレー�
 
 K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。
 
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud ManagerでのKubernetesのデータ管理について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud ManagerでのKubernetesのデータ管理について説明します"^]== Azureの年間契約
 
+EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。
 
+ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。
 
-=== 2022 年 4 月 3 日
-
-
-
-==== System Manager のリンクが削除されました
-
-Cloud Volumes ONTAP 作業環境内から以前に利用可能だった System Manager のリンクを削除しました。
-
-Cloud Volumes ONTAP システムに接続している Web ブラウザにクラスタ管理 IP アドレスを入力しても、 System Manager に接続できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["System Manager への接続に関する詳細情報"]。
-
-
-
-==== WORM ストレージの充電
-
-導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。
-
-https://cloud.netapp.com/pricing["WORM ストレージの価格設定については、こちらをご覧ください"^]。
-
-
-
-=== 2022 年 2 月 27 日
-
-コネクタの3.9.16リリースでは、次の変更が加えられました。
-
-
-
-==== ボリュームウィザードの再設計
-
-特定のアグリゲートに * Advanced allocation * オプションからボリュームを作成するときに、新しいボリューム作成ウィザードを使用できるようになりました。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["特定のアグリゲートにボリュームを作成する方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["ライセンスの詳細については、こちらをご覧ください"]。
 
 
 
