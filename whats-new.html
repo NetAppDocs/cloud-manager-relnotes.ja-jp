@@ -487,7 +487,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 00:17:03 +0000">05/03/2022</time>
+    <time datetime="2022-05-04 13:02:29 +0000">05/04/2022</time>
     
   
 
@@ -548,9 +548,9 @@
 </li>
 <li><a href="#クラウド階層化">クラウド階層化</a>
 <ul class="sectlevel2">
+<li><a href="#2022年5月3日">2022年5月3日</a></li>
 <li><a href="#2022-年-4-月-4-日-2">2022 年 4 月 4 日</a></li>
 <li><a href="#2021-年-9-月-2-日">2021 年 9 月 2 日</a></li>
-<li><a href="#2021-年-7-月-7-日">2021 年 7 月 7 日</a></li>
 </ul>
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
@@ -1140,11 +1140,20 @@
 <h2 id="クラウド階層化">クラウド階層化</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年5月3日">2022年5月3日</h3>
+<div class="sect3">
+<h4 id="cloud-tieringは追加のクラスタ構成をサポートしています">Cloud Tieringは、追加のクラスタ構成をサポートしています</h4>
+<div class="paragraph">
+<p>クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 <a href="https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations">"これらのタイプのクラスタのライセンスを設定する方法を参照してください。"</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022-年-4-月-4-日-2">2022 年 4 月 4 日</h3>
 <div class="sect3">
 <h4 id="amazon-s3-glacier-instant-retrieval-ストレージクラスが使用可能になりました">Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました</h4>
 <div class="paragraph">
-<p>Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。</p>
+<p>Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。 <a href="https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html">"サポートされているS3ストレージクラスを参照してください。"</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1169,15 +1178,6 @@
 <h4 id="オンプレミスの-ontap-クラスタから-s3-互換のオブジェクトストレージにアクセス頻度の低いデータを階層化します">オンプレミスの ONTAP クラスタから S3 互換のオブジェクトストレージにアクセス頻度の低いデータを階層化します</h4>
 <div class="paragraph">
 <p>Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスにアクセス頻度の低いデータを階層化できるようになりました。 <a href="https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-s3-compat.html">"S3 互換オブジェクトストレージへのデータの階層化方法を参照してください"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2021-年-7-月-7-日">2021 年 7 月 7 日</h3>
-<div class="sect3">
-<h4 id="connector-はデータを-azure-blob-ストレージに階層化するときにオンプレミスで実行できます">Connector は、データを Azure BLOB ストレージに階層化するときにオンプレミスで実行できます</h4>
-<div class="paragraph">
-<p>Azure VNet にインストールされたコネクタを使用する必要はなくなりました。Azure BLOB ストレージにデータを階層化する場合は、オンプレミスのホストで Connector を実行できます。</p>
 </div>
 </div>
 </div>
