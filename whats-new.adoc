@@ -27,6 +27,16 @@ Cloud Manager プラットフォームで行われた クラウド サービス 
 
 
 
+=== 2022年5月12日
+
+
+
+==== コネクタ3.9.18パッチ
+
+コネクタを更新し、バグ修正を実施しました。最も注目すべき解決策は、問題 が共有VPC内にある場合にGoogle CloudでのCloud Volumes ONTAP の導入に影響するというものです。
+
+
+
 === 2022年5月2日
 
 
@@ -81,18 +91,6 @@ Cloud Managerに追加したAWSクレデンシャルの各セットに、これ�
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["IAM ロールを使用してコネクタを作成する方法について説明します"]。
 
 * このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["これらの拡張機能について説明します"^]
-
-
-
-
-=== 2022 年 2 月 27 日
-
-
-
-==== コネクタ3.9.16
-
-* Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["これらの拡張機能について説明します"^]
 
 
 

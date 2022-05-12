@@ -65,7 +65,6 @@
   <block id="92a19295ac05c2a8159ff4e129265e4f" category="inline-link">Cloud Manager での Cloud Volumes ONTAP 管理に関するリリースノート</block>
   <block id="998c54a50d0a2978b705c26bab946460" category="list-text"><block ref="998c54a50d0a2978b705c26bab946460" category="inline-link-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
-  <block id="23ea931bf11f885e1a49e6970b0aa60a" category="paragraph">Google Cloud で新しいコネクタを作成すると、 Cloud Manager に既存のすべてのファイアウォールポリシーが表示されるようになります。以前は、 Cloud Manager にはターゲットタグがないポリシーは表示されませんでした。</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">ボリュームテンプレートのサポート</block>
   <block id="28c1b76e8b0c8f418301bc750b4e9f0e" category="paragraph">新しいアプリケーションテンプレートサービスを使用すると、 Azure NetApp Files のボリュームテンプレートを設定できます。テンプレートを使用すると、容量プール、サイズ、プロトコル、 VNet 、ボリュームを配置するサブネットなど、一部のボリュームパラメータがテンプレートにすでに定義されているため、ジョブの簡易化に役立ちます。パラメータがすでに事前定義されている場合は、次のボリュームパラメータに進みます。</block>
@@ -323,8 +322,6 @@
   <block id="c1ef500163b033b0cacf87c830339c6e" category="inline-link">IAM ロールを使用してコネクタを作成する方法について説明します</block>
   <block id="1d74a995b1a421dcb50976efb8094b21" category="paragraph"><block ref="f92b2fbbcca658498705715523d67bd6" category="inline-link-rx"></block>。</block>
   <block id="1d99a1c8fadd3f9a537fec830e9791e0" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。<block ref="66c4cd7232189d67ede2231e4ccd26ce" category="inline-link-rx"></block></block>
-  <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">コネクタ3.9.16</block>
-  <block id="8452efafcd305c048b35a9ac1eaa0a58" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。<block ref="f53661746a388d6e170677167c0cb4ac" category="inline-link-rx"></block></block>
   <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
   <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tieringは、追加のクラスタ構成をサポートしています</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">これらのタイプのクラスタのライセンスを設定する方法を参照してください。</block>
@@ -412,4 +409,7 @@
   <block id="5c4a95a56d4b5bfef734aeab388618c0" category="section-title">Google Cloudサービスアカウントの機能強化</block>
   <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</block>
   <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
+  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">コネクタ3.9.18パッチ</block>
+  <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">コネクタを更新し、バグ修正を実施しました。最も注目すべき解決策は、問題 が共有VPC内にある場合にGoogle CloudでのCloud Volumes ONTAP の導入に影響するというものです。</block>
 </blocks>
