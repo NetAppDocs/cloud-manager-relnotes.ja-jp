@@ -703,6 +703,24 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 
+=== 2022年5月19日（バージョン1.3.0）
+
+バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。
+
+
+
+==== 新しいメタデータエッジ同期機能
+
+この「メタデータエッジ同期」機能は、エッジ同期機能をコアフレームワークとして使用します。すべてのサブスクライブ済みエッジでメタデータ情報のみが更新され、Edgeマシンでファイル/フォルダが作成されます。
+
+
+
+==== License Manager Serviceの機能強化
+
+Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。
+
+
+
 === 2021 年 12 月 17 日（バージョン 1.2.0 ）
 
 
@@ -736,26 +754,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 ==== ライセンス登録ページが更新されました。
 
 GFC ライセンス登録ページに、ネットアップのサブスクリプションを通じてライセンスをアクティブ化したときに表示されるライセンス数が追加されました。
-
-
-
-=== 2021 年 3 月 21 日（バージョン 1.0.3 ）
-
-
-
-==== GFC プロセスを Windows Defender から自動的に除外するためのソフトウェアインストーラのアップデート。
-
-グローバルファイルキャッシュソフトウェアインストーラでは、すべての GFC プロセスが Windows Defender ソフトウェアのオンデマンドスキャンから除外されるようになりました。
-
-
-
-==== 新しい [ ポリシー構成 ] タブが構成コンソールに追加されました。
-
-この設定タブでは、 GFC コアから事前入力ジョブを追加できます。
-
-
-
-==== パフォーマンスと安定性を向上させながら、メモリ使用量を削減するようにソフトウェアを強化。
 
 
 

@@ -205,12 +205,6 @@
   <block id="8703dd42c4c647846ef556f4d8459d59" category="section-title">OpenSSL モジュールがバージョン 1.1.1k にアップグレードされました。</block>
   <block id="513502857f15915e7acef1b7916eda1b" category="section-title">ライセンス登録ページが更新されました。</block>
   <block id="9993afe041a131f763bfa71520f8d27d" category="paragraph">GFC ライセンス登録ページに、ネットアップのサブスクリプションを通じてライセンスをアクティブ化したときに表示されるライセンス数が追加されました。</block>
-  <block id="5be3d95052c37ddc7c5e08fede5b7beb" category="section-title">2021 年 3 月 21 日（バージョン 1.0.3 ）</block>
-  <block id="d701539c3bff162de55bec2ac786dea9" category="section-title">GFC プロセスを Windows Defender から自動的に除外するためのソフトウェアインストーラのアップデート。</block>
-  <block id="2c7e576e2b46004ee7c7f2138e6b71e2" category="paragraph">グローバルファイルキャッシュソフトウェアインストーラでは、すべての GFC プロセスが Windows Defender ソフトウェアのオンデマンドスキャンから除外されるようになりました。</block>
-  <block id="718c867d7cc0d5ae654df61aed5134dd" category="section-title">新しい [ ポリシー構成 ] タブが構成コンソールに追加されました。</block>
-  <block id="85630a0f5573b7e43d043882435503c0" category="paragraph">この設定タブでは、 GFC コアから事前入力ジョブを追加できます。</block>
-  <block id="23f584e2a92da05ee5a990cefc20a926" category="section-title">パフォーマンスと安定性を向上させながら、メモリ使用量を削減するようにソフトウェアを強化。</block>
   <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">Cloud Manager のリソースページを使用して Kubernetes クラスタを管理</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">クイックスタート</block>
   <block id="a84f0102d02caeeb1c0e554f032c6e35" category="paragraph">Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。新しい <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> すぐに運用を開始できます。</block>
@@ -412,4 +406,11 @@
   <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
   <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">コネクタ3.9.18パッチ</block>
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">コネクタを更新し、バグ修正を実施しました。最も注目すべき解決策は、問題 が共有VPC内にある場合にGoogle CloudでのCloud Volumes ONTAP の導入に影響するというものです。</block>
+  <block id="25cd9b4ac7b3c20c21ee2a72afe32aa0" category="section-title">2022年5月19日（バージョン1.3.0）</block>
+  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
+  <block id="538b3d7be12bcc1f18433981df773bc1" category="paragraph">バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。</block>
+  <block id="9463b6d7b9d38e544c6a7eb98988bb3b" category="section-title">新しいメタデータエッジ同期機能</block>
+  <block id="2e0922ffb3ae1ae6ac16997e734d5154" category="paragraph">この「メタデータエッジ同期」機能は、エッジ同期機能をコアフレームワークとして使用します。すべてのサブスクライブ済みエッジでメタデータ情報のみが更新され、Edgeマシンでファイル/フォルダが作成されます。</block>
+  <block id="2273c570a2dcacbb1c4bb77abccca54b" category="section-title">License Manager Serviceの機能強化</block>
+  <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。</block>
 </blocks>
