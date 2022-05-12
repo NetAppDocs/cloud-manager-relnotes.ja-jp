@@ -515,6 +515,108 @@ Simple Storage Service （ S3 ）プロトコルを使用する任意の Object 
 
 
 
+=== 2022年5月2日
+
+コネクタの3.9.18リリースでは、次の変更が加えられました。
+
+
+
+==== Cloud Volumes ONTAP 9.11.0
+
+Cloud ManagerでCloud Volumes ONTAP 9.11.0の導入と管理が可能になりました。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
+==== メディエーターのアップグレードに関する機能拡張
+
+Cloud ManagerによってHAペアのメディエーターがアップグレードされると、ブートディスクを削除する前に新しいメディエーターイメージが使用可能であるかどうかが検証されるようになりました。この変更により、アップグレードプロセスが失敗した場合でもメディエーターは正常に動作し続けることができます。
+
+
+
+==== K8sタブが削除されました
+
+K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。
+
+https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud ManagerでのKubernetesのデータ管理について説明します"^]
+
+
+
+==== Azureの年間契約
+
+EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。
+
+ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["ライセンスの詳細については、こちらをご覧ください"]。
+
+
+
+==== S3 Glacierのインスタント検索
+
+Amazon S3 Glacier Instant Retrievalストレージクラスに階層化データを格納できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["階層化データのストレージクラスを変更する方法について説明します"]。
+
+
+
+==== コネクタに新しいAWS権限が必要です
+
+単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。
+
+[source, json]
+----
+"ec2:DescribePlacementGroups",
+"iam:GetRolePolicy",
+----
+これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。
+
+Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager のポリシーのページです"^]。
+
+
+
+==== 新しいGoogle Cloudリージョンサポート
+
+9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。
+
+* デリー（アジア-サウス2）
+* メルボルン（オーストラリア-スモアカス2）
+* Milan（Europe - west8）-シングルノードのみ
+* Santiago（southamerica-west1）-シングルノードのみ
+
+
+https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します"^]
+
+
+
+==== Google Cloudでのn2標準16のサポート
+
+Google CloudのCloud Volumes ONTAP では、9.10.1リリース以降のn2標準-16マシンタイプがサポートされます。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google CloudでCloud Volumes ONTAP がサポートされている構成を表示します"^]
+
+
+
+==== Google Cloudファイアウォールポリシーの機能強化
+
+* Google CloudでCloud Volumes ONTAP HAペアを作成すると、VPC内の既存のすべてのファイアウォールポリシーがCloud Managerに表示されるようになりました。
++
+以前は、Cloud Managerでは、ターゲットタグのないVPC -1、VPC -2、またはVPC -3のポリシーは表示されませんでした。
+
+* Google CloudでCloud Volumes ONTAP シングルノードシステムを作成する際に、定義済みのファイアウォールポリシーで、選択したVPC内のトラフィックのみを許可するか（推奨）、すべてのVPC内のトラフィックを許可するかを選択できるようになりました。
+
+
+
+
+==== Google Cloudサービスアカウントの機能強化
+
+Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
+
+
+
 === 2022 年 4 月 3 日
 
 
