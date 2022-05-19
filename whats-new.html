@@ -454,6 +454,10 @@
         
 
         
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-family/">Cloud Manager</a>
+        </li>
+        
 
         <li class="n-breadcrumb__list-item">
           <a href="/ja-jp/cloud-manager-relnotes/">Release&nbsp;Notes</a>
@@ -487,7 +491,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-13 15:35:09 +0000">05/13/2022</time>
+    <time datetime="2022-05-19 18:28:27 +0000">05/19/2022</time>
     
   
 
@@ -573,9 +577,9 @@
 </li>
 <li><a href="#グローバルファイルキャッシュ">グローバルファイルキャッシュ</a>
 <ul class="sectlevel2">
+<li><a href="#2022年5月19日バージョン1-3-0">2022年5月19日（バージョン1.3.0）</a></li>
 <li><a href="#2021-年-12-月-17-日バージョン-1-2-0">2021 年 12 月 17 日（バージョン 1.2.0 ）</a></li>
 <li><a href="#2021-年-6-月-9-日バージョン-1-1-0">2021 年 6 月 9 日（バージョン 1.1.0 ）</a></li>
-<li><a href="#2021-年-3-月-21-日バージョン-1-0-3">2021 年 3 月 21 日（バージョン 1.0.3 ）</a></li>
 </ul>
 </li>
 <li><a href="#kubernetes">Kubernetes</a>
@@ -1416,6 +1420,24 @@
 <h2 id="グローバルファイルキャッシュ">グローバルファイルキャッシュ</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年5月19日バージョン1-3-0">2022年5月19日（バージョン1.3.0）</h3>
+<div class="paragraph">
+<p>バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます <a href="https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources">"このページです"</a>。</p>
+</div>
+<div class="sect3">
+<h4 id="新しいメタデータエッジ同期機能">新しいメタデータエッジ同期機能</h4>
+<div class="paragraph">
+<p>この「メタデータエッジ同期」機能は、エッジ同期機能をコアフレームワークとして使用します。すべてのサブスクライブ済みエッジでメタデータ情報のみが更新され、Edgeマシンでファイル/フォルダが作成されます。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="license-manager-serviceの機能強化">License Manager Serviceの機能強化</h4>
+<div class="paragraph">
+<p>Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2021-年-12-月-17-日バージョン-1-2-0">2021 年 12 月 17 日（バージョン 1.2.0 ）</h3>
 <div class="sect3">
 <h4 id="openssl-モジュールがバージョン-1-1-1l-にアップグレードされました">OpenSSL モジュールがバージョン 1.1.1L にアップグレードされました。</h4>
@@ -1447,25 +1469,6 @@
 <div class="paragraph">
 <p>GFC ライセンス登録ページに、ネットアップのサブスクリプションを通じてライセンスをアクティブ化したときに表示されるライセンス数が追加されました。</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2021-年-3-月-21-日バージョン-1-0-3">2021 年 3 月 21 日（バージョン 1.0.3 ）</h3>
-<div class="sect3">
-<h4 id="gfc-プロセスを-windows-defender-から自動的に除外するためのソフトウェアインストーラのアップデート">GFC プロセスを Windows Defender から自動的に除外するためのソフトウェアインストーラのアップデート。</h4>
-<div class="paragraph">
-<p>グローバルファイルキャッシュソフトウェアインストーラでは、すべての GFC プロセスが Windows Defender ソフトウェアのオンデマンドスキャンから除外されるようになりました。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="新しい-ポリシー構成-タブが構成コンソールに追加されました">新しい [ ポリシー構成 ] タブが構成コンソールに追加されました。</h4>
-<div class="paragraph">
-<p>この設定タブでは、 GFC コアから事前入力ジョブを追加できます。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="パフォーマンスと安定性を向上させながらメモリ使用量を削減するようにソフトウェアを強化">パフォーマンスと安定性を向上させながら、メモリ使用量を削減するようにソフトウェアを強化。</h4>
-
 </div>
 </div>
 </div>
