@@ -27,6 +27,27 @@ Cloud Manager プラットフォームで行われた クラウド サービス 
 
 
 
+=== 2022年6月7日
+
+
+
+==== コネクタ3.9.19
+
+* このコネクタは、AWSジャカルタリージョン（AP-Southee-3）でサポートされるようになりました。
+* このコネクタは、Azureブラジル南東部でサポートされるようになりました。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
+
+
+
+
+
+
 === 2022年5月12日
 
 
@@ -251,7 +272,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーが自動的に適用されるように設定します
 
-Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます。このオプションは、セットアップウィザードで新しいKubernetesクラスタまたはに対してCloud Backupをアクティブ化するときに使用できます https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes["[バックアップ設定]ページから選択します"] Cloud Backupをすでにアクティブ化しているクラスタの場合
+Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます。このオプションは、新しいKubernetesクラスタに対してCloud Backupをアクティブ化するときにセットアップウィザードで使用できます。
 
 
 
@@ -394,6 +415,49 @@ Data Sense と統合するグローバル Active Directory サーバは、以前
 
 
 
+=== 2022年6月6日
+
+
+
+==== 継続的な同期
+
+新しい設定を使用すると、ソースのS3バケットからターゲットに変更を継続的に同期できます。
+
+初期データ同期が完了すると、Cloud Sync はソースS3バケットで変更をリスンし、ターゲットへの変更が発生した場合はその変更を継続的に同期します。ソースを定期的に再スキャンする必要はありません。この設定は、S3バケットからS3、Google Cloud Storage、Azure BLOBストレージ、StorageGRID 、またはIBMストレージに同期する場合にのみ使用できます。
+
+データブローカーに関連付けられているIAMロールでは、この設定を使用するために次の権限が必要です。
+
+[source, json]
+----
+"s3:GetBucketNotification",
+"s3:PutBucketNotification"
+----
+これらの権限は、新しく作成したすべてのデータブローカーに自動的に追加されます。
+
+link:task-creating-relationships.html#settings["Continuous Syncの詳細については、こちらをご覧ください"]。
+
+
+
+==== すべてのONTAP ボリュームを表示します
+
+同期関係を作成するときに、ソースCloud Volumes ONTAP システム、オンプレミスONTAP クラスタ、またはCloud Sync ONTAP ファイルシステムのFSXにすべてのボリュームが表示されるようになりました。
+
+以前は、Cloud Sync では、選択したプロトコルに一致するボリュームのみが表示されていました。すべてのボリュームが表示されますが、選択したプロトコルに一致しないボリュームや、共有やエクスポートがないボリュームはグレー表示され、選択できません。
+
+
+
+==== Azure Blobへのタグのコピー
+
+Azure Blobがターゲットである同期関係を作成する際に、Cloud Sync でタグをAzure BLOBコンテナにコピーできるようになりました。
+
+* [*設定*（* Settings *）]ページでは、[*オブジェクトのコピー*（* Copy for Objects *）]設定を使用して、ソースからAzure BLOBコンテナにタグをコピーできます。これは、メタデータのコピーに加えて機能します。
+* * Tags/Metadata*ページで、Azure BLOBコンテナにコピーされるオブジェクトに設定するBLOBインデックスタグを指定できます。以前は、関係のメタデータしか指定できませんでした。
+
+
+これらのオプションは、Azure Blobがターゲットで、ソースがAzure BlobエンドポイントまたはS3互換エンドポイント（S3、StorageGRID 、IBM Cloud Object Storage）の場合にサポートされます。
+
+
+
 === 2022年5月1日
 
 
@@ -438,26 +502,6 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html
 Sync Dashboard の内容をフィルタリングして、特定のステータスに一致する同期関係を簡単に見つけることができるようになりました。たとえば、ステータスが「失敗」の同期関係をフィルタリングできます
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png["ダッシュボードの上部にある ［ 同期によるフィルタ ］ ステータスオプションを示すスクリーンショット。"]
-
-
-
-=== 2022 年 3 月 3 日
-
-
-
-==== ダッシュボードでソートします
-
-ダッシュボードを同期関係名でソートできるようになりました。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-sort.png["ダッシュボードで使用できる [ 名前でソート ] オプションを示すスクリーンショット。"]
-
-
-
-==== データセンスの統合の強化
-
-以前のリリースでは、 Cloud Sync とクラウドデータセンスの統合を導入しました。この更新プログラムでは、同期関係を簡単に作成できるように統合を強化しました。Cloud Data Sense からデータ同期を開始すると、すべてのソース情報が 1 つの手順で表示されるため、重要な情報をいくつか入力するだけで済みます。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png["Cloud Data Sense から直接新しい同期を開始した後に表示される Data Sense Integration ページを示すスクリーンショット。"]
 
 
 
@@ -761,6 +805,12 @@ GFC ライセンス登録ページに、ネットアップのサブスクリプ�
 
 
 
+=== 2022年6月6日
+
+Cloud ManagerがバックエンドストレージとしてAmazon FSX for ONTAP をサポートするようになりました。
+
+
+
 === 2022年5月4日
 
 
@@ -789,18 +839,6 @@ Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["クラスタを削除"]
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["データサービスを有効化"]
 
-
-
-
-=== 2022 年 2 月 27 日
-
-
-
-==== Google Cloud で Kubernetes クラスタがサポートされます
-
-Cloud Manager を使用して、 Google Cloud で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できるようになりました。
-
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud で Kubernetes クラスタを使用する方法をご確認ください"]。
 
 
 
@@ -856,6 +894,22 @@ Cloud Volumes ONTAP for Azure で監視サービスがサポートされるよ�
 
 
 
+=== 2022年6月7日
+
+コネクタの3.9.19リリースでは、次の変更が加えられました。
+
+
+
+==== 新しい詳細ビュー
+
+オンプレミスのONTAP クラスタに対して高度な管理を実行する必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用できます。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。
+
+この詳細ビューは、9.10.0以降を実行するオンプレミスのONTAP クラスタでプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
+
+link:task-administer-advanced-view.html["詳細については、「詳細ビュー」を参照してください"]。
+
+
+
 === 2022 年 2 月 27 日
 
 
@@ -875,16 +929,6 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 ==== オンプレミスの ONTAP クラスタのボリュームに追加するタグは、 Tagging サービスで使用できます。
 
 ボリュームに追加するタグは、アプリケーションテンプレートサービスのタグ機能に関連付けられます。これにより、リソースの管理を整理して簡単にすることができます。
-
-
-
-=== 2021 年 11 月 28 日
-
-
-
-==== オンプレミスの ONTAP クラスタ向けのボリューム作成ウィザードが簡易化されました
-
-使いやすいようにボリューム作成ウィザードが再設計され、カスタムのエクスポートポリシーを選択できるようになりました。
 
 
 
