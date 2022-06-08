@@ -260,6 +260,18 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年6月8日
+
+
+
+==== Cloud Backup for Virtual Machines 1.1.0のGA版になりました
+
+SnapCenter Plug-in for VMware vSphereとCloud Managerを統合することで、仮想マシン上のデータを保護できます。データストアをクラウドにバックアップし、仮想マシンをオンプレミスのSnapCenter Plug-in for VMware vSphereにリストアする作業は簡単です。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-data.html["仮想マシンをクラウドに保護する方法については、こちらをご覧ください"]。
+
+
+
 === 2022年5月2日
 
 
@@ -557,6 +569,84 @@ Simple Storage Service （ S3 ）プロトコルを使用する任意の Object 
 
 
 
+=== 2022年6月7日
+
+コネクタの3.9.19リリースでは、次の変更が加えられました。
+
+
+
+==== Cloud Volumes ONTAP 9.11.1
+
+Cloud ManagerでCloud Volumes ONTAP 9.11.1の導入と管理が可能になりました。これには、新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]
+
+
+
+==== 新しい詳細ビュー
+
+Cloud Volumes ONTAP の高度な管理を行う必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用します。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。
+
+この拡張ビューは、Cloud Volumes ONTAP 9.10.0以降でプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
+
+link:task-administer-advanced-view.html["詳細については、「詳細ビュー」を参照してください"]。
+
+
+
+==== Amazon EBS Elastic Volumesのサポート
+
+Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。
+
+Elastic Volumeは、Cloud Volumes ONTAP 9.11.0システム以降、GP3およびio1 EBSディスクタイプでサポートされます。
+
+link:concept-aws-elastic-volumes.html["Elastic Volumesのサポートに関する詳細情報"]。
+
+Elastic Volumesをサポートするために、Connectorに対する新しいAWS権限が必要になることに注意してください。
+
+[source, json]
+----
+"ec2:DescribeVolumesModifications",
+"ec2:ModifyVolume",
+----
+Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager のポリシーのページです"^]。
+
+
+
+==== 共有AWSサブネットでのHAペアの導入をサポートします
+
+Cloud Volumes ONTAP 9.11.1では、AWS VPC共有がサポートされています。このリリースのコネクタでは、APIを使用するときにAWS共有サブネットにHAペアを導入できます。
+
+link:task-deploy-aws-shared-vpc.html["共有サブネットにHAペアを導入する方法について説明します"]。
+
+
+
+==== サービスエンドポイントを使用する場合は、ネットワークアクセスが制限されます
+
+Cloud Volumes ONTAP とストレージアカウント間の接続にVNetサービスエンドポイントを使用する際に、Cloud Managerはネットワークアクセスを制限するようになりました。Azure Private Link接続を無効にすると、Cloud Managerはサービスエンドポイントを使用します。
+
+link:task-enabling-private-link.html["Cloud Volumes ONTAP でのAzureプライベートリンク接続の詳細については、こちらをご覧ください"]。
+
+
+
+==== Google CloudでのStorage VMの作成がサポートされます
+
+Google CloudのCloud Volumes ONTAP では、9.11.1リリース以降、複数のStorage VMがサポートされています。このリリースのコネクタから、Cloud Managerを使用して、Google CloudのCloud Volumes ONTAP HAペアにStorage VMを作成できます。
+
+Storage VMの作成をサポートするには、次のコネクタに対する新しいGoogle Cloud権限が必要です。
+
+[source, yaml]
+----
+- compute.instanceGroups.get
+- compute.addresses.get
+----
+ONTAP CLIまたはSystem Managerを使用して、シングルノードシステムにStorage VMを作成する必要があります。
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["Google CloudのStorage VMの制限に関する詳細を確認できます"^]
+* link:task-managing-svms-gcp.html["Google CloudでCloud Volumes ONTAP 向けのデータ提供用Storage VMを作成する方法をご確認ください"]
+
+
+
+
 === 2022年5月2日
 
 コネクタの3.9.18リリースでは、次の変更が加えられました。
@@ -676,20 +766,6 @@ Cloud Volumes ONTAP システムに接続している Web ブラウザにクラ�
 導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。
 
 https://cloud.netapp.com/pricing["WORM ストレージの価格設定については、こちらをご覧ください"^]。
-
-
-
-=== 2022 年 2 月 27 日
-
-コネクタの3.9.16リリースでは、次の変更が加えられました。
-
-
-
-==== ボリュームウィザードの再設計
-
-特定のアグリゲートに * Advanced allocation * オプションからボリュームを作成するときに、新しいボリューム作成ウィザードを使用できるようになりました。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["特定のアグリゲートにボリュームを作成する方法について説明します"]。
 
 
 
