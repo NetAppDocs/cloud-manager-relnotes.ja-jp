@@ -27,6 +27,50 @@ Cloud Manager プラットフォームで行われた クラウド サービス 
 
 
 
+=== 2022年7月3日
+
+
+
+==== コネクタ3.9.20
+
+* 拡大する機能のリストへの新しいナビゲート方法が導入されました。左側のパネルにカーソルを合わせると、使い慣れたCloud Managerの機能を簡単に確認できます。
++
+image:screenshot-navigation.png["Cloud Managerの新しい左側のナビゲーションメニューを示すスクリーンショット。"]
+
+* Cloud ManagerからEメールで通知を送信するように設定できるようになりました。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。
++
+link:task-monitor-cm-operations.html["アカウントでの操作の監視の詳細については、こちらをご覧ください"]。
+
+* Cloud Managerでは、Amazon S3のサポートと同様に、Azure Blob StorageとGoogle Cloud Storageが作業環境としてサポートされるようになりました。
++
+AzureまたはGoogle Cloudにコネクタをインストールすると、Connectorがインストールされているプロジェクトで、AzureサブスクリプションまたはGoogle Cloud StorageのAzure Blob Storageに関する情報がCloud Managerで自動的に検出されるようになりました。Cloud Managerにはオブジェクトストレージが作業環境として表示され、この環境を開いて詳細情報を確認することができます。
+
++
+Azure Blob作業環境の例は次のとおりです。
+
++
+image:screenshot-azure-blob.png["ストレージアカウントの概要と詳細情報を表示できるAzure Blob作業環境のスクリーンショット"]
+
+* 容量や暗号化の詳細など、S3バケットに関する詳細情報を提供することで、Amazon S3作業環境用のリソースページが再設計されました。
+* Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。
++
+** マドリード（ヨーロッパ-南西部1）
+** パリ（ヨーロッパ-西9区）
+** ワルシャワ（ヨーロッパ中央部2）
+
+
+* Azure West US 3リージョンでコネクタがサポートされるようになりました。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
+
+* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
+
+
+
+
+
 === 2022年6月28日
 
 
@@ -58,16 +102,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["サポートされてい�
 
 
 
-
-
-
-=== 2022年5月12日
-
-
-
-==== コネクタ3.9.18パッチ
-
-コネクタを更新し、バグ修正を実施しました。最も注目すべき解決策は、問題 が共有VPC内にある場合にGoogle CloudでのCloud Volumes ONTAP の導入に影響するというものです。
 
 
 
@@ -418,6 +452,64 @@ Data Sense と統合するグローバル Active Directory サーバは、以前
 
 
 == Cloud Sync
+
+
+
+=== 2022年7月3日
+
+
+
+==== Azure Data Lake Storage Gen2のサポート
+
+NFSサーバまたはSMBサーバからAzure Data Lake Storage Gen2へデータを同期できるようになりました。
+
+Azureデータレイクを含む同期関係を作成する場合は、Cloud Sync にストレージアカウントの接続文字列を指定する必要があります。共有アクセスシグニチャ（SAS）ではなく、通常の接続文字列である必要があります。
+
+link:reference-supported-relationships.html["サポートされている同期関係のリストを表示します"]。
+
+
+
+==== Google Cloud Storageからの継続的な同期
+
+ソースのGoogle Cloud Storageバケットからクラウドストレージターゲットへ、継続的な同期設定がサポートされるようになりました。
+
+Cloud Sync は、初回のデータ同期後、ソースのGoogle Cloud Storageバケットで変更をリスンし、変更が発生した場合はターゲットに継続的に同期します。この設定は、Google Cloud StorageバケットからS3、Google Cloud Storage、Azure BLOBストレージ、StorageGRID 、またはIBMストレージに同期する場合に使用できます。
+
+データブローカーに関連付けられているサービスアカウントでこの設定を使用するには、次の権限が必要です。
+
+[source, json]
+----
+- pubsub.subscriptions.consume
+- pubsub.subscriptions.create
+- pubsub.subscriptions.delete
+- pubsub.subscriptions.list
+- pubsub.topics.attachSubscription
+- pubsub.topics.create
+- pubsub.topics.delete
+- pubsub.topics.list
+- pubsub.topics.setIamPolicy
+- storage.buckets.update
+----
+link:task-creating-relationships.html#settings["Continuous Syncの詳細については、こちらをご覧ください"]。
+
+
+
+==== 新しいGoogle Cloudリージョンサポート
+
+Cloud Sync データブローカーがGoogle Cloudの次のリージョンでサポートされるようになりました。
+
+* コロンバス（us-east5）
+* ダラス（US -サウス1）
+* マドリード（ヨーロッパ-南西部1）
+* ミラノ（ヨーロッパ-西8）
+* パリ（ヨーロッパ-西9区）
+
+
+
+
+==== 新しいGoogle Cloudマシンタイプ
+
+Google Cloudのデータブローカーのデフォルトのマシンタイプは、n2 -標準-4になりました。
 
 
 

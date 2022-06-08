@@ -340,9 +340,6 @@
   <block id="5c4a95a56d4b5bfef734aeab388618c0" category="section-title">Google Cloudサービスアカウントの機能強化</block>
   <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</block>
   <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
-  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">コネクタ3.9.18パッチ</block>
-  <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">コネクタを更新し、バグ修正を実施しました。最も注目すべき解決策は、問題 が共有VPC内にある場合にGoogle CloudでのCloud Volumes ONTAP の導入に影響するというものです。</block>
   <block id="25cd9b4ac7b3c20c21ee2a72afe32aa0" category="section-title">2022年5月19日（バージョン1.3.0）</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
   <block id="538b3d7be12bcc1f18433981df773bc1" category="paragraph">バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。</block>
@@ -477,4 +474,40 @@
   <block id="47d69a1f17128c359904338c3502fe31" category="section-title">ネットアップのクレデンシャルでログインします</block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">新規ユーザがCloud Centralに登録する際に、「ネットアップでログイン」オプションを選択して、ネットアップサポートサイトのクレデンシャルを使用してログインできるようになりました。Eメールアドレスとパスワードを入力する代わりに使用できます。</block>
   <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">Eメールアドレスとパスワードを使用する既存のログインでは、このログイン方法を使用し続ける必要があります。ネットアップでログインするオプションは、新規ユーザがサインアップする際に使用できます。</block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
+  <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">コネクタ3.9.20</block>
+  <block id="d62eba143e9a6b4f6e0d6902d78ea096" category="list-text">拡大する機能のリストへの新しいナビゲート方法が導入されました。左側のパネルにカーソルを合わせると、使い慣れたCloud Managerの機能を簡単に確認できます。</block>
+  <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">Cloud Managerの新しい左側のナビゲーションメニューを示すスクリーンショット。</block>
+  <block id="f0b1755d1a809617265e005b6e1a8124" category="paragraph"><block ref="f0b1755d1a809617265e005b6e1a8124" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e37234425776295f1624526d17572b8e" category="list-text">Cloud ManagerからEメールで通知を送信するように設定できるようになりました。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。</block>
+  <block id="2f439d7fd2d68628b2c40e59bc7ec352" category="inline-link-macro">アカウントでの操作の監視の詳細については、こちらをご覧ください</block>
+  <block id="8fe400bbcf74fee5f6ca96b5d06fd8a8" category="paragraph"><block ref="6207ce0a1413f0c60f2c0a13a1fde26f" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f9a1f2b52f5c8456ca5d25ab69eea52" category="list-text">Cloud Managerでは、Amazon S3のサポートと同様に、Azure Blob StorageとGoogle Cloud Storageが作業環境としてサポートされるようになりました。</block>
+  <block id="5134e5a3a5a026f57f4938b2eaa07031" category="paragraph">AzureまたはGoogle Cloudにコネクタをインストールすると、Connectorがインストールされているプロジェクトで、AzureサブスクリプションまたはGoogle Cloud StorageのAzure Blob Storageに関する情報がCloud Managerで自動的に検出されるようになりました。Cloud Managerにはオブジェクトストレージが作業環境として表示され、この環境を開いて詳細情報を確認することができます。</block>
+  <block id="a2f44a550843ebb8ee7fe06e85e5d378" category="paragraph">Azure Blob作業環境の例は次のとおりです。</block>
+  <block id="c5a0af9953d83a32751880ddded4d5ec" category="inline-image-macro">ストレージアカウントの概要と詳細情報を表示できるAzure Blob作業環境のスクリーンショット</block>
+  <block id="69ea64e8072e702aaf3256d7a40211ee" category="paragraph"><block ref="69ea64e8072e702aaf3256d7a40211ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="402ca8386bc10e708c8fa4cd43e8856e" category="list-text">容量や暗号化の詳細など、S3バケットに関する詳細情報を提供することで、Amazon S3作業環境用のリソースページが再設計されました。</block>
+  <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。</block>
+  <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">マドリード（ヨーロッパ-南西部1）</block>
+  <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">パリ（ヨーロッパ-西9区）</block>
+  <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">ワルシャワ（ヨーロッパ中央部2）</block>
+  <block id="05f08f9410eed79855c8ade92149a276" category="list-text">Azure West US 3リージョンでコネクタがサポートされるようになりました。</block>
+  <block id="e8249b4253d6a921188373a80621c098" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。</block>
+  <block id="6ccb5320771ae7d28e23216dda7e303f" category="paragraph"><block ref="6ccb5320771ae7d28e23216dda7e303f" category="inline-link-rx"></block></block>
+  <block id="59db2d8d08645826b1c034be277c61d2" category="section-title">Azure Data Lake Storage Gen2のサポート</block>
+  <block id="c7b46a2bde58e21272436d4c94238e15" category="paragraph">NFSサーバまたはSMBサーバからAzure Data Lake Storage Gen2へデータを同期できるようになりました。</block>
+  <block id="20a2ab980685308347c082aec3253ed9" category="paragraph">Azureデータレイクを含む同期関係を作成する場合は、Cloud Sync にストレージアカウントの接続文字列を指定する必要があります。共有アクセスシグニチャ（SAS）ではなく、通常の接続文字列である必要があります。</block>
+  <block id="557b7fbb966ab34b32484f8c806869ae" category="inline-link-macro">サポートされている同期関係のリストを表示します</block>
+  <block id="5d7e962256f3b412b8fa7e864448a86e" category="paragraph"><block ref="22efe00007987c46f8bce57edbae4cc7" category="inline-link-macro-rx"></block>。</block>
+  <block id="ebf5fe0ded517668f74c4f41da278835" category="section-title">Google Cloud Storageからの継続的な同期</block>
+  <block id="6ce39114bc116067ef30366e7df90870" category="paragraph">ソースのGoogle Cloud Storageバケットからクラウドストレージターゲットへ、継続的な同期設定がサポートされるようになりました。</block>
+  <block id="fd36af2b64264c3f7fb77364a0046eb8" category="paragraph">Cloud Sync は、初回のデータ同期後、ソースのGoogle Cloud Storageバケットで変更をリスンし、変更が発生した場合はターゲットに継続的に同期します。この設定は、Google Cloud StorageバケットからS3、Google Cloud Storage、Azure BLOBストレージ、StorageGRID 、またはIBMストレージに同期する場合に使用できます。</block>
+  <block id="5f5f25c6813ee0b01f552cd13dcebec9" category="paragraph">データブローカーに関連付けられているサービスアカウントでこの設定を使用するには、次の権限が必要です。</block>
+  <block id="d38ece9df5f99d11a5e7597c6f6c34f2" category="paragraph">Cloud Sync データブローカーがGoogle Cloudの次のリージョンでサポートされるようになりました。</block>
+  <block id="db760e7471192daa123eed31bfba312d" category="list-text">コロンバス（us-east5）</block>
+  <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">ダラス（US -サウス1）</block>
+  <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">ミラノ（ヨーロッパ-西8）</block>
+  <block id="66c941bf286fd505b009d484ca94a594" category="section-title">新しいGoogle Cloudマシンタイプ</block>
+  <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">Google Cloudのデータブローカーのデフォルトのマシンタイプは、n2 -標準-4になりました。</block>
 </blocks>
