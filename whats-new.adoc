@@ -362,6 +362,44 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-d
 
 
 
+=== 2022年6月12日
+
+
+
+==== Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました
+
+[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report["Data Investigationページからレポートを作成する方法を参照してください"]。
+
+
+
+==== データセンスUIからデータセンスをアンインストールする機能
+
+Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html["方法を参照してください"]。
+
+
+
+==== 監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました
+
+監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html["監査ログの詳細を確認してください"]。
+
+
+
+==== [データ調査]ページの重要な識別子の数に対する新しいフィルタ
+
+「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["データの調査に使用できるすべてのフィルタのリストを確認します"]。
+
+
+
+==== これで、作成した既存のポリシーを編集できるようになります
+
+以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies["ポリシーの編集方法については、を参照してください"]。
+
+
+
 === 2022年5月11日
 
 
@@ -409,40 +447,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 ==== グローバル Active Directory サーバを LDAP サーバとして使用できるようになりました
 
 Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["詳細については、こちらをご覧ください"]。
-
-
-
-=== 2022 年 3 月 15 日
-
-
-
-==== 新しいフィルタ：特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します
-
-「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。
-
-
-
-==== データセンスを使用すると、 SharePoint アカウントと OneDrive アカウントのファイルに対する権限を決定できます
-
-データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。
-
-
-
-==== 追加の 2 種類の個人データは、データセンスで識別できます
-
-* フランスの INSEE - INSEE コードは、フランス国立統計経済研究所（ INSEE ）がさまざまなエンティティを識別するために使用する数値コードです。
-* パスワード - この情報は、英数字の文字列の横にある「 password 」という単語を検索して、近接性検証を使用して識別されます。見つかったアイテムの数は、コンプライアンスダッシュボードの [ 個人の結果 ] の下に表示されます。［ 調査 ］ ペインでパスワードを含むファイルを検索するには、 ［ フィルタ * 個人データ ］ > ［ パスワード * ］ を使用します。
-
-
-
-
-==== ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます
-
-インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["次のエンドポイントへのアクセスを許可する必要があります。"]
-
-
-
-==== Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました
 
 
 
@@ -1035,13 +1039,35 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+=== 2022年6月12日
+
+
+
+==== NASファイルシステムの監査ステータスがONTAP Storage VMに対して追跡されるようになりました
+
+作業環境内のストレージVMの40%未満でファイルシステムの監査が有効になっている場合、_Cyber Resilience Map_にアラートが追加されます。ONTAP イベントとNFSイベントを追跡および監査ログに記録していないSVMの正確な数は、_harden your environment_panelで確認できます。そのうえで、SVMで監査を有効にするかどうかを判断できます。
+
+
+
+==== ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました
+
+この情報は、以前にONTAP 環境パネルを強化する_オンプレミスのONTAP システムについて報告されていました。 しかし、搭載されたアンチランサムウェア機能がボリュームの40%未満でオンになると、ダッシュボードでこの情報を確認できるように、_Cyber Resilience Map_でアラートが報告されるようになりました。
+
+
+
+==== ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました
+
+_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。
+
+
+
 === 2022年5月11日
 
 
 
 ==== ONTAP 環境のセキュリティ強化を追跡する新しいパネル。
 
-新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"^] これにより、異常なアクティビティをプロアクティブに検出して警告します。
+新しいパネル_ ONTAP 環境の強化_導入環境の安全性を追跡するONTAP システムの特定の設定の状態を提供します https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"^] これにより、異常なアクティビティをプロアクティブに検出して警告します。
 
 推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["詳細については、こちらをご覧ください"]。
 
@@ -1049,7 +1075,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 ==== Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。
 
-この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["詳細については、こちらをご覧ください"]。
+このNew_Backup Status_panelでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を示しています。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["詳細については、こちらをご覧ください"]。
 
 
 
@@ -1059,25 +1085,13 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 ==== ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル
 
-新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["詳細については、こちらをご覧ください"]。
+新しいパネル_ビジネスクリティカルデータアクセス権分析_ビジネスに不可欠なデータのアクセス権ステータスを表示しますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["詳細については、こちらをご覧ください"]。
 
 
 
 ==== [ アクセス許可 ] 領域に OneDrive アカウントと SharePoint アカウントが含まれるようになりました
 
 ランサムウェア対策保護ダッシュボードの [ 開くアクセス許可 ] 領域に、 OneDrive アカウントと SharePoint アカウントでスキャンされるファイルに存在するアクセス許可が表示されるようになりました。
-
-
-
-=== 2022 年 2 月 9 日
-
-
-
-==== 新たなランサムウェア対策サービス
-
-新しいランサムウェア防御サービスでは、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価することができます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。
-
-https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html["この新しいサービスの詳細については、こちらをご覧ください"]。
 
 
 

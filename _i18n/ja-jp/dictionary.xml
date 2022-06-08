@@ -121,7 +121,6 @@
   <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能</block>
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">検索とリストアの使用方法を説明します</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
-  <block id="536f48524e36a16593703c5d8d108b79" category="section-title">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</block>
   <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">オーストラリアの個人データは、データセンスで新たに 4 種類識別できます</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
@@ -129,15 +128,6 @@
   <block id="0387123627dfe002c7435c0101983f19" category="section-title">グローバル Active Directory サーバを LDAP サーバとして使用できるようになりました</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
-  <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新しいフィルタ：特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します</block>
-  <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">データセンスを使用すると、 SharePoint アカウントと OneDrive アカウントのファイルに対する権限を決定できます</block>
-  <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。</block>
-  <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">追加の 2 種類の個人データは、データセンスで識別できます</block>
-  <block id="d431283363f0e868742391138a4ffbd0" category="list-text">フランスの INSEE - INSEE コードは、フランス国立統計経済研究所（ INSEE ）がさまざまなエンティティを識別するために使用する数値コードです。</block>
-  <block id="7457180e95a424d146842587474ec483" category="list-text">パスワード - この情報は、英数字の文字列の横にある「 password 」という単語を検索して、近接性検証を使用して識別されます。見つかったアイテムの数は、コンプライアンスダッシュボードの [ 個人の結果 ] の下に表示されます。［ 調査 ］ ペインでパスワードを含むファイルを検索するには、 ［ フィルタ * 個人データ ］ &gt; ［ パスワード * ］ を使用します。</block>
-  <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます</block>
-  <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">次のエンドポイントへのアクセスを許可する必要があります。</block>
-  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
   <block id="33c34b75ae4154295ed3cdeeccb3fd6a" category="section-title">データブローカーグループの機能拡張</block>
   <block id="9e85c5ace2120c3600ae07824bd6d1a9" category="paragraph">データブローカーグループには、次のような機能拡張が行われました。</block>
@@ -228,13 +218,8 @@
   <block id="d69df284f21ccdf93082c4aaf0953b6d" category="section-title">オンプレミスの ONTAP クラスタのボリュームに追加するタグは、 Tagging サービスで使用できます。</block>
   <block id="3686b84bef4027bfe5a11fcf472d8662" category="paragraph">ボリュームに追加するタグは、アプリケーションテンプレートサービスのタグ機能に関連付けられます。これにより、リソースの管理を整理して簡単にすることができます。</block>
   <block id="70ca849e4710f5c98451b61f2b47e5a8" category="section-title">ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル</block>
-  <block id="5816bf17c72947dceb173c559c3f6009" category="paragraph">新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
   <block id="1029db4aa82b2fd39d624a6eda513d6c" category="section-title">[ アクセス許可 ] 領域に OneDrive アカウントと SharePoint アカウントが含まれるようになりました</block>
   <block id="52a3db95e0c303b6251e8f60de3b3f3d" category="paragraph">ランサムウェア対策保護ダッシュボードの [ 開くアクセス許可 ] 領域に、 OneDrive アカウントと SharePoint アカウントでスキャンされるファイルに存在するアクセス許可が表示されるようになりました。</block>
-  <block id="67ecb98d51fb7fee47f7f4c979becfa6" category="section-title">新たなランサムウェア対策サービス</block>
-  <block id="c05006d715a916b10a4f130817c81c90" category="paragraph">新しいランサムウェア防御サービスでは、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価することができます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。</block>
-  <block id="7e0c2cf881384db7bfcfb883b67871a5" category="inline-link">この新しいサービスの詳細については、こちらをご覧ください</block>
-  <block id="f8f0d5b489ad504a83a9a25f8afd6159" category="paragraph"><block ref="64dfcbf1401a338253308f53837a8af7" category="inline-link-rx"></block>。</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">Amazon FSX for ONTAP のサポート</block>
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">Cloud Volumes ONTAP システムまたはオンプレミスの ONTAP クラスタから ONTAP ファイルシステム用の Amazon FSX にデータをレプリケートできるようになりました。</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">データレプリケーションの設定方法について説明します</block>
@@ -320,14 +305,11 @@
   <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「ユーザ/グループの権限」フィルタを使用すると、特定のユーザまたはグループに対する読み取り/書き込み権限があるファイル、フォルダ、および共有を表示できます。複数のユーザまたはグループの名前を選択するか、名前の一部を入力できます。t</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">データの調査に使用できるすべてのフィルタのリストを確認します</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
-  <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</block>
   <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">ONTAP 環境のセキュリティ強化を追跡する新しいパネル。</block>
   <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください</block>
   <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">ONTAP ランサムウェア対策機能</block>
-  <block id="c0920e0c17ca7e741f375b33ea0a761b" category="paragraph">新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
   <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
   <block id="76553642514a4b204c12afe14df42e92" category="section-title">Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。</block>
-  <block id="c55588bedd5ed04bd522d770a0c3de70" category="paragraph">この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
   <block id="97106e7449f4966fc1e4b3b78d425110" category="section-title">System Manager のリンクが削除されました</block>
   <block id="249f6fd27ec465f7b6af7dc12178a1ea" category="paragraph">Cloud Volumes ONTAP 作業環境内から以前に利用可能だった System Manager のリンクを削除しました。</block>
   <block id="1979125e36e7d7c49ca297e15301d908" category="inline-link">System Manager への接続に関する詳細情報</block>
@@ -471,4 +453,29 @@
   <block id="45ee97ced966affff074d2bc1efe2686" category="paragraph">新しいCloud Backup for Applications機能を使用すると、OracleおよびMicrosoft SQLの既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージからAmazon S3またはAzure Blobのクラウドオブジェクトストレージにオフロードできます。</block>
   <block id="8a0841a62164343a6bb78ffd4349420f" category="inline-link">オンプレミスアプリケーションのデータをクラウドで保護する方法については、こちらをご覧ください</block>
   <block id="98d0ff36da367aa918057b6c42219851" category="paragraph"><block ref="6ddb7afc666833c3265591e4f4bdc4a7" category="inline-link-rx"></block>。</block>
+  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
+  <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました</block>
+  <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">Data Investigationページからレポートを作成する方法を参照してください</block>
+  <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
+  <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">データセンスUIからデータセンスをアンインストールする機能</block>
+  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">方法を参照してください</block>
+  <block id="4aa7333b6753545c6a6c04dfb41b9866" category="paragraph">Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。<block ref="3da12a48df084f38bafa988bc8e77bd7" category="inline-link-rx"></block>。</block>
+  <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました</block>
+  <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。</block>
+  <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">監査ログの詳細を確認してください</block>
+  <block id="d96e8ae6f880fe9b4d4de06b59a2128b" category="paragraph"><block ref="a09465601260c6db487e05cfd3d2ec87" category="inline-link-rx"></block>。</block>
+  <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">[データ調査]ページの重要な識別子の数に対する新しいフィルタ</block>
+  <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。</block>
+  <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">これで、作成した既存のポリシーを編集できるようになります</block>
+  <block id="61e409921fe798c5667689af4656a112" category="inline-link">ポリシーの編集方法については、を参照してください</block>
+  <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
+  <block id="ee4612ccbf2c1a0b8e01a1dc2992487f" category="section-title">NASファイルシステムの監査ステータスがONTAP Storage VMに対して追跡されるようになりました</block>
+  <block id="9e0f0ecbfec67c585b4269b113f30ee3" category="paragraph">作業環境内のストレージVMの40%未満でファイルシステムの監査が有効になっている場合、_Cyber Resilience Map_にアラートが追加されます。ONTAP イベントとNFSイベントを追跡および監査ログに記録していないSVMの正確な数は、_harden your environment_panelで確認できます。そのうえで、SVMで監査を有効にするかどうかを判断できます。</block>
+  <block id="9f8d82fd59d602cd8a59ae988c97d5e6" category="section-title">ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました</block>
+  <block id="5e75c953b6169be120d3ab03b8f54b15" category="paragraph">この情報は、以前にONTAP 環境パネルを強化する_オンプレミスのONTAP システムについて報告されていました。 しかし、搭載されたアンチランサムウェア機能がボリュームの40%未満でオンになると、ダッシュボードでこの情報を確認できるように、_Cyber Resilience Map_でアラートが報告されるようになりました。</block>
+  <block id="cc1796d3f81dc9429436a972e383c713" category="section-title">ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました</block>
+  <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。</block>
+  <block id="5e5a2d8b7f4ac8723d3873b0ba14916e" category="paragraph">新しいパネル_ ONTAP 環境の強化_導入環境の安全性を追跡するONTAP システムの特定の設定の状態を提供します<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
+  <block id="ed35eae63358acfc6c38aefc0b7736d0" category="paragraph">このNew_Backup Status_panelでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を示しています。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
+  <block id="f0affd41380a1f75f1e8cb0eb63a3746" category="paragraph">新しいパネル_ビジネスクリティカルデータアクセス権分析_ビジネスに不可欠なデータのアクセス権ステータスを表示しますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
 </blocks>
