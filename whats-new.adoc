@@ -272,6 +272,43 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-da
 
 
 
+==== クラウドのリストアインスタンスは、ONTAP の参照とリストア機能では必要ありません
+
+S3およびBLOBストレージからのファイルレベルの参照およびリストア処理に必要な、別のCloud Restoreインスタンス/仮想マシン。このインスタンスは使用していないときにシャットダウンされますが、ファイルのリストアに時間とコストがかかります。この機能は、必要に応じてコネクタに導入される無償のコンテナに置き換えられました。これには、次の利点があります。
+
+* ファイルレベルのリストア処理のための追加コストは不要です
+* ファイルレベルのリストア処理が高速化されます
+* Connectorがオンプレミスにインストールされている場合のクラウドからのファイルの参照とリストアの処理がサポートされます
+
+
+以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。
+
+
+
+==== Google CloudおよびStorageGRID ストレージからのファイルのサポートを参照してリストアできます
+
+前述のように、参照および復元操作用のコンテナが追加されたことで、Google CloudおよびStorageGRID システムに保存されているバックアップファイルからファイルの復元操作を実行できるようになりました。現在は、参照とリストアを使用して、すべてのパブリッククラウドプロバイダとStorageGRID からファイルをリストアできます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-browse-restore["参照リストアを使用してONTAP バックアップからボリュームとファイルをリストアする方法を参照してください"]。
+
+
+
+==== ドラッグアンドドロップして、Cloud Backup to S3ストレージを有効にします
+
+バックアップのAmazon S3デスティネーションがキャンバス上の作業環境として存在する場合、オンプレミスのONTAP クラスタまたはCloud Volumes ONTAP システム（AWSにインストール）をAmazon S3作業環境にドラッグしてセットアップウィザードを開始できます。
+
+
+
+==== Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーを自動的に適用します
+
+Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes["[バックアップ設定]ページから選択します"] Cloud Backupをすでにアクティブ化しているクラスタの場合
+
+
+
+==== Cloud Backup APIを使用して、バックアップとリストアの処理を管理できるようになりました
+
+APIはにあります https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html[]。を参照してください link:api-backup-restore.html["このページです"] を参照してください。
+
+
+
 === 2022年5月2日
 
 
@@ -307,7 +344,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-
 
 ==== Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました
 
-新しい Cloud Backup for Applications 機能を使用すると、 Oracle および Microsoft SQL の既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージから AWS S3 または Azure Blob のクラウドオブジェクトストレージにオフロードできます。
+新しいCloud Backup for Applications機能を使用すると、OracleおよびMicrosoft SQLの既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージからAmazon S3またはAzure Blobのクラウドオブジェクトストレージにオフロードできます。
 
 必要に応じて、クラウドからオンプレミスへデータをリストアできます。
 
@@ -318,20 +355,6 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-d
 ==== すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能
 
 ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["検索とリストアの使用方法を説明します"]。
-
-
-
-=== 2022 年 3 月 3 日
-
-
-
-==== GKE Kubernetes クラスタから Google Cloud ストレージに永続ボリュームをバックアップする機能
-
-ネットアップ Astra Trident がインストールされている GKE クラスタで、 Cloud Volumes ONTAP for GCP をクラスタのバックエンドストレージとして使用している場合は、 Google Cloud ストレージとの間で永続的ボリュームのバックアップとリストアを行うことができます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-kubernetes-to-gcp.html["詳細については、こちらをご覧ください"]。
-
-
-
-==== Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました
 
 
 

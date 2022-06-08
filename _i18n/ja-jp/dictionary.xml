@@ -117,15 +117,10 @@
   <block id="00b4c4979fe8d65dc663ea7c82a1b1c2" category="paragraph"><block ref="ddc85a18edb3f9e32810e603b7ef9eb7" category="inline-link-rx"></block>。</block>
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022 年 4 月 4 日</block>
   <block id="223fdeee6256cb135700ded14acc7574" category="section-title">Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました</block>
-  <block id="1d62f7c162a37407056f64380ddd240c" category="paragraph">新しい Cloud Backup for Applications 機能を使用すると、 Oracle および Microsoft SQL の既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージから AWS S3 または Azure Blob のクラウドオブジェクトストレージにオフロードできます。</block>
   <block id="1959411b4282df2234896496da39c42f" category="paragraph">必要に応じて、クラウドからオンプレミスへデータをリストアできます。</block>
-  <block id="9793a7606042d0fe65c3a7569fe10e8a" category="inline-link">オンプレミスアプリケーションのデータをクラウドで保護する方法については、こちらをご覧ください</block>
-  <block id="eda2e5118f80ed23863efd871fe97b1e" category="paragraph"><block ref="4c415cce11b2e607b8fde97291a59b9c" category="inline-link-rx"></block>。</block>
   <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能</block>
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">検索とリストアの使用方法を説明します</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
-  <block id="afffc0d082245313c31dfcac23d2d8e0" category="section-title">GKE Kubernetes クラスタから Google Cloud ストレージに永続ボリュームをバックアップする機能</block>
-  <block id="387cd7ab52bc5fa4b28d5ab54360a48f" category="paragraph">ネットアップ Astra Trident がインストールされている GKE クラスタで、 Cloud Volumes ONTAP for GCP をクラスタのバックエンドストレージとして使用している場合は、 Google Cloud ストレージとの間で永続的ボリュームのバックアップとリストアを行うことができます。<block ref="39d25c9214775db10710eba772faa6a0" category="inline-link-rx"></block>。</block>
   <block id="536f48524e36a16593703c5d8d108b79" category="section-title">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</block>
   <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">オーストラリアの個人データは、データセンスで新たに 4 種類識別できます</block>
@@ -456,4 +451,24 @@
   <block id="7859fc06f13ff8714740aa72213f86e7" category="list-text"><block ref="7859fc06f13ff8714740aa72213f86e7" category="inline-link-rx"></block></block>
   <block id="3a7eebf972f838daafe4ea7948002b3d" category="inline-link-macro">Google CloudでCloud Volumes ONTAP 向けのデータ提供用Storage VMを作成する方法をご確認ください</block>
   <block id="4d4f80e19da50b86ec7f247f81baedf7" category="list-text"><block ref="4d4f80e19da50b86ec7f247f81baedf7" category="inline-link-macro-rx"></block></block>
+  <block id="338b73eb5ee02b02ceb307b68866c9f2" category="section-title">クラウドのリストアインスタンスは、ONTAP の参照とリストア機能では必要ありません</block>
+  <block id="c2f301bf47b0e51a835909a868e786b5" category="paragraph">S3およびBLOBストレージからのファイルレベルの参照およびリストア処理に必要な、別のCloud Restoreインスタンス/仮想マシン。このインスタンスは使用していないときにシャットダウンされますが、ファイルのリストアに時間とコストがかかります。この機能は、必要に応じてコネクタに導入される無償のコンテナに置き換えられました。これには、次の利点があります。</block>
+  <block id="b7a41babdf28bb4d456f0725ccfbc402" category="list-text">ファイルレベルのリストア処理のための追加コストは不要です</block>
+  <block id="898be2b1c15b9168ca69a0986639cb4e" category="list-text">ファイルレベルのリストア処理が高速化されます</block>
+  <block id="f8cae2a44d4ac885154da71ae7da347a" category="list-text">Connectorがオンプレミスにインストールされている場合のクラウドからのファイルの参照とリストアの処理がサポートされます</block>
+  <block id="b7fe1f1109cab9c0a50f4ac3ee36df48" category="paragraph">以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。</block>
+  <block id="06a21d28fcdc17ce4f2e4747a1fe635b" category="section-title">Google CloudおよびStorageGRID ストレージからのファイルのサポートを参照してリストアできます</block>
+  <block id="60222043eb5ad60b7dd1964a983d4f85" category="inline-link">参照リストアを使用してONTAP バックアップからボリュームとファイルをリストアする方法を参照してください</block>
+  <block id="68792eeb104c6fe1ef3c561265ed75dd" category="paragraph">前述のように、参照および復元操作用のコンテナが追加されたことで、Google CloudおよびStorageGRID システムに保存されているバックアップファイルからファイルの復元操作を実行できるようになりました。現在は、参照とリストアを使用して、すべてのパブリッククラウドプロバイダとStorageGRID からファイルをリストアできます。<block ref="a4ebf9bfc678bc28afd45dff032c4465" category="inline-link-rx"></block>。</block>
+  <block id="fe3455104008d8da35fbd267dbef0701" category="section-title">ドラッグアンドドロップして、Cloud Backup to S3ストレージを有効にします</block>
+  <block id="5e1eb4d1c116b2c77bbd1fbc73321106" category="paragraph">バックアップのAmazon S3デスティネーションがキャンバス上の作業環境として存在する場合、オンプレミスのONTAP クラスタまたはCloud Volumes ONTAP システム（AWSにインストール）をAmazon S3作業環境にドラッグしてセットアップウィザードを開始できます。</block>
+  <block id="da1d5a542623977c61bd148b8576513c" category="section-title">Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーを自動的に適用します</block>
+  <block id="31d9f5df125d9014e9c296eed143904c" category="inline-link">[バックアップ設定]ページから選択します</block>
+  <block id="0781288780239fb5b3a1479574714ff9" category="paragraph">Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます<block ref="11a3efd6b42c9f2e763586db69ebed23" category="inline-link-rx"></block> Cloud Backupをすでにアクティブ化しているクラスタの場合</block>
+  <block id="52e2c3fc6fb58a0ca1eb816ca6e270ed" category="section-title">Cloud Backup APIを使用して、バックアップとリストアの処理を管理できるようになりました</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="b83e2caeb95bea361704be4e9e795cd1" category="paragraph">APIはにあります<block ref="323898002645c2363c910f7c119fd4d6" category="inline-link-rx"></block>。を参照してください <block ref="cf7847f4c926eb96d69d319dfdc23654" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="45ee97ced966affff074d2bc1efe2686" category="paragraph">新しいCloud Backup for Applications機能を使用すると、OracleおよびMicrosoft SQLの既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージからAmazon S3またはAzure Blobのクラウドオブジェクトストレージにオフロードできます。</block>
+  <block id="8a0841a62164343a6bb78ffd4349420f" category="inline-link">オンプレミスアプリケーションのデータをクラウドで保護する方法については、こちらをご覧ください</block>
+  <block id="98d0ff36da367aa918057b6c42219851" category="paragraph"><block ref="6ddb7afc666833c3265591e4f4bdc4a7" category="inline-link-rx"></block>。</block>
 </blocks>
