@@ -481,7 +481,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-07 21:55:15 +0000">06/07/2022</time>
+    <time datetime="2022-06-08 19:29:41 +0000">06/08/2022</time>
     
   
 
@@ -522,6 +522,7 @@
 </li>
 <li><a href="#クラウドバックアップ">クラウドバックアップ</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月8日">2022年6月8日</a></li>
 <li><a href="#2022年5月2日-2">2022年5月2日</a></li>
 <li><a href="#2022-年-4-月-4-日">2022 年 4 月 4 日</a></li>
 <li><a href="#2022-年-3-月-3-日-2">2022 年 3 月 3 日</a></li>
@@ -550,9 +551,9 @@
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月7日-2">2022年6月7日</a></li>
 <li><a href="#2022年5月2日-3">2022年5月2日</a></li>
 <li><a href="#2022-年-4-月-3-日-3">2022 年 4 月 3 日</a></li>
-<li><a href="#2022-年-2-月-27-日-2">2022 年 2 月 27 日</a></li>
 </ul>
 </li>
 <li><a href="#cloud-volumes-service-for-gcp">Cloud Volumes Service for GCP</a>
@@ -589,8 +590,8 @@
 </li>
 <li><a href="#オンプレミスの-ontap-クラスタ">オンプレミスの ONTAP クラスタ</a>
 <ul class="sectlevel2">
-<li><a href="#2022年6月7日-2">2022年6月7日</a></li>
-<li><a href="#2022-年-2-月-27-日-3">2022 年 2 月 27 日</a></li>
+<li><a href="#2022年6月7日-3">2022年6月7日</a></li>
+<li><a href="#2022-年-2-月-27-日-2">2022 年 2 月 27 日</a></li>
 <li><a href="#2022-年-1-月-11-日">2022 年 1 月 11 日</a></li>
 </ul>
 </li>
@@ -906,6 +907,18 @@
 <div class="sect1">
 <h2 id="クラウドバックアップ">クラウドバックアップ</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="2022年6月8日">2022年6月8日</h3>
+<div class="sect3">
+<h4 id="cloud-backup-for-virtual-machines-1-1-0のga版になりました">Cloud Backup for Virtual Machines 1.1.0のGA版になりました</h4>
+<div class="paragraph">
+<p>SnapCenter Plug-in for VMware vSphereとCloud Managerを統合することで、仮想マシン上のデータを保護できます。データストアをクラウドにバックアップし、仮想マシンをオンプレミスのSnapCenter Plug-in for VMware vSphereにリストアする作業は簡単です。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-data.html">"仮想マシンをクラウドに保護する方法については、こちらをご覧ください"</a>。</p>
+</div>
+</div>
+</div>
 <div class="sect2">
 <h3 id="2022年5月2日-2">2022年5月2日</h3>
 <div class="sect3">
@@ -1246,6 +1259,103 @@
 <h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年6月7日-2">2022年6月7日</h3>
+<div class="paragraph">
+<p>コネクタの3.9.19リリースでは、次の変更が加えられました。</p>
+</div>
+<div class="sect3">
+<h4 id="cloud-volumes-ontap-9-11-1">Cloud Volumes ONTAP 9.11.1</h4>
+<div class="paragraph">
+<p>Cloud ManagerでCloud Volumes ONTAP 9.11.1の導入と管理が可能になりました。これには、新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes" target="_blank" rel="noopener">"このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="新しい詳細ビュー">新しい詳細ビュー</h4>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP の高度な管理を行う必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用します。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。</p>
+</div>
+<div class="paragraph">
+<p>この拡張ビューは、Cloud Volumes ONTAP 9.10.0以降でプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-administer-advanced-view.html">"詳細については、「詳細ビュー」を参照してください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="amazon-ebs-elastic-volumesのサポート">Amazon EBS Elastic Volumesのサポート</h4>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。</p>
+</div>
+<div class="paragraph">
+<p>Elastic Volumeは、Cloud Volumes ONTAP 9.11.0システム以降、GP3およびio1 EBSディスクタイプでサポートされます。</p>
+</div>
+<div class="paragraph">
+<p><a href="concept-aws-elastic-volumes.html">"Elastic Volumesのサポートに関する詳細情報"</a>。</p>
+</div>
+<div class="paragraph">
+<p>Elastic Volumesをサポートするために、Connectorに対する新しいAWS権限が必要になることに注意してください。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"ec2:DescribeVolumesModifications",
+"ec2:ModifyVolume",</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"Cloud Manager のポリシーのページです"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="共有awsサブネットでのhaペアの導入をサポートします">共有AWSサブネットでのHAペアの導入をサポートします</h4>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 9.11.1では、AWS VPC共有がサポートされています。このリリースのコネクタでは、APIを使用するときにAWS共有サブネットにHAペアを導入できます。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-deploy-aws-shared-vpc.html">"共有サブネットにHAペアを導入する方法について説明します"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="サービスエンドポイントを使用する場合はネットワークアクセスが制限されます">サービスエンドポイントを使用する場合は、ネットワークアクセスが制限されます</h4>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP とストレージアカウント間の接続にVNetサービスエンドポイントを使用する際に、Cloud Managerはネットワークアクセスを制限するようになりました。Azure Private Link接続を無効にすると、Cloud Managerはサービスエンドポイントを使用します。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-enabling-private-link.html">"Cloud Volumes ONTAP でのAzureプライベートリンク接続の詳細については、こちらをご覧ください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="google-cloudでのstorage-vmの作成がサポートされます">Google CloudでのStorage VMの作成がサポートされます</h4>
+<div class="paragraph">
+<p>Google CloudのCloud Volumes ONTAP では、9.11.1リリース以降、複数のStorage VMがサポートされています。このリリースのコネクタから、Cloud Managerを使用して、Google CloudのCloud Volumes ONTAP HAペアにStorage VMを作成できます。</p>
+</div>
+<div class="paragraph">
+<p>Storage VMの作成をサポートするには、次のコネクタに対する新しいGoogle Cloud権限が必要です。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">- compute.instanceGroups.get
+- compute.addresses.get</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ONTAP CLIまたはSystem Managerを使用して、シングルノードシステムにStorage VMを作成する必要があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits" target="_blank" rel="noopener">"Google CloudのStorage VMの制限に関する詳細を確認できます"</a></p>
+</li>
+<li>
+<p><a href="task-managing-svms-gcp.html">"Google CloudでCloud Volumes ONTAP 向けのデータ提供用Storage VMを作成する方法をご確認ください"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年5月2日-3">2022年5月2日</h3>
 <div class="paragraph">
 <p>コネクタの3.9.18リリースでは、次の変更が加えられました。</p>
@@ -1391,21 +1501,6 @@
 </div>
 <div class="paragraph">
 <p><a href="https://cloud.netapp.com/pricing" target="_blank" rel="noopener">"WORM ストレージの価格設定については、こちらをご覧ください"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-2-月-27-日-2">2022 年 2 月 27 日</h3>
-<div class="paragraph">
-<p>コネクタの3.9.16リリースでは、次の変更が加えられました。</p>
-</div>
-<div class="sect3">
-<h4 id="ボリュームウィザードの再設計">ボリュームウィザードの再設計</h4>
-<div class="paragraph">
-<p>特定のアグリゲートに * Advanced allocation * オプションからボリュームを作成するときに、新しいボリューム作成ウィザードを使用できるようになりました。</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html">"特定のアグリゲートにボリュームを作成する方法について説明します"</a>。</p>
 </div>
 </div>
 </div>
@@ -1635,12 +1730,12 @@
 <h2 id="オンプレミスの-ontap-クラスタ">オンプレミスの ONTAP クラスタ</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="2022年6月7日-2">2022年6月7日</h3>
+<h3 id="2022年6月7日-3">2022年6月7日</h3>
 <div class="paragraph">
 <p>コネクタの3.9.19リリースでは、次の変更が加えられました。</p>
 </div>
 <div class="sect3">
-<h4 id="新しい詳細ビュー">新しい詳細ビュー</h4>
+<h4 id="新しい詳細ビュー-2">新しい詳細ビュー</h4>
 <div class="paragraph">
 <p>オンプレミスのONTAP クラスタに対して高度な管理を実行する必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用できます。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。</p>
 </div>
@@ -1653,7 +1748,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="2022-年-2-月-27-日-3">2022 年 2 月 27 日</h3>
+<h3 id="2022-年-2-月-27-日-2">2022 年 2 月 27 日</h3>
 <div class="sect3">
 <h4 id="社内-ontap-タブはデジタルウォレットで使用できます">「社内 ONTAP 」タブはデジタルウォレットで使用できます。</h4>
 <div class="paragraph">
