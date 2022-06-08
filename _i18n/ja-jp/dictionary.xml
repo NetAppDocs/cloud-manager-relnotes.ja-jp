@@ -121,7 +121,6 @@
   <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能</block>
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">検索とリストアの使用方法を説明します</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
-  <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">オーストラリアの個人データは、データセンスで新たに 4 種類識別できます</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
@@ -273,11 +272,6 @@
   <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。</block>
   <block id="eaf263597aafb24c99ce4e16af420ae8" category="inline-link">Cloud Manager のポリシーのページです</block>
   <block id="26dd25d183752a9f37249174f3d3ff89" category="paragraph">Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>。</block>
-  <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">コネクタ3.9.17</block>
-  <block id="dc45cdfe41bbcfa7f2d8bf1ed54a89ed" category="list-text">Cloud Manager に、環境で設定した IAM ロールを割り当てることでコネクタを作成できるようになりました。この認証方式は、 AWS のアクセスキーとシークレットキーを共有する場合よりも安全です。</block>
-  <block id="c1ef500163b033b0cacf87c830339c6e" category="inline-link">IAM ロールを使用してコネクタを作成する方法について説明します</block>
-  <block id="1d74a995b1a421dcb50976efb8094b21" category="paragraph"><block ref="f92b2fbbcca658498705715523d67bd6" category="inline-link-rx"></block>。</block>
-  <block id="1d99a1c8fadd3f9a537fec830e9791e0" category="list-text">このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。<block ref="66c4cd7232189d67ede2231e4ccd26ce" category="inline-link-rx"></block></block>
   <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
   <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tieringは、追加のクラスタ構成をサポートしています</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">これらのタイプのクラスタのライセンスを設定する方法を参照してください。</block>
@@ -484,4 +478,10 @@
   <block id="826610554423c9dc8481da631ccae8be" category="inline-link">オフラインサイトのStorageGRID にONTAP データをバックアップする方法を参照してください</block>
   <block id="824ce1955c2b2d5f91cb80c86545d639" category="paragraph"><block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>。<block ref="f39d73248b535226c2e16237e43ff2d0" category="inline-link-rx"></block>。</block>
   <block id="0a0c24e7fef8cd9bcb19d6db19987b93" category="paragraph">以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。Cloud Backupプロセスが1日に1回実行され、古いCloud Restoreインスタンスがすべて削除されます。この変更は完全に透過的に行われます。データへの影響はなく、バックアップジョブやリストアジョブの変更は通知されません。</block>
+  <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（バージョン1.13.1）</block>
+  <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（バージョン1.12.1）</block>
+  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（バージョン1.11.1）</block>
+  <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
+  <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
+  <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
 </blocks>
