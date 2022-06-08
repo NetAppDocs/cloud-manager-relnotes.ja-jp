@@ -101,21 +101,6 @@ Cloud Managerに追加したAWSクレデンシャルの各セットに、これ�
 
 
 
-=== 2022 年 4 月 3 日
-
-
-
-==== コネクタ3.9.17
-
-* Cloud Manager に、環境で設定した IAM ロールを割り当てることでコネクタを作成できるようになりました。この認証方式は、 AWS のアクセスキーとシークレットキーを共有する場合よりも安全です。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["IAM ロールを使用してコネクタを作成する方法について説明します"]。
-
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["これらの拡張機能について説明します"^]
-
-
-
-
 == Azure NetApp Files の特長
 
 
