@@ -481,7 +481,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 19:29:41 +0000">06/08/2022</time>
+    <time datetime="2022-06-09 16:06:05 +0000">06/09/2022</time>
     
   
 
@@ -525,7 +525,6 @@
 <li><a href="#2022年6月8日">2022年6月8日</a></li>
 <li><a href="#2022年5月2日-2">2022年5月2日</a></li>
 <li><a href="#2022-年-4-月-4-日">2022 年 4 月 4 日</a></li>
-<li><a href="#2022-年-3-月-3-日-2">2022 年 3 月 3 日</a></li>
 </ul>
 </li>
 <li><a href="#クラウドデータの意味">クラウドデータの意味</a>
@@ -918,6 +917,52 @@
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-data.html">"仮想マシンをクラウドに保護する方法については、こちらをご覧ください"</a>。</p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="クラウドのリストアインスタンスはontap-の参照とリストア機能では必要ありません">クラウドのリストアインスタンスは、ONTAP の参照とリストア機能では必要ありません</h4>
+<div class="paragraph">
+<p>S3およびBLOBストレージからのファイルレベルの参照およびリストア処理に必要な、別のCloud Restoreインスタンス/仮想マシン。このインスタンスは使用していないときにシャットダウンされますが、ファイルのリストアに時間とコストがかかります。この機能は、必要に応じてコネクタに導入される無償のコンテナに置き換えられました。これには、次の利点があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ファイルレベルのリストア処理のための追加コストは不要です</p>
+</li>
+<li>
+<p>ファイルレベルのリストア処理が高速化されます</p>
+</li>
+<li>
+<p>Connectorがオンプレミスにインストールされている場合のクラウドからのファイルの参照とリストアの処理がサポートされます</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="google-cloudおよびstoragegrid-ストレージからのファイルのサポートを参照してリストアできます">Google CloudおよびStorageGRID ストレージからのファイルのサポートを参照してリストアできます</h4>
+<div class="paragraph">
+<p>前述のように、参照および復元操作用のコンテナが追加されたことで、Google CloudおよびStorageGRID システムに保存されているバックアップファイルからファイルの復元操作を実行できるようになりました。現在は、参照とリストアを使用して、すべてのパブリッククラウドプロバイダとStorageGRID からファイルをリストアできます。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-browse-restore">"参照リストアを使用してONTAP バックアップからボリュームとファイルをリストアする方法を参照してください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ドラッグアンドドロップしてcloud-backup-to-s3ストレージを有効にします">ドラッグアンドドロップして、Cloud Backup to S3ストレージを有効にします</h4>
+<div class="paragraph">
+<p>バックアップのAmazon S3デスティネーションがキャンバス上の作業環境として存在する場合、オンプレミスのONTAP クラスタまたはCloud Volumes ONTAP システム（AWSにインストール）をAmazon S3作業環境にドラッグしてセットアップウィザードを開始できます。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーを自動的に適用します">Kubernetesクラスタ内に新しく作成されたボリュームにバックアップポリシーを自動的に適用します</h4>
+<div class="paragraph">
+<p>Cloud Backupをアクティブ化したあとにKubernetesクラスタに新しい永続ボリュームを追加した場合は、以前にそれらのボリュームのバックアップを忘れずに設定する必要がありました。新しく作成したボリュームに自動的に適用するポリシーを選択できます <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes">"[バックアップ設定</a>ページから選択します"] Cloud Backupをすでにアクティブ化しているクラスタの場合</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="cloud-backup-apiを使用してバックアップとリストアの処理を管理できるようになりました">Cloud Backup APIを使用して、バックアップとリストアの処理を管理できるようになりました</h4>
+<div class="paragraph">
+<p>APIはにあります <a href="https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html" class="bare">https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html</a>。を参照してください <a href="api-backup-restore.html">"このページです"</a> を参照してください。</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="2022年5月2日-2">2022年5月2日</h3>
@@ -961,7 +1006,7 @@
 <div class="sect3">
 <h4 id="cloud-backup-for-applications-1-1-0-snapcenter-搭載の-ga-版になりました">Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました</h4>
 <div class="paragraph">
-<p>新しい Cloud Backup for Applications 機能を使用すると、 Oracle および Microsoft SQL の既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージから AWS S3 または Azure Blob のクラウドオブジェクトストレージにオフロードできます。</p>
+<p>新しいCloud Backup for Applications機能を使用すると、OracleおよびMicrosoft SQLの既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージからAmazon S3またはAzure Blobのクラウドオブジェクトストレージにオフロードできます。</p>
 </div>
 <div class="paragraph">
 <p>必要に応じて、クラウドからオンプレミスへデータをリストアできます。</p>
@@ -975,19 +1020,6 @@
 <div class="paragraph">
 <p>ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore">"検索とリストアの使用方法を説明します"</a>。</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-3-月-3-日-2">2022 年 3 月 3 日</h3>
-<div class="sect3">
-<h4 id="gke-kubernetes-クラスタから-google-cloud-ストレージに永続ボリュームをバックアップする機能">GKE Kubernetes クラスタから Google Cloud ストレージに永続ボリュームをバックアップする機能</h4>
-<div class="paragraph">
-<p>ネットアップ Astra Trident がインストールされている GKE クラスタで、 Cloud Volumes ONTAP for GCP をクラスタのバックエンドストレージとして使用している場合は、 Google Cloud ストレージとの間で永続的ボリュームのバックアップとリストアを行うことができます。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-kubernetes-to-gcp.html">"詳細については、こちらをご覧ください"</a>。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="cloud-data-sense-を使用して-cloud-backup-ファイルをスキャンするベータ機能は本リリースでは廃止されました">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</h4>
-
 </div>
 </div>
 </div>
@@ -1084,7 +1116,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="cloud-data-sense-を使用して-cloud-backup-ファイルをスキャンするベータ機能は本リリースでは廃止されました-2">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</h4>
+<h4 id="cloud-data-sense-を使用して-cloud-backup-ファイルをスキャンするベータ機能は本リリースでは廃止されました">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</h4>
 
 </div>
 </div>
