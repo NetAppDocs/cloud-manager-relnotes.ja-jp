@@ -481,7 +481,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-09 16:06:05 +0000">06/09/2022</time>
+    <time datetime="2022-06-13 14:19:09 +0000">06/13/2022</time>
     
   
 
@@ -529,9 +529,9 @@
 </li>
 <li><a href="#クラウドデータの意味">クラウドデータの意味</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月12日">2022年6月12日</a></li>
 <li><a href="#2022年5月11日">2022年5月11日</a></li>
 <li><a href="#2022-年-4-月-5-日">2022 年 4 月 5 日</a></li>
-<li><a href="#2022-年-3-月-15-日">2022 年 3 月 15 日</a></li>
 </ul>
 </li>
 <li><a href="#cloud-sync">Cloud Sync</a>
@@ -596,9 +596,9 @@
 </li>
 <li><a href="#ランサムウェアからの保護">ランサムウェアからの保護</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月12日-2">2022年6月12日</a></li>
 <li><a href="#2022年5月11日-2">2022年5月11日</a></li>
-<li><a href="#2022-年-3-月-15-日-2">2022 年 3 月 15 日</a></li>
-<li><a href="#2022-年-2-月-9-日-2">2022 年 2 月 9 日</a></li>
+<li><a href="#2022-年-3-月-15-日">2022 年 3 月 15 日</a></li>
 </ul>
 </li>
 <li><a href="#レプリケーション">レプリケーション</a>
@@ -1028,6 +1028,45 @@
 <h2 id="クラウドデータの意味">クラウドデータの意味</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年6月12日">2022年6月12日</h3>
+<div class="sect3">
+<h4 id="data-investigationページから結果を-jsonレポートとしてダウンロードできるようになりました">Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました</h4>
+<div class="paragraph">
+<p>[データ調査]ページでデータをフィルタリングした後、データを.jsonファイルに保存してNFS共有にエクスポートできます。これにより、ローカルシステム上の.csvファイルにデータを保存することができます。データセンスにエクスポートアクセスのための正しい権限があることを確認します。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report">"Data Investigationページからレポートを作成する方法を参照してください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="データセンスuiからデータセンスをアンインストールする機能">データセンスUIからデータセンスをアンインストールする機能</h4>
+<div class="paragraph">
+<p>Data Senseをアンインストールして、ソフトウェアをホストから完全に削除することができます。クラウドの導入の場合は、Data Senseが導入されていた仮想マシン/インスタンスを削除します。インスタンスを削除すると、データセンスがスキャンしたインデックス情報がすべて完全に削除されます。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html">"方法を参照してください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="監査ログを使用してデータ検出によって実行されたアクションの履歴を追跡できるようになりました">監査ログを使用して、データ検出によって実行されたアクションの履歴を追跡できるようになりました</h4>
+<div class="paragraph">
+<p>監査ログは、データがスキャンしているすべての作業環境およびデータソースから、ファイルに対してデータが実行した管理アクティビティを追跡します。アクティビティには、ユーザが生成するアクティビティ（ファイルの削除、ポリシーの作成など）と生成されるポリシー（ファイルにラベルを自動的に追加するアクティビティ、ファイルを自動的に削除するアクティビティなど）があります。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html">"監査ログの詳細を確認してください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="データ調査ページの重要な識別子の数に対する新しいフィルタ">[データ調査]ページの重要な識別子の数に対する新しいフィルタ</h4>
+<div class="paragraph">
+<p>「Number of identifiers（識別子の数）」フィルタを使用すると、個人データと機密性の高い個人データの両方を含む、一定数の機密識別子を持つファイルをリストできます。1-10や501-1000などの範囲を選択すると、その数の機密識別子を含むファイルのみを表示できます。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page">"データの調査に使用できるすべてのフィルタのリストを確認します"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="これで作成した既存のポリシーを編集できるようになります">これで、作成した既存のポリシーを編集できるようになります</h4>
+<div class="paragraph">
+<p>以前に作成したカスタムポリシーに変更を加える必要がある場合は、新しいポリシーを作成する代わりにポリシーを編集できるようになりました。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies">"ポリシーの編集方法については、を参照してください"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年5月11日">2022年5月11日</h3>
 <div class="sect3">
 <h4 id="google-driveアカウントでのデータスキャンのサポートが追加されました">Google Driveアカウントでのデータスキャンのサポートが追加されました</h4>
@@ -1080,44 +1119,6 @@
 <div class="paragraph">
 <p>Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html">"詳細については、こちらをご覧ください"</a>。</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-3-月-15-日">2022 年 3 月 15 日</h3>
-<div class="sect3">
-<h4 id="新しいフィルタ特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します">新しいフィルタ：特定のユーザまたはグループに読み取りまたは書き込み権限があるファイルを表示します</h4>
-<div class="paragraph">
-<p>「ユーザ / グループの権限」という新しいフィルタが追加され、特定のユーザまたはグループの読み取り / 書き込み権限を持つファイルを一覧表示できるようになりました。1つ以上のユーザ名またはグループ名を選択するか、または名前の一部を入力できます。この機能は、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files 、 Amazon FSX for ONTAP 、およびファイル共有のボリュームで使用できます。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="データセンスを使用すると-sharepoint-アカウントと-onedrive-アカウントのファイルに対する権限を決定できます">データセンスを使用すると、 SharePoint アカウントと OneDrive アカウントのファイルに対する権限を決定できます</h4>
-<div class="paragraph">
-<p>データセンスでは、 OneDrive アカウントと SharePoint アカウントでスキャン中のファイルに存在するアクセス許可を読み取ることができます。この情報は、ファイルの [ 調査 ] ペインの詳細、およびガバナンスダッシュボードの [ アクセス許可を開く ] 領域に表示されます。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="追加の-2-種類の個人データはデータセンスで識別できます">追加の 2 種類の個人データは、データセンスで識別できます</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>フランスの INSEE - INSEE コードは、フランス国立統計経済研究所（ INSEE ）がさまざまなエンティティを識別するために使用する数値コードです。</p>
-</li>
-<li>
-<p>パスワード - この情報は、英数字の文字列の横にある「 password 」という単語を検索して、近接性検証を使用して識別されます。見つかったアイテムの数は、コンプライアンスダッシュボードの [ 個人の結果 ] の下に表示されます。［ 調査 ］ ペインでパスワードを含むファイルを検索するには、 ［ フィルタ * 個人データ ］ &gt; ［ パスワード * ］ を使用します。</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="ダークサイトに導入した場合-onedrive-と-sharepoint-のデータをスキャンできます">ダークサイトに導入した場合、 OneDrive と SharePoint のデータをスキャンできます</h4>
-<div class="paragraph">
-<p>インターネットにアクセスできないオンプレミスサイトのホストに Cloud Data Sense を導入した場合、 OneDrive アカウントまたは SharePoint アカウントからローカルデータをスキャンできるようになりました。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements">"次のエンドポイントへのアクセスを許可する必要があります。"</a></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="cloud-data-sense-を使用して-cloud-backup-ファイルをスキャンするベータ機能は本リリースでは廃止されました">Cloud Data Sense を使用して Cloud Backup ファイルをスキャンするベータ機能は、本リリースでは廃止されました</h4>
-
 </div>
 </div>
 </div>
@@ -1806,11 +1807,32 @@
 <h2 id="ランサムウェアからの保護">ランサムウェアからの保護</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年6月12日-2">2022年6月12日</h3>
+<div class="sect3">
+<h4 id="nasファイルシステムの監査ステータスがontap-storage-vmに対して追跡されるようになりました">NASファイルシステムの監査ステータスがONTAP Storage VMに対して追跡されるようになりました</h4>
+<div class="paragraph">
+<p>作業環境内のストレージVMの40%未満でファイルシステムの監査が有効になっている場合、_Cyber Resilience Map_にアラートが追加されます。ONTAP イベントとNFSイベントを追跡および監査ログに記録していないSVMの正確な数は、_harden your environment_panelで確認できます。そのうえで、SVMで監査を有効にするかどうかを判断できます。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました">ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました</h4>
+<div class="paragraph">
+<p>この情報は、以前にONTAP 環境パネルを強化する_オンプレミスのONTAP システムについて報告されていました。 しかし、搭載されたアンチランサムウェア機能がボリュームの40%未満でオンになると、ダッシュボードでこの情報を確認できるように、_Cyber Resilience Map_でアラートが報告されるようになりました。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ontap-システムのfsxがボリュームスナップショットの有効化のために追跡されるようになりました">ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました</h4>
+<div class="paragraph">
+<p>_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年5月11日-2">2022年5月11日</h3>
 <div class="sect3">
 <h4 id="ontap-環境のセキュリティ強化を追跡する新しいパネル">ONTAP 環境のセキュリティ強化を追跡する新しいパネル。</h4>
 <div class="paragraph">
-<p>新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"</a> およびを参照してください <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"ONTAP ランサムウェア対策機能"</a> これにより、異常なアクティビティをプロアクティブに検出して警告します。</p>
+<p>新しいパネル_ ONTAP 環境の強化_導入環境の安全性を追跡するONTAP システムの特定の設定の状態を提供します <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"</a> およびを参照してください <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"ONTAP ランサムウェア対策機能"</a> これにより、異常なアクティビティをプロアクティブに検出して警告します。</p>
 </div>
 <div class="paragraph">
 <p>推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。 <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening">"詳細については、こちらをご覧ください"</a>。</p>
@@ -1819,34 +1841,22 @@
 <div class="sect3">
 <h4 id="cloud-backup-を使用してさまざまなカテゴリのデータを保護する方法については新しいパネルを参照してください">Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。</h4>
 <div class="paragraph">
-<p>この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。 <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data">"詳細については、こちらをご覧ください"</a>。</p>
+<p>このNew_Backup Status_panelでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を示しています。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。 <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data">"詳細については、こちらをご覧ください"</a>。</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="2022-年-3-月-15-日-2">2022 年 3 月 15 日</h3>
+<h3 id="2022-年-3-月-15-日">2022 年 3 月 15 日</h3>
 <div class="sect3">
 <h4 id="ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル">ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル</h4>
 <div class="paragraph">
-<p>新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data">"詳細については、こちらをご覧ください"</a>。</p>
+<p>新しいパネル_ビジネスクリティカルデータアクセス権分析_ビジネスに不可欠なデータのアクセス権ステータスを表示しますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data">"詳細については、こちらをご覧ください"</a>。</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="アクセス許可-領域に-onedrive-アカウントと-sharepoint-アカウントが含まれるようになりました">[ アクセス許可 ] 領域に OneDrive アカウントと SharePoint アカウントが含まれるようになりました</h4>
 <div class="paragraph">
 <p>ランサムウェア対策保護ダッシュボードの [ 開くアクセス許可 ] 領域に、 OneDrive アカウントと SharePoint アカウントでスキャンされるファイルに存在するアクセス許可が表示されるようになりました。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-2-月-9-日-2">2022 年 2 月 9 日</h3>
-<div class="sect3">
-<h4 id="新たなランサムウェア対策サービス">新たなランサムウェア対策サービス</h4>
-<div class="paragraph">
-<p>新しいランサムウェア防御サービスでは、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価することができます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html">"この新しいサービスの詳細については、こちらをご覧ください"</a>。</p>
 </div>
 </div>
 </div>
