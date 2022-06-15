@@ -481,7 +481,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-13 14:19:09 +0000">06/13/2022</time>
+    <time datetime="2022-06-15 13:55:08 +0000">06/15/2022</time>
     
   
 
@@ -522,6 +522,7 @@
 </li>
 <li><a href="#クラウドバックアップ">クラウドバックアップ</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月14日">2022年6月14日</a></li>
 <li><a href="#2022年6月8日">2022年6月8日</a></li>
 <li><a href="#2022年5月2日-2">2022年5月2日</a></li>
 <li><a href="#2022-年-4-月-4-日">2022 年 4 月 4 日</a></li>
@@ -907,6 +908,18 @@
 <h2 id="クラウドバックアップ">クラウドバックアップ</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年6月14日">2022年6月14日</h3>
+<div class="sect3">
+<h4 id="インターネットにアクセスできないサイトのオンプレミスontap-クラスタデータをバックアップするサポートが追加されました">インターネットにアクセスできないサイトのオンプレミスONTAP クラスタデータをバックアップするサポートが追加されました</h4>
+<div class="paragraph">
+<p>オンプレミスのONTAP クラスタが、インターネットにアクセスできないサイト（ダークサイトまたはオフラインサイトとも呼ばれます）にある場合は、Cloud Backupを使用して、同じサイトにあるNetApp StorageGRID システムにボリュームデータをバックアップできるようになりました。この機能を使用するには、Cloud Manager Connector（バージョン3.9.19以降）もオフラインサイトに導入する必要があります。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html">"コネクターをオフラインサイトにインストールする方法を参照してください"</a>。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["オフラインサイトのStorageGRID にONTAP データをバックアップする方法を参照してください"]。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月8日">2022年6月8日</h3>
 <div class="sect3">
 <h4 id="cloud-backup-for-virtual-machines-1-1-0のga版になりました">Cloud Backup for Virtual Machines 1.1.0のGA版になりました</h4>
@@ -936,7 +949,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。</p>
+<p>以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。Cloud Backupプロセスが1日に1回実行され、古いCloud Restoreインスタンスがすべて削除されます。この変更は完全に透過的に行われます。データへの影響はなく、バックアップジョブやリストアジョブの変更は通知されません。</p>
 </div>
 </div>
 <div class="sect3">
