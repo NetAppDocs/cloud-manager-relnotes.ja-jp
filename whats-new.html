@@ -473,7 +473,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-24 20:47:05 +0000">06/24/2022</time>
+    <time datetime="2022-06-28 21:27:39 +0000">06/28/2022</time>
     
   
 
@@ -485,9 +485,9 @@
 <ul class="sectlevel1">
 <li><a href="#管理機能">管理機能</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月28日">2022年6月28日</a></li>
 <li><a href="#2022年6月7日">2022年6月7日</a></li>
 <li><a href="#2022年5月12日">2022年5月12日</a></li>
-<li><a href="#2022年5月2日">2022年5月2日</a></li>
 </ul>
 </li>
 <li><a href="#azure-netapp-files-の特長">Azure NetApp Files の特長</a>
@@ -515,7 +515,7 @@
 <ul class="sectlevel2">
 <li><a href="#2022年6月14日">2022年6月14日</a></li>
 <li><a href="#2022年6月8日">2022年6月8日</a></li>
-<li><a href="#2022年5月2日-2">2022年5月2日</a></li>
+<li><a href="#2022年5月2日">2022年5月2日</a></li>
 <li><a href="#2022-年-4-月-4-日">2022 年 4 月 4 日</a></li>
 </ul>
 </li>
@@ -543,7 +543,7 @@
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
 <li><a href="#2022年6月7日-2">2022年6月7日</a></li>
-<li><a href="#2022年5月2日-3">2022年5月2日</a></li>
+<li><a href="#2022年5月2日-2">2022年5月2日</a></li>
 <li><a href="#2022-年-4-月-3-日-2">2022 年 4 月 3 日</a></li>
 </ul>
 </li>
@@ -621,6 +621,27 @@
 <p>このセクションでは、 Cloud Manager の管理機能に関連する新機能として、アカウント、コネクタ、クラウドプロバイダのクレデンシャルなどについて説明します。</p>
 </div>
 <div class="sect2">
+<h3 id="2022年6月28日">2022年6月28日</h3>
+<div class="sect3">
+<h4 id="ネットアップのクレデンシャルでログインします">ネットアップのクレデンシャルでログインします</h4>
+<div class="paragraph">
+<p>新規ユーザがCloud Centralに登録する際に、「ネットアップでログイン」オプションを選択して、ネットアップサポートサイトのクレデンシャルを使用してログインできるようになりました。Eメールアドレスとパスワードを入力する代わりに使用できます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-relnotes/images/note.svg" alt="注記">
+</td>
+<td class="content">
+Eメールアドレスとパスワードを使用する既存のログインでは、このログイン方法を使用し続ける必要があります。ネットアップでログインするオプションは、新規ユーザがサインアップする際に使用できます。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月7日">2022年6月7日</h3>
 <div class="sect3">
 <h4 id="コネクタ3-9-19">コネクタ3.9.19</h4>
@@ -658,68 +679,6 @@
 <h4 id="コネクタ3-9-18パッチ">コネクタ3.9.18パッチ</h4>
 <div class="paragraph">
 <p>コネクタを更新し、バグ修正を実施しました。最も注目すべき解決策は、問題 が共有VPC内にある場合にGoogle CloudでのCloud Volumes ONTAP の導入に影響するというものです。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022年5月2日">2022年5月2日</h3>
-<div class="sect3">
-<h4 id="コネクタ3-9-18">コネクタ3.9.18</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Connectorは、次のGoogle Cloudリージョンでサポートされるようになりました。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>デリー（アジア-サウス2）</p>
-</li>
-<li>
-<p>メルボルン（オーストラリア-スモアカス2）</p>
-</li>
-<li>
-<p>ミラノ（ヨーロッパ-西8）</p>
-</li>
-<li>
-<p>サンティアゴ（サウスメリカ-西1）</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"サポートされているリージョンの完全なリストを表示します"</a></p>
-</div>
-</li>
-<li>
-<p>Connectorで使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。</p>
-<div class="paragraph">
-<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png" alt="サービスアカウントフィールドのスクリーンショット"></span></p>
-</div>
-</li>
-<li>
-<p>をサポートするOSでVMインスタンス上のGoogle CloudのConnectorを認定しました <a href="https://cloud.google.com/compute/shielded-vm/docs/shielded-vm" target="_blank" rel="noopener">"シールドVM機能"</a></p>
-</li>
-<li>
-<p>このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張も含まれています。 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022" target="_blank" rel="noopener">"これらの拡張機能について説明します"</a></p>
-</li>
-<li>
-<p>ConnectorでCloud Volumes ONTAP を導入するには、新しいAWS権限が必要です。</p>
-<div class="paragraph">
-<p>単一のAvailability Zone（AZ；アベイラビリティゾーン）にHAペアを導入する際にAWS分散配置グループを作成するためには、次の権限が必要です。</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">"ec2:DescribePlacementGroups",
-"iam:GetRolePolicy",</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。</p>
-</div>
-<div class="paragraph">
-<p>Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"Cloud Manager のポリシーのページです"</a>。</p>
-</div>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -951,7 +910,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="2022年5月2日-2">2022年5月2日</h3>
+<h3 id="2022年5月2日">2022年5月2日</h3>
 <div class="sect3">
 <h4 id="google-cloud-storageのバックアップファイルで検索とリストアがサポートされるようになりました">Google Cloud Storageのバックアップファイルで検索とリストアがサポートされるようになりました</h4>
 <div class="paragraph">
@@ -1375,7 +1334,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="2022年5月2日-3">2022年5月2日</h3>
+<h3 id="2022年5月2日-2">2022年5月2日</h3>
 <div class="paragraph">
 <p>コネクタの3.9.18リリースでは、次の変更が加えられました。</p>
 </div>
