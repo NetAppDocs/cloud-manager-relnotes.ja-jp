@@ -114,11 +114,7 @@
   <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能</block>
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">検索とリストアの使用方法を説明します</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
-  <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">オーストラリアの個人データは、データセンスで新たに 4 種類識別できます</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
-  <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">データセンスでは、オーストラリア TFN ( 税ファイル番号 ) 、オーストラリア運転免許証番号、オーストラリア医薬品番号、オーストラリアパスポート番号を含むファイルを識別し、分類することができます。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
-  <block id="0387123627dfe002c7435c0101983f19" category="section-title">グローバル Active Directory サーバを LDAP サーバとして使用できるようになりました</block>
-  <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">Data Sense と統合するグローバル Active Directory サーバは、以前にサポートされていた DNS サーバに加えて、 LDAP サーバにすることができます。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
   <block id="33c34b75ae4154295ed3cdeeccb3fd6a" category="section-title">データブローカーグループの機能拡張</block>
@@ -437,7 +433,6 @@
   <block id="0a0c24e7fef8cd9bcb19d6db19987b93" category="paragraph">以前に使用していた場合は、Cloud Restoreインスタンス/VMが自動的に削除されることに注意してください。Cloud Backupプロセスが1日に1回実行され、古いCloud Restoreインスタンスがすべて削除されます。この変更は完全に透過的に行われます。データへの影響はなく、バックアップジョブやリストアジョブの変更は通知されません。</block>
   <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（バージョン1.13.1）</block>
   <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（バージョン1.12.1）</block>
-  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（バージョン1.11.1）</block>
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
@@ -509,4 +504,19 @@
   <block id="26317664fb1c4e8b3a500a7b1e46a4e7" category="inline-link-macro">Astra Tridentをインストールして管理</block>
   <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
   <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</block>
+  <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日（バージョン1.14）</block>
+  <block id="45b5235b8c737e18e646514c30664517" category="section-title">これで、ディレクトリにアクセスできるユーザとグループを表示できます</block>
+  <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">フォルダおよびファイル共有にアクセスできるユーザとグループを表示する方法について説明します</block>
+  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">これまでは、個々のファイルに付与されているオープンアクセス権のタイプを表示できました。これで、ディレクトリ（フォルダおよびファイル共有）にアクセスできるすべてのユーザまたはグループ、およびディレクトリにアクセスできる権限のタイプのリストが表示されます。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
+  <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">リポジトリのスキャンを一時停止すると'特定のコンテンツのスキャンを一時的に停止できます</block>
+  <block id="1c32547b30cc36869742df049964326d" category="inline-link">スキャンを一時停止および再開する方法を参照してください</block>
+  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">スキャンを一時停止すると、ボリュームやバケットへの追加や変更はデータスキャンを実行できなくなりますが、現在の結果はすべてシステムで使用できるようになります。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
+  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">3つの追加状態からのUSドライバーのライセンスデータは、データセンスで識別できます</block>
+  <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">データセンスは、インディアナ、ニューヨーク、テキサスの運転免許証データを含むファイルを識別して分類できます。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">ポリシーは、検索条件に一致するディレクトリを返すようになりました</block>
+  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">ポリシーの作成の詳細については、こちらをご覧ください</block>
+  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">以前は、カスタムポリシーを作成したときに、検索条件に一致したファイルが結果に表示されていました。これで、クエリに一致するディレクトリ（フォルダおよびファイル共有）も結果に表示されます。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
+  <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">データセンスでは、一度に最大100,000個のファイルを移動できます</block>
+  <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">データセンスを使用してファイルを移動する方法をご覧ください</block>
+  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
 </blocks>
