@@ -39,7 +39,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Cloud ManagerからEメールで通知を送信するように設定できるようになりました。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。
 +
-link:task-monitor-cm-operations.html["アカウントでの操作の監視の詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["アカウントでの操作の監視の詳細については、こちらをご覧ください"]。
 
 * Cloud Managerでは、Amazon S3のサポートと同様に、Azure Blob StorageとGoogle Cloud Storageが作業環境としてサポートされるようになりました。
 +
@@ -159,6 +159,20 @@ Cloud Manager では、ボリューム Snapshot を作成、削除、リスト�
 
 
 
+=== 2022年7月3日
+
+* 単一または複数のアベイラビリティゾーンHA導入モデルを選択できるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["ONTAP 作業環境用の FSX を作成します"]
+
+* AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["IAM ロールを設定します"]
+
+
+
+
+
 === 2022 年 2 月 27 日
 
 
@@ -184,22 +198,6 @@ Cloud Manager API を使用して FSX for ONTAP 用の iSCSI ボリュームを�
 ==== ボリュームの作成時にボリュームの単位を選択します
 
 可能です link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します"] FSX for ONTAP の場合。
-
-
-
-=== 2021 年 10 月 4 日
-
-
-
-==== Cloud Manager を使用して CIFS ボリュームを作成
-
-できるようになりました。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Cloud Manager を使用して、 FSX for ONTAP に CIFS ボリュームを作成します"]。
-
-
-
-==== Cloud Manager を使用してボリュームを編集
-
-できるようになりました。 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["Cloud Manager を使用して ONTAP ボリュームの FSX を編集します"]。
 
 
 
@@ -1001,6 +999,20 @@ GFC ライセンス登録ページに、ネットアップのサブスクリプ�
 
 
 
+=== 2022年7月3日
+
+* Tridentオペレータを使用してAstra Tridentを導入した場合、Cloud Managerで最新バージョンのAstra Tridentにアップグレードできるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Tridentをインストールして管理"]
+
+* KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを追加します"]
+
+
+
+
+
 === 2022年6月6日
 
 Cloud ManagerがバックエンドストレージとしてAmazon FSX for ONTAP をサポートするようになりました。
@@ -1016,25 +1028,6 @@ Cloud ManagerがバックエンドストレージとしてAmazon FSX for ONTAP �
 KubernetesクラスタをドラッグしてCloud Volumes ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。
 
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを追加します"]
-
-
-
-=== 2022 年 4 月 4 日
-
-
-
-==== Cloud Manager のリソースページを使用して Kubernetes クラスタを管理
-
-Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。新しい link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["クイックスタート"] すぐに運用を開始できます。
-
-クラスタリソースのページで次の操作を実行できるようになりました。
-
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Trident をインストール"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["ストレージクラスを追加する"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["クラスタを削除"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["データサービスを有効化"]
-
 
 
 

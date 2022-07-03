@@ -94,13 +94,6 @@
   <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">ボリュームの作成時にボリュームの単位を選択します</block>
   <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します</block>
   <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">可能です <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> FSX for ONTAP の場合。</block>
-  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021 年 10 月 4 日</block>
-  <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">Cloud Manager を使用して CIFS ボリュームを作成</block>
-  <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">Cloud Manager を使用して、 FSX for ONTAP に CIFS ボリュームを作成します</block>
-  <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">できるようになりました。 <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>。</block>
-  <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">Cloud Manager を使用してボリュームを編集</block>
-  <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">Cloud Manager を使用して ONTAP ボリュームの FSX を編集します</block>
-  <block id="b233fccd6a0e80b0628c8b760f808f80" category="paragraph">できるようになりました。 <block ref="4f9c429b7c1519954500e41db7985c1c" category="inline-link-macro-rx"></block>。</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">2022 年 3 月 3 日</block>
   <block id="400480e0d45c783abec0a0fffbb005a6" category="section-title">テンプレートを作成して、特定の作業環境を検索できるようになりました</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">詳細については、こちらをご覧ください</block>
@@ -180,20 +173,6 @@
   <block id="8703dd42c4c647846ef556f4d8459d59" category="section-title">OpenSSL モジュールがバージョン 1.1.1k にアップグレードされました。</block>
   <block id="513502857f15915e7acef1b7916eda1b" category="section-title">ライセンス登録ページが更新されました。</block>
   <block id="9993afe041a131f763bfa71520f8d27d" category="paragraph">GFC ライセンス登録ページに、ネットアップのサブスクリプションを通じてライセンスをアクティブ化したときに表示されるライセンス数が追加されました。</block>
-  <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">Cloud Manager のリソースページを使用して Kubernetes クラスタを管理</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">クイックスタート</block>
-  <block id="a84f0102d02caeeb1c0e554f032c6e35" category="paragraph">Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。新しい <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> すぐに運用を開始できます。</block>
-  <block id="4e9fabf2f81510967e324cfc9c54b640" category="paragraph">クラスタリソースのページで次の操作を実行できるようになりました。</block>
-  <block id="f1fe71442cd08e74d342114df7ee1551" category="inline-link-macro">Astra Trident をインストール</block>
-  <block id="b4940c8b54941154dff3675bb279c96f" category="list-text"><block ref="b4940c8b54941154dff3675bb279c96f" category="inline-link-macro-rx"></block></block>
-  <block id="fd0987c679e587c89c7d5551c641f09e" category="inline-link-macro">ストレージクラスを追加する</block>
-  <block id="be2f7669a1d3d4dec877a85297de18ec" category="list-text"><block ref="be2f7669a1d3d4dec877a85297de18ec" category="inline-link-macro-rx"></block></block>
-  <block id="260adbf21b473e18ea0788235c9512b8" category="inline-link-macro">永続ボリュームを表示します</block>
-  <block id="6a38c17b4adfb6fade3691d6bab9976a" category="list-text"><block ref="6a38c17b4adfb6fade3691d6bab9976a" category="inline-link-macro-rx"></block></block>
-  <block id="f253fdd547a6f5e0e05bbdb671ae8b24" category="inline-link-macro">クラスタを削除</block>
-  <block id="aa7542e939f8e623254af69a1fcd8e2b" category="list-text"><block ref="aa7542e939f8e623254af69a1fcd8e2b" category="inline-link-macro-rx"></block></block>
-  <block id="41e3782291be693bb1f948094d98229d" category="inline-link-macro">データサービスを有効化</block>
-  <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
   <block id="ef1bf4095b622ba80ac24b48b8e45eac" category="section-title">2022 年 1 月 11 日</block>
   <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021 年 8 月 1 日</block>
   <block id="f9564bccd9f6164dfb5486c5fe5ff233" category="section-title">Acquisition Unit の名前に変更します</block>
@@ -472,7 +451,6 @@
   <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">Cloud Managerの新しい左側のナビゲーションメニューを示すスクリーンショット。</block>
   <block id="e37234425776295f1624526d17572b8e" category="list-text">Cloud ManagerからEメールで通知を送信するように設定できるようになりました。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。</block>
   <block id="2f439d7fd2d68628b2c40e59bc7ec352" category="inline-link-macro">アカウントでの操作の監視の詳細については、こちらをご覧ください</block>
-  <block id="8fe400bbcf74fee5f6ca96b5d06fd8a8" category="paragraph"><block ref="6207ce0a1413f0c60f2c0a13a1fde26f" category="inline-link-macro-rx"></block>。</block>
   <block id="0f9a1f2b52f5c8456ca5d25ab69eea52" category="list-text">Cloud Managerでは、Amazon S3のサポートと同様に、Azure Blob StorageとGoogle Cloud Storageが作業環境としてサポートされるようになりました。</block>
   <block id="5134e5a3a5a026f57f4938b2eaa07031" category="paragraph">AzureまたはGoogle Cloudにコネクタをインストールすると、Connectorがインストールされているプロジェクトで、AzureサブスクリプションまたはGoogle Cloud StorageのAzure Blob Storageに関する情報がCloud Managerで自動的に検出されるようになりました。Cloud Managerにはオブジェクトストレージが作業環境として表示され、この環境を開いて詳細情報を確認することができます。</block>
   <block id="a2f44a550843ebb8ee7fe06e85e5d378" category="paragraph">Azure Blob作業環境の例は次のとおりです。</block>
@@ -520,4 +498,15 @@
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="16d18a6af4e3eb041715aa5c571b4c92" category="paragraph">&lt;stdin&gt;で未解決のディレクティブ: https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]</block>
+  <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
+  <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">単一または複数のアベイラビリティゾーンHA導入モデルを選択できるようになりました。</block>
+  <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">ONTAP 作業環境用の FSX を作成します</block>
+  <block id="28d4a8073a683a018eec6bfdec63098f" category="paragraph"><block ref="28d4a8073a683a018eec6bfdec63098f" category="inline-link-macro-rx"></block></block>
+  <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。</block>
+  <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">IAM ロールを設定します</block>
+  <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
+  <block id="3b5790878c6505820d5eed0428e827bb" category="list-text">Tridentオペレータを使用してAstra Tridentを導入した場合、Cloud Managerで最新バージョンのAstra Tridentにアップグレードできるようになりました。</block>
+  <block id="26317664fb1c4e8b3a500a7b1e46a4e7" category="inline-link-macro">Astra Tridentをインストールして管理</block>
+  <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
+  <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</block>
 </blocks>
