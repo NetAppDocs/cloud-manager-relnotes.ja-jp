@@ -506,7 +506,6 @@
   <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">デジタルウォレット</block>
   <block id="d5503d6062daaaa4326462970164cbac" category="paragraph">デジタルウォレットに、アカウントで消費された合計容量とライセンスパッケージで消費された容量が表示されるようになりました。この情報は、料金の支払い方法や、容量の追加購入が必要かどうかを把握するのに役立ちます。</block>
   <block id="232ac716fdabb7e9b9ba7c3a108574a7" category="inline-image-macro">容量ベースのライセンスのデジタルウォレットページを示すスクリーンショット。アカウントの使用済み容量の概要が表示され、ライセンスパッケージ別に容量が表示されます。</block>
-  <block id="25151b376af0a0b205be15ab92b4cd97" category="paragraph"><block ref="25151b376af0a0b205be15ab92b4cd97" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9c05beb7c27c53dc1cb952afddea3ac" category="section-title">Elastic Volumesの機能拡張</block>
   <block id="119ffefd11e6681de49e316bc16a471d" category="paragraph">Cloud Managerで、ユーザインターフェイスからCloud Volumes ONTAP の作業環境を作成する際に、Amazon EBS Elastic Volumes機能がサポートされるようになりました。Elastic Volumes機能は、GP3またはio1ディスクを使用している場合、デフォルトで有効になっています。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。</block>
   <block id="0c5741d0ec0127a10c28f7c82579da32" category="inline-link-macro">Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください</block>
@@ -514,9 +513,11 @@
   <block id="7fb4d101a5e000398c4d5b4c48b802a6" category="section-title">AWSのONTAP S3ライセンス</block>
   <block id="e1d7a3ee89947f3549d385865ef27dda" category="paragraph">バージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムには、AWSにONTAP S3ライセンスが自動的にインストールされるようになりました。</block>
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します</block>
-  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>。</block>
   <block id="c86d179c90248acd6ebdba05bd94320c" category="section-title">Azure Cloudリージョンが新たにサポートされます</block>
   <block id="c55cc410beff8f86afc3ba8027b681f7" category="paragraph">9.10.1リリース以降、Azure West US 3リージョンでCloud Volumes ONTAP がサポートされるようになりました。</block>
   <block id="1a3362a1b5304a4e1e1112496974b9ae" category="section-title">AzureのONTAP S3ライセンス</block>
   <block id="e29ddfe6afa32fb2c96c8682f4ca73e8" category="paragraph">バージョン9.9.1以降を実行している新規および既存のCloud Volumes ONTAP システムに、Cloud ManagerによってONTAP S3ライセンスがAzureに自動的にインストールされるようになりました。</block>
+  <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
+  <block id="16d18a6af4e3eb041715aa5c571b4c92" category="paragraph">&lt;stdin&gt;で未解決のディレクティブ: https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]</block>
 </blocks>
