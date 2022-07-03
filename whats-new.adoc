@@ -695,7 +695,7 @@ link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳�
 
 ==== AWSのONTAP S3ライセンス
 
-バージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムには、AWSにONTAP S3ライセンスが自動的にインストールされるようになりました。
+AWSでバージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
 
@@ -711,7 +711,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP で�
 
 ==== AzureのONTAP S3ライセンス
 
-バージョン9.9.1以降を実行している新規および既存のCloud Volumes ONTAP システムに、Cloud ManagerによってONTAP S3ライセンスがAzureに自動的にインストールされるようになりました。
+バージョン9.9.1以降を実行する新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
 

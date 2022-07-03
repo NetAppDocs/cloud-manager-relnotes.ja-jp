@@ -484,12 +484,10 @@
   <block id="0c5741d0ec0127a10c28f7c82579da32" category="inline-link-macro">Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください</block>
   <block id="3cc8cd9bef921086f444d55cf1ea25c6" category="paragraph"><block ref="a2865c7bad4b206df6582ad55cba915e" category="inline-link-macro-rx"></block>。</block>
   <block id="7fb4d101a5e000398c4d5b4c48b802a6" category="section-title">AWSのONTAP S3ライセンス</block>
-  <block id="e1d7a3ee89947f3549d385865ef27dda" category="paragraph">バージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムには、AWSにONTAP S3ライセンスが自動的にインストールされるようになりました。</block>
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します</block>
   <block id="c86d179c90248acd6ebdba05bd94320c" category="section-title">Azure Cloudリージョンが新たにサポートされます</block>
   <block id="c55cc410beff8f86afc3ba8027b681f7" category="paragraph">9.10.1リリース以降、Azure West US 3リージョンでCloud Volumes ONTAP がサポートされるようになりました。</block>
   <block id="1a3362a1b5304a4e1e1112496974b9ae" category="section-title">AzureのONTAP S3ライセンス</block>
-  <block id="e29ddfe6afa32fb2c96c8682f4ca73e8" category="paragraph">バージョン9.9.1以降を実行している新規および既存のCloud Volumes ONTAP システムに、Cloud ManagerによってONTAP S3ライセンスがAzureに自動的にインストールされるようになりました。</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="16d18a6af4e3eb041715aa5c571b4c92" category="paragraph">&lt;stdin&gt;で未解決のディレクティブ: https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]</block>
@@ -519,4 +517,6 @@
   <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">データセンスでは、一度に最大100,000個のファイルを移動できます</block>
   <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">データセンスを使用してファイルを移動する方法をご覧ください</block>
   <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
+  <block id="8152540df51584ebf79193211a381d46" category="paragraph">AWSでバージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。</block>
+  <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">バージョン9.9.1以降を実行する新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。</block>
 </blocks>
