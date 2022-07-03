@@ -473,7 +473,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-03 16:48:36 +0000">07/03/2022</time>
+    <time datetime="2022-07-03 17:12:36 +0000">07/03/2022</time>
     
   
 
@@ -543,9 +543,9 @@
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月3日-3">2022年7月3日</a></li>
 <li><a href="#2022年6月7日-2">2022年6月7日</a></li>
 <li><a href="#2022年5月2日-2">2022年5月2日</a></li>
-<li><a href="#2022-年-4-月-3-日-2">2022 年 4 月 3 日</a></li>
 </ul>
 </li>
 <li><a href="#cloud-volumes-service-for-gcp">Cloud Volumes Service for GCP</a>
@@ -1369,6 +1369,79 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 <h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年7月3日-3">2022年7月3日</h3>
+<div class="paragraph">
+<p>コネクタの3.9.20リリースでは、次の変更が加えられました。</p>
+</div>
+<div class="sect3">
+<h4 id="デジタルウォレット">デジタルウォレット</h4>
+<div class="paragraph">
+<p>デジタルウォレットに、アカウントで消費された合計容量とライセンスパッケージで消費された容量が表示されるようになりました。この情報は、料金の支払い方法や、容量の追加購入が必要かどうかを把握するのに役立ちます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-digital-wallet-summary.png" alt="容量ベースのライセンスのデジタルウォレットページを示すスクリーンショット。アカウントの使用済み容量の概要が表示され、ライセンスパッケージ別に容量が表示されます。"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="elastic-volumesの機能拡張">Elastic Volumesの機能拡張</h4>
+<div class="paragraph">
+<p>Cloud Managerで、ユーザインターフェイスからCloud Volumes ONTAP の作業環境を作成する際に、Amazon EBS Elastic Volumes機能がサポートされるようになりました。Elastic Volumes機能は、GP3またはio1ディスクを使用している場合、デフォルトで有効になっています。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。</p>
+</div>
+<div class="paragraph">
+<p><a href="concept-aws-elastic-volumes.html">"Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="awsのontap-s3ライセンス">AWSのONTAP S3ライセンス</h4>
+<div class="paragraph">
+<p>バージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムには、AWSにONTAP S3ライセンスが自動的にインストールされるようになりました。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/ontap/object-storage-management/index.html" target="_blank" rel="noopener">"ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="azure-cloudリージョンが新たにサポートされます">Azure Cloudリージョンが新たにサポートされます</h4>
+<div class="paragraph">
+<p>9.10.1リリース以降、Azure West US 3リージョンでCloud Volumes ONTAP がサポートされるようになりました。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="azureのontap-s3ライセンス">AzureのONTAP S3ライセンス</h4>
+<div class="paragraph">
+<p>バージョン9.9.1以降を実行している新規および既存のCloud Volumes ONTAP システムに、Cloud ManagerによってONTAP S3ライセンスがAzureに自動的にインストールされるようになりました。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/ontap/object-storage-management/index.html" target="_blank" rel="noopener">"ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="新しいgoogle-cloudリージョンサポート-2">新しいGoogle Cloudリージョンサポート</h4>
+<div class="paragraph">
+<p>9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>マドリード（ヨーロッパ-南西部1）</p>
+</li>
+<li>
+<p>パリ（ヨーロッパ-西9区）</p>
+</li>
+<li>
+<p>ワルシャワ（ヨーロッパ中央部2）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Cloud Volumes ONTAP でサポートされるリージョンの完全なリストを表示します"</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月7日-2">2022年6月7日</h3>
 <div class="paragraph">
 <p>コネクタの3.9.19リリースでは、次の変更が加えられました。</p>
@@ -1534,7 +1607,7 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 </div>
 </div>
 <div class="sect3">
-<h4 id="新しいgoogle-cloudリージョンサポート-2">新しいGoogle Cloudリージョンサポート</h4>
+<h4 id="新しいgoogle-cloudリージョンサポート-3">新しいGoogle Cloudリージョンサポート</h4>
 <div class="paragraph">
 <p>9.10.1リリース以降、Cloud Volumes ONTAP は次のGoogle Cloudリージョンでサポートされるようになりました。</p>
 </div>
@@ -1590,27 +1663,6 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png" alt="サービスアカウントフィールドのスクリーンショット"></span></p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-4-月-3-日-2">2022 年 4 月 3 日</h3>
-<div class="sect3">
-<h4 id="system-manager-のリンクが削除されました">System Manager のリンクが削除されました</h4>
-<div class="paragraph">
-<p>Cloud Volumes ONTAP 作業環境内から以前に利用可能だった System Manager のリンクを削除しました。</p>
-</div>
-<div class="paragraph">
-<p>Cloud Volumes ONTAP システムに接続している Web ブラウザにクラスタ管理 IP アドレスを入力しても、 System Manager に接続できます。 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html">"System Manager への接続に関する詳細情報"</a>。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="worm-ストレージの充電">WORM ストレージの充電</h4>
-<div class="paragraph">
-<p>導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。</p>
-</div>
-<div class="paragraph">
-<p><a href="https://cloud.netapp.com/pricing" target="_blank" rel="noopener">"WORM ストレージの価格設定については、こちらをご覧ください"</a>。</p>
 </div>
 </div>
 </div>
