@@ -473,7 +473,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-03 17:29:52 +0000">07/03/2022</time>
+    <time datetime="2022-07-05 16:01:06 +0000">07/05/2022</time>
     
   
 
@@ -499,9 +499,9 @@
 </li>
 <li><a href="#ontap-対応の-amazon-fsx">ONTAP 対応の Amazon FSX</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月3日-2">2022年7月3日</a></li>
 <li><a href="#2022-年-2-月-27-日">2022 年 2 月 27 日</a></li>
 <li><a href="#2021-年-10-月-31-日">2021 年 10 月 31 日</a></li>
-<li><a href="#2021-年-10-月-4-日">2021 年 10 月 4 日</a></li>
 </ul>
 </li>
 <li><a href="#アプリケーションテンプレート">アプリケーションテンプレート</a>
@@ -528,7 +528,7 @@
 </li>
 <li><a href="#cloud-sync">Cloud Sync</a>
 <ul class="sectlevel2">
-<li><a href="#2022年7月3日-2">2022年7月3日</a></li>
+<li><a href="#2022年7月3日-3">2022年7月3日</a></li>
 <li><a href="#2022年6月6日">2022年6月6日</a></li>
 <li><a href="#2022年5月1日">2022年5月1日</a></li>
 <li><a href="#2022-年-4-月-3-日">2022 年 4 月 3 日</a></li>
@@ -543,7 +543,7 @@
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
-<li><a href="#2022年7月3日-3">2022年7月3日</a></li>
+<li><a href="#2022年7月3日-4">2022年7月3日</a></li>
 <li><a href="#2022年6月7日-2">2022年6月7日</a></li>
 <li><a href="#2022年5月2日-2">2022年5月2日</a></li>
 </ul>
@@ -569,9 +569,9 @@
 </li>
 <li><a href="#kubernetes">Kubernetes</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月3日-5">2022年7月3日</a></li>
 <li><a href="#2022年6月6日-2">2022年6月6日</a></li>
 <li><a href="#2022年5月4日">2022年5月4日</a></li>
-<li><a href="#2022-年-4-月-4-日-3">2022 年 4 月 4 日</a></li>
 </ul>
 </li>
 <li><a href="#監視">監視</a>
@@ -636,7 +636,7 @@
 <li>
 <p>Cloud ManagerからEメールで通知を送信するように設定できるようになりました。これにより、システムにログインしていないときでも重要なシステムアクティビティを通知できます。</p>
 <div class="paragraph">
-<p><a href="task-monitor-cm-operations.html">"アカウントでの操作の監視の詳細については、こちらをご覧ください"</a>。</p>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html">"アカウントでの操作の監視の詳細については、こちらをご覧ください"</a>。</p>
 </div>
 </li>
 <li>
@@ -809,6 +809,25 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 <h2 id="ontap-対応の-amazon-fsx">ONTAP 対応の Amazon FSX</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年7月3日-2">2022年7月3日</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>単一または複数のアベイラビリティゾーンHA導入モデルを選択できるようになりました。</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment">"ONTAP 作業環境用の FSX を作成します"</a></p>
+</div>
+</li>
+<li>
+<p>AWS GovCloudアカウント認証はCloud Managerでサポートされるようになりました。</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role">"IAM ロールを設定します"</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022-年-2-月-27-日">2022 年 2 月 27 日</h3>
 <div class="sect3">
 <h4 id="iam-の役割を引き受けます">IAM の役割を引き受けます</h4>
@@ -832,21 +851,6 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 <h4 id="ボリュームの作成時にボリュームの単位を選択します">ボリュームの作成時にボリュームの単位を選択します</h4>
 <div class="paragraph">
 <p>可能です <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes">"ボリュームの作成時にボリュームの単位（ GiB または TiB ）を選択します"</a> FSX for ONTAP の場合。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2021-年-10-月-4-日">2021 年 10 月 4 日</h3>
-<div class="sect3">
-<h4 id="cloud-manager-を使用して-cifs-ボリュームを作成">Cloud Manager を使用して CIFS ボリュームを作成</h4>
-<div class="paragraph">
-<p>できるようになりました。 <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes">"Cloud Manager を使用して、 FSX for ONTAP に CIFS ボリュームを作成します"</a>。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="cloud-manager-を使用してボリュームを編集">Cloud Manager を使用してボリュームを編集</h4>
-<div class="paragraph">
-<p>できるようになりました。 <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes">"Cloud Manager を使用して ONTAP ボリュームの FSX を編集します"</a>。</p>
 </div>
 </div>
 </div>
@@ -1129,7 +1133,7 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 <h2 id="cloud-sync">Cloud Sync</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="2022年7月3日-2">2022年7月3日</h3>
+<h3 id="2022年7月3日-3">2022年7月3日</h3>
 <div class="sect3">
 <h4 id="azure-data-lake-storage-gen2のサポート">Azure Data Lake Storage Gen2のサポート</h4>
 <div class="paragraph">
@@ -1369,7 +1373,7 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 <h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="2022年7月3日-3">2022年7月3日</h3>
+<h3 id="2022年7月3日-4">2022年7月3日</h3>
 <div class="paragraph">
 <p>コネクタの3.9.20リリースでは、次の変更が加えられました。</p>
 </div>
@@ -1778,6 +1782,25 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 <h2 id="kubernetes">Kubernetes</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年7月3日-5">2022年7月3日</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Tridentオペレータを使用してAstra Tridentを導入した場合、Cloud Managerで最新バージョンのAstra Tridentにアップグレードできるようになりました。</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html">"Astra Tridentをインストールして管理"</a></p>
+</div>
+</li>
+<li>
+<p>KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes">"ストレージクラスを追加します"</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月6日-2">2022年6月6日</h3>
 <div class="paragraph">
 <p>Cloud ManagerがバックエンドストレージとしてAmazon FSX for ONTAP をサポートするようになりました。</p>
@@ -1792,37 +1815,6 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes">"ストレージクラスを追加します"</a></p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-4-月-4-日-3">2022 年 4 月 4 日</h3>
-<div class="sect3">
-<h4 id="cloud-manager-のリソースページを使用して-kubernetes-クラスタを管理">Cloud Manager のリソースページを使用して Kubernetes クラスタを管理</h4>
-<div class="paragraph">
-<p>Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。新しい <a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html">"クイックスタート"</a> すぐに運用を開始できます。</p>
-</div>
-<div class="paragraph">
-<p>クラスタリソースのページで次の操作を実行できるようになりました。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html">"Astra Trident をインストール"</a></p>
-</li>
-<li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html">"ストレージクラスを追加する"</a></p>
-</li>
-<li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html">"永続ボリュームを表示します"</a></p>
-</li>
-<li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html">"クラスタを削除"</a></p>
-</li>
-<li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html">"データサービスを有効化"</a></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
