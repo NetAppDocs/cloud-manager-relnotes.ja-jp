@@ -457,7 +457,6 @@
   <block id="66c941bf286fd505b009d484ca94a594" category="section-title">新しいGoogle Cloudマシンタイプ</block>
   <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">Google Cloudのデータブローカーのデフォルトのマシンタイプは、n2 -標準-4になりました。</block>
   <block id="1da5b30af8a0c5d1ce771dde6d9be98e" category="paragraph"><block ref="1da5b30af8a0c5d1ce771dde6d9be98e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0ce7c9606b5f3d67c288c6ffe90a846e" category="paragraph"><block ref="0ce7c9606b5f3d67c288c6ffe90a846e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11df15715c1f580c53cb06d73a344574" category="paragraph">コネクタの3.9.20リリースでは、次の変更が加えられました。</block>
   <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">デジタルウォレット</block>
   <block id="d5503d6062daaaa4326462970164cbac" category="paragraph">デジタルウォレットに、アカウントで消費された合計容量とライセンスパッケージで消費された容量が表示されるようになりました。この情報は、料金の支払い方法や、容量の追加購入が必要かどうかを把握するのに役立ちます。</block>
@@ -518,4 +517,5 @@
   <block id="289c267aad7151f388f9cb33c2dd25ca" category="paragraph">また、各ポリシーへのリンクを提供するページも作成しました。 <block ref="95fc2556330780df6dd239853ed18808" category="inline-link-macro-rx"></block>。</block>
   <block id="63e4eec15ba75260d01771611989182b" category="inline-link">AWSの最新のコネクタポリシーを確認します</block>
   <block id="3f5180c6dfc0906c58f04ff000c41a28" category="paragraph">Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。<block ref="68d3de9f2b18269a91b4a95ab6a0f18b" category="inline-link-rx"></block>。</block>
+  <block id="75c4b088a92b16dc79074e212617e6c6" category="paragraph"><block ref="75c4b088a92b16dc79074e212617e6c6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
