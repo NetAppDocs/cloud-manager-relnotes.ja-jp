@@ -715,8 +715,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP で�
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
 
-<stdin>で未解決のディレクティブ: https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]
-
 
 
 === 2022年6月7日
