@@ -27,6 +27,20 @@ Cloud Manager プラットフォームで行われた クラウド サービス 
 
 
 
+=== 2022年7月15日
+
+
+
+==== ポリシーの変更
+
+ドキュメントを更新するには、Cloud Managerのポリシーをドキュメント内に直接追加します。これにより、コネクタとCloud Volumes ONTAP に必要な権限を、設定方法を説明する手順とともに表示できるようになりました。これらのポリシーには、ネットアップサポートサイトのページからアクセスできます。
+
+link:task-creating-connectors-aws.html#create-an-iam-policy["次の例は、コネクタの作成に使用するAWS IAMロールの権限を示しています"]。
+
+また、各ポリシーへのリンクを提供するページも作成しました。 link:reference-permissions.html["Cloud Managerの権限の概要を確認します"]。
+
+
+
 === 2022年7月3日
 
 
@@ -81,27 +95,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2
 
 
 NOTE: Eメールアドレスとパスワードを使用する既存のログインでは、このログイン方法を使用し続ける必要があります。ネットアップでログインするオプションは、新規ユーザがサインアップする際に使用できます。
-
-
-
-=== 2022年6月7日
-
-
-
-==== コネクタ3.9.19
-
-* このコネクタは、AWSジャカルタリージョン（AP-Southee-3）でサポートされるようになりました。
-* このコネクタは、Azureブラジル南東部でサポートされるようになりました。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]
-
-* このリリースのコネクタには、Cloud Volumes ONTAP の機能拡張とオンプレミスONTAP クラスタの機能拡張も含まれています。
-+
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["Cloud Volumes ONTAP の機能拡張について説明します"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["ONTAP オンプレミスクラスタの機能拡張について説明します"^]
-
-
-
 
 
 
@@ -760,7 +753,7 @@ Elastic Volumesをサポートするために、Connectorに対する新しいAW
 "ec2:DescribeVolumesModifications",
 "ec2:ModifyVolume",
 ----
-Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager のポリシーのページです"^]。
+Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWSの最新のコネクタポリシーを確認します"^]。
 
 
 
@@ -856,7 +849,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 ----
 これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。
 
-Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。最新の権限のリストは、で確認できます https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager のポリシーのページです"^]。
+Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWSの最新のコネクタポリシーを確認します"^]。
 
 
 
