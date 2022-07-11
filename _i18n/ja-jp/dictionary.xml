@@ -109,11 +109,6 @@
   <block id="049ebb609707e4c76f578eb98777ffdc" category="inline-link">リソースタグ付けの詳細については、こちらをご覧ください</block>
   <block id="00b4c4979fe8d65dc663ea7c82a1b1c2" category="paragraph"><block ref="ddc85a18edb3f9e32810e603b7ef9eb7" category="inline-link-rx"></block>。</block>
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022 年 4 月 4 日</block>
-  <block id="223fdeee6256cb135700ded14acc7574" category="section-title">Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました</block>
-  <block id="1959411b4282df2234896496da39c42f" category="paragraph">必要に応じて、クラウドからオンプレミスへデータをリストアできます。</block>
-  <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能</block>
-  <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">検索とリストアの使用方法を説明します</block>
-  <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">データで特定できるすべての種類の個人データを表示します</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
@@ -396,9 +391,6 @@
   <block id="52e2c3fc6fb58a0ca1eb816ca6e270ed" category="section-title">Cloud Backup APIを使用して、バックアップとリストアの処理を管理できるようになりました</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="b83e2caeb95bea361704be4e9e795cd1" category="paragraph">APIはにあります<block ref="323898002645c2363c910f7c119fd4d6" category="inline-link-rx"></block>。を参照してください <block ref="cf7847f4c926eb96d69d319dfdc23654" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="45ee97ced966affff074d2bc1efe2686" category="paragraph">新しいCloud Backup for Applications機能を使用すると、OracleおよびMicrosoft SQLの既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージからAmazon S3またはAzure Blobのクラウドオブジェクトストレージにオフロードできます。</block>
-  <block id="8a0841a62164343a6bb78ffd4349420f" category="inline-link">オンプレミスアプリケーションのデータをクラウドで保護する方法については、こちらをご覧ください</block>
-  <block id="98d0ff36da367aa918057b6c42219851" category="paragraph"><block ref="6ddb7afc666833c3265591e4f4bdc4a7" category="inline-link-rx"></block>。</block>
   <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
   <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">Data Investigationページから結果を.jsonレポートとしてダウンロードできるようになりました</block>
   <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">Data Investigationページからレポートを作成する方法を参照してください</block>
@@ -490,7 +482,6 @@
   <block id="1a3362a1b5304a4e1e1112496974b9ae" category="section-title">AzureのONTAP S3ライセンス</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
-  <block id="16d18a6af4e3eb041715aa5c571b4c92" category="paragraph">&lt;stdin&gt;で未解決のディレクティブ: https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]</block>
   <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
   <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">単一または複数のアベイラビリティゾーンHA導入モデルを選択できるようになりました。</block>
   <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">ONTAP 作業環境用の FSX を作成します</block>
@@ -519,4 +510,12 @@
   <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">スキャンしたデータソースからNFS共有へのファイル移動にData Senseを使用する場合は、ファイルの最大数が100、000ファイルに増加しています。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
   <block id="8152540df51584ebf79193211a381d46" category="paragraph">AWSでバージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。</block>
   <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">バージョン9.9.1以降を実行する新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。</block>
+  <block id="02e3f175b6b6db384cc8a9f19dfd8b6a" category="section-title">2022年7月13日</block>
+  <block id="f2c95e400c19071fbcd562467ddc48b3" category="section-title">SnapLock Enterpriseボリュームのバックアップがサポートされるようになりました</block>
+  <block id="e5fff8c021afd86e8d7cd1a5b82dec8e" category="paragraph">Cloud Backupを使用して、SnapLock Enterpriseボリュームをパブリッククラウドとプライベートクラウドにバックアップできるようになりました。この機能を使用するには、ONTAP システムでONTAP 9.11.1以降が実行されている必要があります。ただし、SnapLock Complianceボリュームは現在サポートされていません。</block>
+  <block id="975ab611b7133feabb2a325e663f8347" category="section-title">オンプレミスコネクタを使用して、パブリッククラウドにバックアップファイルを作成できるようになりました</block>
+  <block id="8d2224260491150c834f946712c069a0" category="paragraph">以前は、バックアップファイルの作成場所と同じクラウドプロバイダにConnectorを導入する必要がありました。オンプレミスに導入されたコネクタを使用して、オンプレミスのONTAP システムからAmazon S3、Azure Blob、Google Cloud Storageへのバックアップファイルを作成できるようになりました。（StorageGRID システムでバックアップファイルを作成する場合は、オンプレミスコネクタが常に必要でした）。</block>
+  <block id="f42fcdabb7c9a7075b26292ed8cb7a23" category="section-title">ONTAP システムのバックアップポリシーを作成する場合には、追加の機能を使用できます</block>
+  <block id="cd359ec6a578adbdedd6582f88b84401" category="list-text">毎年のスケジュールでバックアップを実行できるようになりました。年単位のバックアップの場合、デフォルトの保持期間は1ですが、この値を変更して、以前の多数のバックアップファイルにアクセスできるようにすることができます。</block>
+  <block id="42a0fcc08cab0bf2248dfca3aecd8ec9" category="list-text">バックアップポリシーに名前を付けておくと、よりわかりやすいテキストでポリシーを識別できます。</block>
 </blocks>

@@ -247,6 +247,30 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年7月13日
+
+
+
+==== SnapLock Enterpriseボリュームのバックアップがサポートされるようになりました
+
+Cloud Backupを使用して、SnapLock Enterpriseボリュームをパブリッククラウドとプライベートクラウドにバックアップできるようになりました。この機能を使用するには、ONTAP システムでONTAP 9.11.1以降が実行されている必要があります。ただし、SnapLock Complianceボリュームは現在サポートされていません。
+
+
+
+==== オンプレミスコネクタを使用して、パブリッククラウドにバックアップファイルを作成できるようになりました
+
+以前は、バックアップファイルの作成場所と同じクラウドプロバイダにConnectorを導入する必要がありました。オンプレミスに導入されたコネクタを使用して、オンプレミスのONTAP システムからAmazon S3、Azure Blob、Google Cloud Storageへのバックアップファイルを作成できるようになりました。（StorageGRID システムでバックアップファイルを作成する場合は、オンプレミスコネクタが常に必要でした）。
+
+
+
+==== ONTAP システムのバックアップポリシーを作成する場合には、追加の機能を使用できます
+
+* 毎年のスケジュールでバックアップを実行できるようになりました。年単位のバックアップの場合、デフォルトの保持期間は1ですが、この値を変更して、以前の多数のバックアップファイルにアクセスできるようにすることができます。
+* バックアップポリシーに名前を付けておくと、よりわかりやすいテキストでポリシーを識別できます。
+
+
+
+
 === 2022年6月14日
 
 
@@ -334,26 +358,6 @@ Cloud Backupのライセンスの実装方法には、次の点が変更され�
 
 
 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html["使用可能なライセンスモデルの詳細については、こちらをご覧ください"]。
-
-
-
-=== 2022 年 4 月 4 日
-
-
-
-==== Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました
-
-新しいCloud Backup for Applications機能を使用すると、OracleおよびMicrosoft SQLの既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージからAmazon S3またはAzure Blobのクラウドオブジェクトストレージにオフロードできます。
-
-必要に応じて、クラウドからオンプレミスへデータをリストアできます。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-data-to-cloud.html["オンプレミスアプリケーションのデータをクラウドで保護する方法については、こちらをご覧ください"]。
-
-
-
-==== すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能
-
-ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["検索とリストアの使用方法を説明します"]。
 
 
 
