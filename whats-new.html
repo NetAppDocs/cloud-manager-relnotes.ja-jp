@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/ja-jp/cloud-manager-relnotes/search.html"
           data-type="widget" 
-          data-placeholder="ドキュメントを検索" 
-          data-no-results-found="{query}に該当する結果はありません" 
-          data-did-you-mean="{suggestion} を検索" 
-          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-          data-results-found="{hitCount} 件見つかりました"  
+          data-placeholder="ドキュメントを検索"
+          data-no-results-found="{query}に該当する結果はありません"
+          data-did-you-mean="{suggestion} を検索"
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?"
+          data-results-found="{hitCount} 件見つかりました"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -473,7 +475,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-11 22:17:56 +0000">07/11/2022</time>
+    <time datetime="2022-07-13 13:15:35 +0000">07/13/2022</time>
     
   
 
@@ -513,10 +515,10 @@
 </li>
 <li><a href="#クラウドバックアップ">クラウドバックアップ</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月13日">2022年7月13日</a></li>
 <li><a href="#2022年6月14日">2022年6月14日</a></li>
 <li><a href="#2022年6月8日">2022年6月8日</a></li>
 <li><a href="#2022年5月2日">2022年5月2日</a></li>
-<li><a href="#2022-年-4-月-4-日">2022 年 4 月 4 日</a></li>
 </ul>
 </li>
 <li><a href="#クラウドデータの意味">クラウドデータの意味</a>
@@ -537,7 +539,7 @@
 <li><a href="#クラウド階層化">クラウド階層化</a>
 <ul class="sectlevel2">
 <li><a href="#2022年5月3日">2022年5月3日</a></li>
-<li><a href="#2022-年-4-月-4-日-2">2022 年 4 月 4 日</a></li>
+<li><a href="#2022-年-4-月-4-日">2022 年 4 月 4 日</a></li>
 <li><a href="#2021-年-9-月-2-日">2021 年 9 月 2 日</a></li>
 </ul>
 </li>
@@ -901,6 +903,34 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 <h2 id="クラウドバックアップ">クラウドバックアップ</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年7月13日">2022年7月13日</h3>
+<div class="sect3">
+<h4 id="snaplock-enterpriseボリュームのバックアップがサポートされるようになりました">SnapLock Enterpriseボリュームのバックアップがサポートされるようになりました</h4>
+<div class="paragraph">
+<p>Cloud Backupを使用して、SnapLock Enterpriseボリュームをパブリッククラウドとプライベートクラウドにバックアップできるようになりました。この機能を使用するには、ONTAP システムでONTAP 9.11.1以降が実行されている必要があります。ただし、SnapLock Complianceボリュームは現在サポートされていません。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="オンプレミスコネクタを使用してパブリッククラウドにバックアップファイルを作成できるようになりました">オンプレミスコネクタを使用して、パブリッククラウドにバックアップファイルを作成できるようになりました</h4>
+<div class="paragraph">
+<p>以前は、バックアップファイルの作成場所と同じクラウドプロバイダにConnectorを導入する必要がありました。オンプレミスに導入されたコネクタを使用して、オンプレミスのONTAP システムからAmazon S3、Azure Blob、Google Cloud Storageへのバックアップファイルを作成できるようになりました。（StorageGRID システムでバックアップファイルを作成する場合は、オンプレミスコネクタが常に必要でした）。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ontap-システムのバックアップポリシーを作成する場合には追加の機能を使用できます">ONTAP システムのバックアップポリシーを作成する場合には、追加の機能を使用できます</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>毎年のスケジュールでバックアップを実行できるようになりました。年単位のバックアップの場合、デフォルトの保持期間は1ですが、この値を変更して、以前の多数のバックアップファイルにアクセスできるようにすることができます。</p>
+</li>
+<li>
+<p>バックアップポリシーに名前を付けておくと、よりわかりやすいテキストでポリシーを識別できます。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月14日">2022年6月14日</h3>
 <div class="sect3">
 <h4 id="インターネットにアクセスできないサイトのオンプレミスontap-クラスタデータをバックアップするサポートが追加されました">インターネットにアクセスできないサイトのオンプレミスONTAP クラスタデータをバックアップするサポートが追加されました</h4>
@@ -1004,27 +1034,6 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html">"使用可能なライセンスモデルの詳細については、こちらをご覧ください"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022-年-4-月-4-日">2022 年 4 月 4 日</h3>
-<div class="sect3">
-<h4 id="cloud-backup-for-applications-1-1-0-snapcenter-搭載の-ga-版になりました">Cloud Backup for Applications 1.1.0 （ SnapCenter 搭載）の GA 版になりました</h4>
-<div class="paragraph">
-<p>新しいCloud Backup for Applications機能を使用すると、OracleおよびMicrosoft SQLの既存のアプリケーション整合性スナップショット（バックアップ）を、オンプレミスのプライマリストレージからAmazon S3またはAzure Blobのクラウドオブジェクトストレージにオフロードできます。</p>
-</div>
-<div class="paragraph">
-<p>必要に応じて、クラウドからオンプレミスへデータをリストアできます。</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-data-to-cloud.html">"オンプレミスアプリケーションのデータをクラウドで保護する方法については、こちらをご覧ください"</a>。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="すべての-ontap-バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能">すべての ONTAP バックアップファイルでボリュームまたはファイルを検索するための新しい検索とリストア機能</h4>
-<div class="paragraph">
-<p>ボリューム名またはフルボリューム名、部分的またはフルファイル名、サイズ範囲、および追加の検索フィルタを使用して、すべての ONTAP バックアップファイル * にまたがるボリュームまたはファイルを検索できるようになりました。これは、どのクラスタまたはボリュームがデータのソースであるかがわからない場合に、リストアするデータを見つけるための新しい優れた方法です。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore">"検索とリストアの使用方法を説明します"</a>。</p>
 </div>
 </div>
 </div>
@@ -1353,7 +1362,7 @@ Eメールアドレスとパスワードを使用する既存のログインで�
 </div>
 </div>
 <div class="sect2">
-<h3 id="2022-年-4-月-4-日-2">2022 年 4 月 4 日</h3>
+<h3 id="2022-年-4-月-4-日">2022 年 4 月 4 日</h3>
 <div class="sect3">
 <h4 id="amazon-s3-glacier-instant-retrieval-ストレージクラスが使用可能になりました">Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました</h4>
 <div class="paragraph">
